@@ -9,11 +9,12 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
-    @IBOutlet var recordButton: UIButton!
+   // @IBOutlet var recordButton: UIButton!
     var isRecording = false
     
     var animatedView : UIView!
     
+    var recordButton : ButtonReccordView!
     var pulseAnimation = PulseAnimation()
     
     @IBOutlet weak var reponseDeCall: UILabel!
@@ -42,7 +43,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
-                        self.loadRecordingUI()
+                        self.initReccordButton()
                     } else {
                         // failed to record
                     }
@@ -53,55 +54,30 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         }
     }
     
+    func initReccordButton(){
     
-   
-    
-    func loadRecordingUI() {
-        recordButton.isEnabled = true
-        recordButton.setTitle("Appuyer", for: .normal)
-        recordButton.addTarget(self, action: #selector(recordAudioButtonTapped), for: .touchUpInside)
-        view.addSubview(recordButton)
-    }
-    
-    
-    func createPositionPulseAnimation() {
-     pulseAnimation = PulseAnimation(frame: view.bounds)
-   //elf.createPositionPulseAnimation()
-    self.view.addSubview(pulseAnimation)
+        recordButton = ButtonReccordView(frame: view.bounds)
+        self.view.addSubview(recordButton)
+        recordButton.translatesAutoresizingMaskIntoConstraints = false
+        recordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        recordButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
-    pulseAnimation.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([
-        
-        pulseAnimation.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-        pulseAnimation.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-        
-    ])
-        
-    }
-    
- 
-    
-    @objc func recordAudioButtonTapped(_ sender: UIButton) {
-        if audioRecorder == nil {
-                UIView.animate(withDuration: 8, animations: {
-                    // Créez et ajoutez l'animation ici
-                    self.createPositionPulseAnimation()
-                    
-                    self.recordButton.isHidden = true
-                }) { finished in
-                    self.recordButton.isHidden = false
-                    self.pulseAnimation.isHidden = true
-                    // Rendre le bouton à nouveau visible
-                    print("Animation terminée")
-                }
-                
-                startRecording()
-            } else {
-                finishRecording(success: true)
+        recordButton.ringBack = { [weak self] button in
+            
+            if self?.audioRecorder == nil {
+                self?.startRecording()
             }
-
+            else {
+                self?.finishRecording(success: true)
+            }
+            
+        }
     }
-    
+   
+   
+ 
+    /*
+    */
     func startRecording() {
         let audioFilename = getFileURL()
         
@@ -213,7 +189,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         
         ApiRequest.sharedInstance.sendSongApi(recorder.url)
         
-        
+        audioRecorder = nil
+    }
         
         
         /*
@@ -237,6 +214,5 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
          */
         
         
-        audioRecorder = nil
-    }
+       
 }
