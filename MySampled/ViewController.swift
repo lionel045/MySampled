@@ -130,7 +130,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         }
     }
     
-    
     @objc func updateAudioLevel(){
         guard let recorder = audioRecorder, recorder.isRecording else {
             // The audioRecorder is nil or not recording, so we can't update meters.
@@ -157,7 +156,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         }
     }
     
-    
     func finishRecording(success: Bool) {
         audioRecorder.stop()
         audioRecorder = nil
@@ -173,9 +171,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         
         recordButton.isEnabled = true
     }
-    
-    
-    
     
     func preparePlayer() {
         var error: NSError?
