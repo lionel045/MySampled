@@ -25,14 +25,16 @@ class ButtonReccordView: UIButton {
         reccordButton = UIButton(type: .custom)
         reccordButton.addTarget(nil, action: #selector(handleTapGesture), for: .touchUpInside)
         reccordButton.contentMode = .scaleAspectFit
-        reccordButton.setImage(UIImage(named: "mySampled"), for: .normal)
+        reccordButton.setTitle("Appuie", for: .normal)
+        reccordButton.backgroundColor = .darkGray
         reccordButton.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(reccordButton)
         
         NSLayoutConstraint.activate([
-            
-            reccordButton.widthAnchor.constraint(equalToConstant: 80),
-            reccordButton.heightAnchor.constraint(equalToConstant: 80),
+            reccordButton.widthAnchor.constraint(equalToConstant: 300),
+            reccordButton.heightAnchor.constraint(equalToConstant: 200),
+            reccordButton.topAnchor.constraint(equalTo: topAnchor),
+            reccordButton.bottomAnchor.constraint(equalTo: bottomAnchor),
             reccordButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             reccordButton.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
@@ -40,11 +42,11 @@ class ButtonReccordView: UIButton {
     
     @objc func handleTapGesture() {
         
-        ringBack?(reccordButton)
-        let generator = UIImpactFeedbackGenerator(style: .light)
+        let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.prepare()
         generator.impactOccurred()
-        UIView.animate(withDuration: 8) {
+        ringBack?(reccordButton)
+        UIView.animate(withDuration: 10) {
             self.reccordButton.layer.opacity = 0.7
             self.createPositionPulseAnimation()
         } completion: { [weak self ] finish in
@@ -56,7 +58,6 @@ class ButtonReccordView: UIButton {
     
     func createPositionPulseAnimation() {
     pulseAnimation = PulseAnimation(frame: bounds)
-   //elf.createPositionPulseAnimation()
         self.addSubview(pulseAnimation)
 
     pulseAnimation.translatesAutoresizingMaskIntoConstraints = false
@@ -68,7 +69,5 @@ class ButtonReccordView: UIButton {
     ])
         
     }
-    
-    
-    
+
 }

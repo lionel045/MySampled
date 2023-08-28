@@ -6,11 +6,11 @@ class ApiRequest {
     let boundary = "---011000010111000001101001"
     let headers = [
         "content-type": "multipart/form-data; boundary=---011000010111000001101001",
-        "X-RapidAPI-Key": "3fca4dcdaemsha417ffe39712856p192395jsn5b914d38967a",
+        "X-RapidAPI-Key": "57af9a7a31msh7019ae94f91d8dcp1bb025jsnb9c09d6e299c",
         "X-RapidAPI-Host": "shazam-api6.p.rapidapi.com"
     ]
     
-    func sendSongApi(_ relativePath: URL) {
+    func sendSongApi(_ relativePath: URL, completion: ((Bool, _ shazamData: ShazamResponse?) -> ())?) {
         let url = URL(string: "https://shazam-api6.p.rapidapi.com/shazam/recognize/")!
         
         var request = URLRequest(url: url)
@@ -37,8 +37,6 @@ class ApiRequest {
             body.append("Content-Disposition: form-data; name=\"\(paramName)\"; filename=\"\(param["fileName"]!)\"\r\n".data(using: .utf8)!)
             body.append("Content-Type: \(param["contentType"]!)\r\n\r\n".data(using: .utf8)!)
             
-            
-            
             if let fileData = try? Data(contentsOf: relativePath) {
                 body.append(fileData)
                 body.append("\r\n".data(using: .utf8)!)
@@ -61,14 +59,18 @@ class ApiRequest {
             
             guard let data = data, error == nil else {
                 print("Aucune donnée reçue.")
+                completion?(false,nil)
                 return
             }
             
             do {
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(ShazamResponse.self, from: data)
+                let str = String(decoding: data, as: UTF8.self)
+                print(str)
                 print(jsonData.result?.track?.title)
-                print(jsonData.result?.track?.subtitle)
+                    completion?(true,jsonData)
+                
             } catch {
                     print("error \(error.localizedDescription)")
                             

@@ -9,18 +9,16 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
-   // @IBOutlet var recordButton: UIButton!
+    // @IBOutlet var recordButton: UIButton!
     var isRecording = false
-    
     var animatedView : UIView!
-    
     var recordButton : ButtonReccordView!
     var pulseAnimation = PulseAnimation()
     
     @IBOutlet weak var reponseDeCall: UILabel!
     
     @IBOutlet weak var imageArtist: UIImageView!
-    
+
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var audioPlayer:AVAudioPlayer!
@@ -28,16 +26,14 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //setup Recorder
-    //    createPositionPulseAnimation()
+    
         setupView()
-        //  recordButton.addSubview(pulseAnimation)
     }
     func setupView() {
         recordingSession = AVAudioSession.sharedInstance()
         
         do {
+            
             try recordingSession.setCategory(.playAndRecord, mode: .default)
             try recordingSession.setActive(true)
             recordingSession.requestRecordPermission() { [unowned self] allowed in
@@ -45,39 +41,27 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                     if allowed {
                         self.initReccordButton()
                     } else {
-                        // failed to record
                     }
                 }
             }
         } catch {
-            // failed to record
         }
     }
     
     func initReccordButton(){
-    
-        recordButton = ButtonReccordView(frame: view.bounds)
+        
+        recordButton = ButtonReccordView(frame: self.view.bounds)
         self.view.addSubview(recordButton)
         recordButton.translatesAutoresizingMaskIntoConstraints = false
         recordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         recordButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-
+        
         recordButton.ringBack = { [weak self] button in
-            
-            if self?.audioRecorder == nil {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
                 self?.startRecording()
             }
-            else {
-                self?.finishRecording(success: true)
-            }
-            
         }
     }
-   
-   
- 
-    /*
-    */
     func startRecording() {
         let audioFilename = getFileURL()
         
@@ -87,7 +71,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             AVNumberOfChannelsKey: 1,
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
         ]
-        
         isRecording = true
         
         do {
@@ -95,12 +78,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             audioRecorder.delegate = self
             audioRecorder.isMeteringEnabled = true
             audioRecorder.prepareToRecord()
-            audioRecorder.record(forDuration: 10)
-            audioLevelTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAudioLevel), userInfo: nil, repeats: true)
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 10) { [weak self] in
-                self?.overCountdown()
-            }
+            audioRecorder.record(forDuration: 4)
+     
         } catch {
             finishRecording(success: false)
         }
@@ -122,31 +101,19 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     func animateViewWithAudioLevel(_ level: CGFloat){
         
         let scale = 2.0 + level
-        
-        
-    }
-    
-    @objc func overCountdown() {
-        if recordButton.currentTitle == "Enregistrement en cours" {
-            recordButton.setTitle(" Veuillez reesayer ", for: .normal)
-        }
     }
     
     func finishRecording(success: Bool) {
         audioRecorder.stop()
         audioRecorder = nil
-        
         if success {
             DispatchQueue.main.async {
-                self.recordButton.setTitle("Enregistrer à nouveau ", for: .normal)
+                print("OK")
             }
         } else {
-            recordButton.setTitle("Tap to Record", for: .normal)
             // recording failed :(
         }
-        
-        recordButton.isEnabled = true
-    }
+        }
     
     func preparePlayer() {
         var error: NSError?
@@ -176,43 +143,85 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         return path as URL
     }
     
-    
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         
         if !flag {
             
             finishRecording(success: false)
-            
-            
+
         }
         print("Voici l'url de ton enregistrement \(recorder.url)")
-        
-        ApiRequest.sharedInstance.sendSongApi(recorder.url)
-        
         audioRecorder = nil
-    }
-        
-        
-        /*
-         ApiRequest.sharedInstance.sendSongApi(recorder.url) { responseApi, state in
+    
+         ApiRequest.sharedInstance.sendSongApi(recorder.url) {  succes, shazamData in
+         if succes {
          
-         DispatchQueue.global().async {
-         do {
-         
-         let imageData = try Data(contentsOf: (responseApi?.result?.track?.share?.image)!)
          DispatchQueue.main.async {
-         guard let matchTitle = responseApi?.result?.track?.title else { return }
-         self.reponseDeCall.text = matchTitle
-         self.imageArtist.image = UIImage(data: imageData)
-         }
-         } catch {
-         print("Erreur lors du téléchargement de l'image : \(error.localizedDescription)")
-         }
+         
+         if let retrieveArtist = shazamData?.result?.track?.subtitle , let retrieveTitle = shazamData?.result?.track?.title {
+         
+         
+         let formatArtist =  formatArtistName(retrieveArtist)
+         
+         let songWithoutFeat = removeFeaturing(from: retrieveTitle)
+         
+         let formatTitle = formatArtistName(songWithoutFeat)
+         print(formatArtist)
+         let url = "https://www.whosampled.com/\(formatArtist)/\(formatTitle)/"
+         print(url)
+         WebScrap.sharedInstance.retrieveData(currentUrl:url)
+         
          }
          
          }
-         */
-        
-        
-       
+         }
+         }
+         
+    }
 }
+
+
+func removeFeaturing(from artistName: String) -> String {
+    if let featRange = artistName.range(of: "feat") {
+        let artistWithoutFeaturing = artistName[..<featRange.lowerBound]
+        
+        if let artistWithoutParenthesis = artistWithoutFeaturing.lastIndex(of: "(") {
+            let artistWithoutSpace = artistWithoutFeaturing.prefix(upTo: artistWithoutParenthesis).trimmingCharacters(in: .whitespaces)
+            return String(artistWithoutSpace)
+        } else {
+            return String(artistWithoutFeaturing)
+        }
+        
+    } else {
+        return artistName
+    }
+}
+
+func formatArtistName(_ artistName: String) -> String {
+    var mediaName = ""
+    
+    artistName.forEach { char in
+        if char == " " {
+            mediaName += "-"
+        }
+        else if char == "'" {
+            mediaName += "%27"
+        }
+        
+        else if char == "?"
+        {
+            mediaName += "%3F"
+            
+        }
+        
+        else {
+            mediaName += String(char)
+        }
+    }
+    
+    return mediaName
+}
+
+
+
+
