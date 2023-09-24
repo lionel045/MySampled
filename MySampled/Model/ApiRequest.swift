@@ -6,7 +6,7 @@ class ApiRequest {
     let boundary = "---011000010111000001101001"
     let headers = [
         "content-type": "multipart/form-data; boundary=---011000010111000001101001",
-        "X-RapidAPI-Key": "305df2c3f1mshf8d48e901f76a4cp1762b0jsn4858be5da47e",
+        "X-RapidAPI-Key": "3fca4dcdaemsha417ffe39712856p192395jsn5b914d38967a",
         "X-RapidAPI-Host": "shazam-api6.p.rapidapi.com"
     ]
     

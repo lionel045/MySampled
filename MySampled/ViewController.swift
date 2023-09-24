@@ -80,7 +80,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             audioRecorder.prepareToRecord()
             audioRecorder.record(forDuration: 8)
             audioRecorder.addObserver(self, forKeyPath: "isRecording", options: .new, context: nil)
-
+            
         } catch {
             finishRecording(success: false)
         }
@@ -118,7 +118,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         } else {
         }
     }
-
+    
     
     func preparePlayer() {
         var error: NSError?
@@ -166,7 +166,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                     if let retrieveArtist = shazamData?.result?.track?.subtitle , let retrieveTitle = shazamData?.result?.track?.title {
                         
                         let songWithoutFeat = removeFeaturing(from: retrieveTitle)
-
+                        
                         
                         let trackwithoutFeat =  formatTrackName(songWithoutFeat)
                         
@@ -209,7 +209,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     
     func removeContentInParentheses(from track: String) -> String {
         var result = track
-
+        
         // Recherche la première parenthèse ouvrante "("
         if let openParenthesisRange = result.range(of: "(") {
             // Recherche la première parenthèse fermante ")" après la première parenthèse ouvrante
@@ -218,10 +218,10 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                 result.removeSubrange(openParenthesisRange.lowerBound...closeParenthesisRange.lowerBound)
             }
         }
-
+        
         // Supprime les espaces et retours à la ligne excédentaires autour du texte restant
         result = result.trimmingCharacters(in: .whitespacesAndNewlines)
-
+        
         return result
     }
     
@@ -230,29 +230,39 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         var mediaName = ""
         
         artistName.forEach { char in
-            if char == " " {
+            switch char {
+            case " ":
                 mediaName += "%20"
-            }
-            else if char == "'" {
+                
+            case "'":
                 mediaName += "'"
-            }
-            
-            else if char == "?"
-            {
+                
+                
+            case "?":
+                
                 mediaName += ""
                 
-            }
-            else if char == "é"
-            {
-                mediaName += ""
                 
-            }
-            
-            else {
+            case "é":
+                
+                mediaName += "e"
+                
+                
+            case "à":
+                
+                mediaName += "a"
+                
+                
+            case "-":
+                
+                mediaName += "%20"
+                
+            default:
                 mediaName += String(char)
             }
         }
         
         return mediaName
     }
+    
 }

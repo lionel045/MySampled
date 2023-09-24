@@ -41,13 +41,16 @@ class NetworkService {
             }
             
             do {
-                let str = String(decoding: data, as: UTF8.self)
-                //print(str)
                 let result = try JSONDecoder().decode(expecting, from: data)
                 
                 completion(.success(result))
             } catch {
+                let str = String(decoding: data, as: UTF8.self)
+
+                print(str)
+
                 completion(.failure(error))
+            
             }
         }
         task.resume()

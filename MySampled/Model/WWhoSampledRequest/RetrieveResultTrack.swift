@@ -33,7 +33,6 @@ struct RetrieveResultTrack {
                 switch result {
                 case .success(let artist):
                     self.retrieveIdArtist?(artist.id)
-                    print(artist.id)
                 case .failure(let error):
                     print("Erreur : \(error)")
                 }
@@ -77,8 +76,8 @@ struct ArtistInfo: Codable {
     }
 
     let artist: Artist
-    let collab_artist1: String?
-    let collab_artist2: String?
+    //let collab_artist1: Any?
+    //let collab_artist2: Any?
     let cover_count: Int
     let covered_count: Int
     let featuring_artist1: FeaturingArtist?
@@ -100,9 +99,9 @@ struct ArtistInfo: Codable {
     let small_image_url: String
     let spotify_id: String?
     let spotify_id_verified: Bool?
-    let track_name: String
-    let youtube_id: String
-    let youtube_syndicate: Bool
+    let track_name: String?
+    let youtube_id: String?
+    let youtube_syndicate: Bool?
 }
 
 struct FeaturingArtist: Codable {
