@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.swift
 //  VoiceRecorder
 //
@@ -18,7 +18,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     @IBOutlet weak var reponseDeCall: UILabel!
     
     @IBOutlet weak var imageArtist: UIImageView!
-
+    
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var audioPlayer:AVAudioPlayer!
@@ -26,7 +26,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         setupView()
     }
     func setupView() {
@@ -78,12 +78,14 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             audioRecorder.delegate = self
             audioRecorder.isMeteringEnabled = true
             audioRecorder.prepareToRecord()
-            audioRecorder.record(forDuration: 4)
-     
+            audioRecorder.record(forDuration: 8)
+            audioRecorder.addObserver(self, forKeyPath: "isRecording", options: .new, context: nil)
+
         } catch {
             finishRecording(success: false)
         }
     }
+    
     
     @objc func updateAudioLevel(){
         guard let recorder = audioRecorder, recorder.isRecording else {
@@ -95,7 +97,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         let decibels = audioRecorder.averagePower(forChannel: 0) ?? 0.0
         let normalizedValue = CGFloat((decibels + 160) / 160)
         animateViewWithAudioLevel(normalizedValue)
-        
     }
     
     func animateViewWithAudioLevel(_ level: CGFloat){
@@ -104,16 +105,20 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     }
     
     func finishRecording(success: Bool) {
-        audioRecorder.stop()
-        audioRecorder = nil
+        if let audioRecorder = audioRecorder {
+            if audioRecorder.isRecording {
+                audioRecorder.stop()
+            }
+            self.audioRecorder = nil
+        }
         if success {
             DispatchQueue.main.async {
                 print("OK")
             }
         } else {
-            // recording failed :(
         }
-        }
+    }
+
     
     func preparePlayer() {
         var error: NSError?
@@ -148,80 +153,106 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         if !flag {
             
             finishRecording(success: false)
-
+            
         }
         print("Voici l'url de ton enregistrement \(recorder.url)")
         audioRecorder = nil
-    
-         ApiRequest.sharedInstance.sendSongApi(recorder.url) {  succes, shazamData in
-         if succes {
-         
-         DispatchQueue.main.async {
-         
-         if let retrieveArtist = shazamData?.result?.track?.subtitle , let retrieveTitle = shazamData?.result?.track?.title {
-         
-         
-         let formatArtist =  formatArtistName(retrieveArtist)
-         
-         let songWithoutFeat = removeFeaturing(from: retrieveTitle)
-         
-         let formatTitle = formatArtistName(songWithoutFeat)
-         print(formatArtist)
-         let url = "https://www.whosampled.com/\(formatArtist)/\(formatTitle)/"
-         print(url)
-         WebScrap.sharedInstance.retrieveData(currentUrl:url)
-         
-         }
-         
-         }
-         }
-         }
-         
-    }
-}
-
-
-func removeFeaturing(from artistName: String) -> String {
-    if let featRange = artistName.range(of: "feat") {
-        let artistWithoutFeaturing = artistName[..<featRange.lowerBound]
         
-        if let artistWithoutParenthesis = artistWithoutFeaturing.lastIndex(of: "(") {
-            let artistWithoutSpace = artistWithoutFeaturing.prefix(upTo: artistWithoutParenthesis).trimmingCharacters(in: .whitespaces)
-            return String(artistWithoutSpace)
-        } else {
-            return String(artistWithoutFeaturing)
-        }
-        
-    } else {
-        return artistName
-    }
-}
+        ApiRequest.sharedInstance.sendSongApi(recorder.url) {  succes, shazamData in
+            if succes {
+                
+                DispatchQueue.main.async { [self] in
+                    
+                    if let retrieveArtist = shazamData?.result?.track?.subtitle , let retrieveTitle = shazamData?.result?.track?.title {
+                        
+                        let songWithoutFeat = removeFeaturing(from: retrieveTitle)
 
-func formatArtistName(_ artistName: String) -> String {
-    var mediaName = ""
-    
-    artistName.forEach { char in
-        if char == " " {
-            mediaName += "-"
-        }
-        else if char == "'" {
-            mediaName += "%27"
-        }
-        
-        else if char == "?"
-        {
-            mediaName += "%3F"
+                        
+                        let trackwithoutFeat =  formatTrackName(songWithoutFeat)
+                        
+                        let track = removeContentInParentheses(from: trackwithoutFeat)
+                        
+                        let artist = retrieveArtist
+                        
+                        
+                        
+                        //let formatTitle = formatArtistName(songWithoutFeat)
+                        print(track)
+                        finishRecording(success: true)
+                        self.recordButton.resetButton()
+                        SearchRequest.sharedInstance.myTupleValue = (artist,track)
+                        ResultSample.sharedInstance.displayTrack()
+                    }
+                }
+            }
             
         }
-        
-        else {
-            mediaName += String(char)
+    }
+    
+    
+    func removeFeaturing(from artistName: String) -> String {
+        if let featRange = artistName.range(of: "feat") {
+            let artistWithoutFeaturing = artistName[..<featRange.lowerBound]
+            
+            if let artistWithoutParenthesis = artistWithoutFeaturing.lastIndex(of: "(") {
+                let artistWithoutSpace = artistWithoutFeaturing.prefix(upTo: artistWithoutParenthesis).trimmingCharacters(in: .whitespaces)
+                return String(artistWithoutSpace)
+            } else {
+                return String(artistWithoutFeaturing)
+            }
+            
+        } else {
+            return artistName
         }
     }
     
-    return mediaName
+    
+    func removeContentInParentheses(from track: String) -> String {
+        var result = track
+
+        // Recherche la première parenthèse ouvrante "("
+        if let openParenthesisRange = result.range(of: "(") {
+            // Recherche la première parenthèse fermante ")" après la première parenthèse ouvrante
+            if let closeParenthesisRange = result.range(of: ")", options: [], range: openParenthesisRange.upperBound..<result.endIndex, locale: nil) {
+                // Supprime le contenu entre les parenthèses, y compris les parenthèses elles-mêmes
+                result.removeSubrange(openParenthesisRange.lowerBound...closeParenthesisRange.lowerBound)
+            }
+        }
+
+        // Supprime les espaces et retours à la ligne excédentaires autour du texte restant
+        result = result.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        return result
+    }
+    
+    
+    func formatTrackName(_ artistName: String) -> String {
+        var mediaName = ""
+        
+        artistName.forEach { char in
+            if char == " " {
+                mediaName += "%20"
+            }
+            else if char == "'" {
+                mediaName += "'"
+            }
+            
+            else if char == "?"
+            {
+                mediaName += ""
+                
+            }
+            else if char == "é"
+            {
+                mediaName += ""
+                
+            }
+            
+            else {
+                mediaName += String(char)
+            }
+        }
+        
+        return mediaName
+    }
 }
-
-
-
-

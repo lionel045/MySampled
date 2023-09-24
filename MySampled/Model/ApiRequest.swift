@@ -6,7 +6,7 @@ class ApiRequest {
     let boundary = "---011000010111000001101001"
     let headers = [
         "content-type": "multipart/form-data; boundary=---011000010111000001101001",
-        "X-RapidAPI-Key": "57af9a7a31msh7019ae94f91d8dcp1bb025jsnb9c09d6e299c",
+        "X-RapidAPI-Key": "305df2c3f1mshf8d48e901f76a4cp1762b0jsn4858be5da47e",
         "X-RapidAPI-Host": "shazam-api6.p.rapidapi.com"
     ]
     
@@ -67,8 +67,8 @@ class ApiRequest {
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(ShazamResponse.self, from: data)
                 let str = String(decoding: data, as: UTF8.self)
-                print(str)
-                print(jsonData.result?.track?.title)
+                print(jsonData.result?.track?.subtitle)
+                
                     completion?(true,jsonData)
                 
             } catch {

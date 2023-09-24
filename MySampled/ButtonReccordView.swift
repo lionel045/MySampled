@@ -52,7 +52,6 @@ class ButtonReccordView: UIButton {
         } completion: { [weak self ] finish in
             self?.pulseAnimation.removeFromSuperview()
             self?.reccordButton.layer.opacity = 1
-
         }
     }
     
@@ -68,6 +67,13 @@ class ButtonReccordView: UIButton {
         
     ])
         
+    }
+    
+    func resetButton() {
+        // Réinitialisez le bouton à son état initial ici
+        reccordButton.layer.removeAllAnimations()
+        pulseAnimation.removeFromSuperview()
+        reccordButton.layer.opacity = 1
     }
 
 }
