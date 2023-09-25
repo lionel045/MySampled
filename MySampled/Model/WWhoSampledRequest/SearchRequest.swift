@@ -40,7 +40,7 @@ class SearchRequest {
 
                     for sampleResult in result {
                         if sampleResult.full_artist_name!.contains(artist) {
-
+                            print("bg)")
                             self?.ringBack?(sampleResult.id!)
                         }
                     }
@@ -55,8 +55,6 @@ class SearchRequest {
         
      
     }
-    
-
 
 struct TrackResponse: Codable {
     let meta: Meta?

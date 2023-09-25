@@ -17,12 +17,7 @@ class NetworkService {
             return
         }
         var request = URLRequest(url: url)
-   /*     let configuration = URLSessionConfiguration.default
-               configuration.httpAdditionalHeaders = [
-                   "Host": "www.whosampled.com",
-                   "User-Agent": "WhoSampled 1.41.3 rv:2 (iPad; iPadOS 16.6; en_FR)"
-               ]
-    */
+
         request.setValue("www.whosampled.com", forHTTPHeaderField: "Host")
         request.setValue("WhoSampled 1.41.3 rv:2 (iPad; iPadOS 16.6; en_FR)", forHTTPHeaderField: "User-Agent")
 

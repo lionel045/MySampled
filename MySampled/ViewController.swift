@@ -172,7 +172,9 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                         
                         let track = removeContentInParentheses(from: trackwithoutFeat)
                         
-                        let artist = retrieveArtist
+                        
+                        let artist = removeAndContent(artistName: retrieveArtist) 
+                        
                         
                         
                         
@@ -226,6 +228,23 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     }
     
     
+    func removeAndContent(artistName : String) -> String {
+        
+        if let indexAnd = artistName.range(of: "&") {
+            
+            
+            var elementWithoutAnd = artistName[..<indexAnd.lowerBound]
+            
+            
+            return String(elementWithoutAnd)
+        }
+        
+        return artistName
+        
+    }
+    
+    
+    
     func formatTrackName(_ artistName: String) -> String {
         var mediaName = ""
         
@@ -233,6 +252,9 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             switch char {
             case " ":
                 mediaName += "%20"
+                
+            case "’":
+                mediaName += "" 
                 
             case "'":
                 mediaName += "'"
