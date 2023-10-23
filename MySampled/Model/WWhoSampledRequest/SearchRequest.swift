@@ -40,7 +40,6 @@ class SearchRequest {
 
                     for sampleResult in result {
                         if sampleResult.full_artist_name!.contains(artist) {
-                            print("bg)")
                             self?.ringBack?(sampleResult.id!)
                         }
                     }

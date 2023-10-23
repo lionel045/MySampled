@@ -4,17 +4,13 @@ class PulseAnimation: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .systemBrown
+        backgroundColor = .white
         layer.addSublayer(firstPulsingLayer)
                 createPulseLayers(count: 4)
-        firstPulsingLayer.add(PulsingAnimation(scale: 1.60), forKey: nil)
-      //  layer.addSublayer(secondPulsingLayer)
-       // layer.addSublayer(thirdPulsingLayer)
-        //  secondPulsingLayer.add(PulsingAnimation(scale: 1.90), forKey: nil)
-     //   thirdPulsingLayer.add(PulsingAnimation(scale: 2), forKey: nil)
+        firstPulsingLayer.add(PulsingAnimation(scale: 1.10), forKey: nil)
+        
     }
-    
-    required init?(coder aDecoder: NSCoder) {
+        required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -24,7 +20,7 @@ class PulseAnimation: UIView {
         animationGroup.animations = [createExpandingAnimation(scale: scale),createOpacityAnimation()]
         return animationGroup
     }
- 
+    
     private func createPulsingAnimationGroup(duration: TimeInterval, speed: Float) -> CAAnimationGroup {
         let animationGroup = CAAnimationGroup()
         animationGroup.duration = duration
@@ -49,16 +45,14 @@ class PulseAnimation: UIView {
         
         return opacityAnimation
     }
-    
     private func createPulseLayers(count: Int)  {
-        
         var lineWidth = 4
         var scale : CGFloat = 1.85
         var radius : CGFloat =  110
         for pulseCount in 0..<count {
             var circularPulse = PulseAnimation.circularLayer(color: Constant.secondPulsingColor , radius: radius, lineWidth: 3)
                 
-            circularPulse.fillColor = UIColor.darkGray.cgColor
+          //  circularPulse.fillColor = UIColor.lightGray.cgColor
             radius += 15
             lineWidth -= 1
             
@@ -70,9 +64,8 @@ class PulseAnimation: UIView {
         }
         
     }
-    
-    
-    private let firstPulsingLayer: CAShapeLayer = circularLayer(color: Constant.firstPulsingColor, radius: 80, lineWidth: 15)
+      
+    private let firstPulsingLayer: CAShapeLayer = circularLayer(color: Constant.firstPulsingColor, radius: 80, lineWidth: 4)
     private let secondPulsingLayer: CAShapeLayer = circularLayer(color: Constant.secondPulsingColor, radius: 100, lineWidth: 2 )
     private let thirdPulsingLayer: CAShapeLayer = circularLayer(color: Constant.thirdPulsingColor, radius: 110, lineWidth: 1)
     
@@ -80,19 +73,15 @@ class PulseAnimation: UIView {
         let circularLayer = CAShapeLayer()
         circularLayer.lineWidth = lineWidth
         circularLayer.strokeColor = color
-        circularLayer.fillColor = UIColor.clear.cgColor
+        circularLayer.fillColor = UIColor.white.cgColor
         circularLayer.path = UIBezierPath(arcCenter: CGPoint.zero, radius: radius, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true).cgPath
         return circularLayer
     }
     
     private enum Constant {
-        
-                
-        
-        static let firstPulsingColor: CGColor = UIColor(red: 0.12, green: 0.56, blue: 1, alpha: 1).cgColor // Nuance la plus claire de bleu
-        static let secondPulsingColor: CGColor = UIColor(red: 0.12, green: 0.36, blue: 0.8, alpha: 1).cgColor // Nuance intermédiaire de bleu
-        static let thirdPulsingColor: CGColor = UIColor(red: 0.12, green: 0.16, blue: 0.6, alpha: 1).cgColor // Nuance la plus foncée de bleu
+        static let firstPulsingColor: CGColor = UIColor(red: 0.7, green: 0.4, blue: 0.7, alpha: 1.0).cgColor
+        static let secondPulsingColor: CGColor = UIColor(red: 0.6, green: 0.3, blue: 0.6, alpha: 1.0).cgColor
+        static let thirdPulsingColor: CGColor = UIColor(red: 0.5, green: 0.2, blue: 0.5, alpha: 1.0).cgColor
     }
-
-
 }
+ 

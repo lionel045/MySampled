@@ -18,12 +18,16 @@
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
 				</dict>
-                <key>NSMicrophoneUsageDescription</key>
-                    <string>BasicVideoChat needs access to your microphone so we can record audio for videos.</string>
-                    <key>NSCameraUsageDescription</key>
-                    <string>BasicVideoChat needs access to your camera so we can record video.</string>
+				<string>NSMicrophoneUsageDescription</string>
+				<string>BasicVideoChat needs access to your microphone so we can record audio for videos.</string>
+				<string>NSCameraUsageDescription</string>
+				<string>BasicVideoChat needs access to your camera so we can record video.</string>
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 </dict>
 </plist>

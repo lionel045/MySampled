@@ -9,7 +9,6 @@ class NetworkService {
     
     static let shared = NetworkService()
     
-    
     func httpRequest<T: Codable>(url: URL?, expecting: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
         
         guard let url = url else {
