@@ -4,11 +4,24 @@ class ApiRequest {
     static let sharedInstance = ApiRequest()
     
     let boundary = "---011000010111000001101001"
-    let headers = [
-        "content-type": "multipart/form-data; boundary=---011000010111000001101001",
-        "X-RapidAPI-Key": "4924f29bbamsh5066595dd1ce4b6p1b5c6fjsn757ec2643d91",
-        "X-RapidAPI-Host": "shazam-api6.p.rapidapi.com"
-    ]
+    
+    // Supprimez la clé API directement écrite ici
+    var headers: [String: String] {
+        [
+            "content-type": "multipart/form-data; boundary=\(boundary)",
+            "X-RapidAPI-Key": apiKey,  // Utilisez la clé API chargée
+            "X-RapidAPI-Host": "shazam-api6.p.rapidapi.com"
+        ]
+    }
+    
+    // Propriété pour stocker la clé API
+    private var apiKey: String {
+        guard let key = Bundle.main.apiKey(named: "X-RapidAPI-Key") else {
+            fatalError("API Key not found in ApiKey.plist")
+        }
+        return key
+    }
+    
     
     func sendSongApi(_ relativePath: URL, completion: ((Bool, _ shazamData: ShazamResponse?) -> ())?) {
         let url = URL(string: "https://shazam-api6.p.rapidapi.com/shazam/recognize/")!
@@ -66,21 +79,33 @@ class ApiRequest {
             do {
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(ShazamResponse.self, from: data)
-                let str = String(decoding: data, as: UTF8.self)
+                let str = String(decoding: data, as: UTF8.self) // Permet de checker les logs en cas de problème
                 print(jsonData.result?.track?.subtitle)
-                
-                    completion?(true,jsonData)
+                print(str)
+                completion?(true,jsonData)
                 
             } catch {
-                    print("error \(error.localizedDescription)")
-                            
-                        }
+                print("error \(error.localizedDescription)")
+                
+            }
             
         }
         
         dataTask.resume()
     }
 }
+
+extension Bundle {
+    func apiKey(named name: String) -> String? {
+        if let url = self.url(forResource: "ApiKey", withExtension: "plist"),
+           let data = try? Data(contentsOf: url),
+           let config = try? PropertyListSerialization.propertyList(from: data, options: .mutableContainersAndLeaves, format: nil) as? [String: Any] {
+            return config[name] as? String
+        }
+        return nil
+    }
+}
+
 
 struct ShazamResponse: Codable {
     let status: Bool?

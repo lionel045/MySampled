@@ -1,96 +1,106 @@
 import AVFoundation
 
-class AudioRecorderManager: NSObject, AVAudioRecorderDelegate {
+class AudioRecorderManager: NSObject {
     static let shared = AudioRecorderManager()
     
-    private var audioRecorder: AVAudioRecorder?
-    private var completion: ((Data) -> Void)?
-     var sendReccord: ((AVAudioRecorder) -> Void)?
-    
-    
+    private var audioEngine: AVAudioEngine?
+    private var audioFile: AVAudioFile?
+    var sendReccord: ((URL) -> Void)?
     
     func setupAudioSession() {
         do {
             try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .defaultToSpeaker])
+            
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print("Setting up audio session failed.")
         }
     }
-
-    
-    
     
     func startRecording() {
-        setupAudioSession()
+        audioEngine = AVAudioEngine()
+        let audioFormat = AVAudioFormat(standardFormatWithSampleRate: 48000, channels: 2)
+        
+        guard let inputNode = audioEngine?.inputNode else {
+            print("Error: Couldn't fetch inputNode.")
+            return
+        }
+        
         let audioFilename = getFileURL()
+        
+        // Delete the file if it already exists
+        do {
+            if FileManager.default.fileExists(atPath: audioFilename.path) {
+                try FileManager.default.removeItem(at: audioFilename)
+            }
+        } catch {
+            print("Error: Could not delete existing audio file.")
+            return
+        }
+        
+        let sampleRate = Int(audioFormat!.sampleRate)
+        let channels = Int(audioFormat!.channelCount)
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-            AVSampleRateKey: 44100,
-            AVNumberOfChannelsKey: 1,
+            AVSampleRateKey: Int(audioFormat!.sampleRate),
+            AVNumberOfChannelsKey: Int(audioFormat!.channelCount),
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
         ]
         
         do {
-            audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
-            audioRecorder?.delegate = self
-            audioRecorder?.isMeteringEnabled = true
-            audioRecorder?.prepareToRecord()
-            audioRecorder?.record(forDuration: 8)
-            audioRecorder?.addObserver(self, forKeyPath: "isRecording",options: .new, context: nil)
+            audioFile = try AVAudioFile(forWriting: audioFilename, settings: settings)
         } catch {
-            
-             finishRecording(success: false)
-            
+            print("Error: Couldn't create AVAudioFile for writing. \(error)")
+            return
+        }
+        
+        inputNode.installTap(onBus: 0, bufferSize: 8192, format: audioFormat) { [weak self] (buffer, time) in
+            do {
+                try self?.audioFile?.write(from: buffer)
+            } catch let writeError {
+                print("Error during buffer write: \(writeError.localizedDescription)")
             }
-    }
-    
-    func stopRecording(completion: @escaping (Data) -> Void) {
-        // Stop the audio recorder and handle the recorded data
-        self.completion = completion
-        audioRecorder?.stop()
-    }
-    
-    // AVAudioRecorderDelegate method to handle recording completion
-    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        if flag {
-            if let audioData = try? Data(contentsOf: recorder.url) {
-                print("Voici l'url de ton enregistrement \(recorder.url)")
-                finishRecording(success: true)
-
-                sendReccord?(recorder)
-                completion?(audioData)
-                
-                
-            } else {
-                finishRecording(success: false)
-            }
+        }
+        
+        do {
+            try audioEngine?.start()
+        } catch {
+            print("Error: Couldn't start AVAudioEngine.")
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
+            self?.stopRecording()
         }
     }
     
+    func stopRecording() {
+        audioEngine?.stop()
+        audioEngine?.inputNode.removeTap(onBus: 0)
+        self.finishRecording(success: true)
+        finalizeAudioFile() // Nouvelle méthode pour finaliser le fichier
+        
+    }
+    
     func finishRecording(success: Bool) {
-          if let audioRecorder = audioRecorder {
+        let fileSaved = getFileURL()
+        if success {
+            print("Recording completed successfully.")
             
-              if audioRecorder.isRecording {
-                  audioRecorder.stop()
-              }
-              if success {
-              DispatchQueue.main.async {
-                      print("ok")
-                  }
-              }
-          } else {
-              print("L'enregistrement a échoué.")
-          }
-      }
+            
+            
+            
+        } else {
+            print("Recording failed.")
+        }
+    }
     
-    func getDocumentsDirectory() -> URL {
-          let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-          return paths[0]
-      }
+    func finalizeAudioFile() {
+        audioFile = nil // Libère l'objet AVAudioFile, ce qui devrait finaliser l'écriture du fichier
+        let fileURL = getFileURL()
+        self.sendReccord?(fileURL)
+    }
     
-    
-    private func getFileURL() -> URL {
+    func getFileURL() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0].appendingPathComponent("recording.m4a")
     }

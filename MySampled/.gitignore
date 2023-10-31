@@ -1,0 +1,13 @@
+# .gitignore
+
+# Xcode settings
+...
+
+# Carthage
+...
+
+# Votre nouvelle règle pour ignorer ApiKey.plist
+ApiKey.plist
+
+# Code Injection
+...
