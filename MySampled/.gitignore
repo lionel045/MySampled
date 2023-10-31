@@ -6,8 +6,8 @@
 # Carthage
 ...
 
-# Votre nouvelle règle pour ignorer ApiKey.plist
-ApiKey.plist
+# règle pour ignorer ApiKey.plist
+
 
 # Code Injection
 ...

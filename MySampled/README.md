@@ -32,5 +32,5 @@ MySampled est en cours de développement actif. Bien que les fonctionnalités pr
 Amélioration du Front-End : Je travaille activement à améliorer l'interface utilisateur pour rendre l'expérience plus intuitive, réactive et agréable. Ceci inclut la révision des layouts, l'amélioration des interactions utilisateur et l'optimisation de la performance visuelle.
 
 
-Lien pour l'api de Shazam https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing 
+Lien pour l'api de [Shazam](https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing)
 Pas de panique l'utilisation de l'API est gratuite
