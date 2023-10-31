@@ -1,9 +1,3 @@
-
-Conversations
-2,62 Go utilisés sur 15 Go
-Conditions d'utilisation · Confidentialité · Règlement du programme
-Dernière activité sur le compte : il y a 1 minute
-Utilisé actuellement à un autre emplacement · Détails
 # 🎵 MySampled
 
 Bienvenue sur **MySampled**, une application innovante de reconnaissance de samples musicaux. En intégrant l'API de **Shazam** et une API de reconnaissance de samples, MySampled se positionne comme un outil indispensable pour les amateurs de musique, les DJ, et les producteurs. Conçue en **Swift** et s'appuyant sur **UIKit**, cette application offre une expérience utilisateur fluide et agréable.
