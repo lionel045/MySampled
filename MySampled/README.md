@@ -12,7 +12,7 @@ Découvrez les samples cachés dans vos morceaux préférés en utilisant une te
 
 - Disposer de Xcode : Notre environnement de développement de choix pour compiler et exécuter l'application. Clé API via RapidAPI : Vous devez générer une clé API pour Shazam en visitant Shazam API sur RapidAPI. 🔑 Configuration de la clé API Pour intégrer l'API Shazam dans MySampled :
 
-  Obtenir la clé API : Rendez-vous sur (RapidAPI)(https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing) et générer votre clé API Shazam. Création du fichier ApiKey.plist : Dans Xcode, créez un fichier ApiKey.plist au sein de votre projet. Ajout de la clé API dans ApiKey.plist : Ouvrez le fichier ApiKey.plist. Créez un nouveau dictionnaire avec la clé X-RapidAPI-Key. Insérez la clé API que vous avez obtenue de RapidAPI comme valeur pour cette clé.
+  Obtenir la clé API : Rendez-vous sur [RapidAPI](https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing) et générer votre clé API Shazam. Création du fichier ApiKey.plist : Dans Xcode, créez un fichier ApiKey.plist au sein de votre projet. Ajout de la clé API dans ApiKey.plist : Ouvrez le fichier ApiKey.plist. Créez un nouveau dictionnaire avec la clé X-RapidAPI-Key. Insérez la clé API que vous avez obtenue de RapidAPI comme valeur pour cette clé.
 
 ## 📲 Installation
 
