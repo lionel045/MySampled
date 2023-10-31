@@ -2,8 +2,10 @@ import UIKit
 import AVFoundation
 
 
-class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
-    
+class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate, Delegation{
+    func superviseResult(result: Bool?) {
+        print("ok")
+    }
     
     var isRecording = false
     var animatedView: UIView!
@@ -14,24 +16,43 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     @IBOutlet weak var imageArtist: UIImageView!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
-    var audioPlayer: AVAudioPlayer!
- /*
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        let secondVc = SecondViewController()
-        self.present(secondVc, animated: true, completion: nil)
-    }
-   
-*/
+    var audioPlayer: AVAudioPlayer?
+    /*
+     override func viewDidAppear(_ animated: Bool) {
+     super.viewDidAppear(animated)
+     
+     let secondVc = SecondViewController()
+     self.present(secondVc, animated: true, completion: nil)
+     }
+     
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
+        
         displayAudioReccord()
+        
+        
     }
     
-   
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if flag {
+            print("La lecture s'est terminée avec succès.")
+        } else {
+            print("La lecture est terminée, mais pas avec succès.")
+        }
+    }
+    
+    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
+        print("Une erreur de décodage lors de la lecture est survenue: \(String(describing: error))")
+    }
+    
+    @objc func audioDidFinish(_ notification: Notification) {
+        print("La lecture de l'audio est terminée.")
+        NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
+    }
+    
     
     
     func sendDataToVc(data: ShazamResponse) {
@@ -74,6 +95,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             recordButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             recordButton.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+        
         recordButton.ringBack = { [weak self] button in
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
                 if let strongSelf = self {
@@ -82,31 +104,42 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                 }
             }
         }
+        
+        recordButton.testPlayBtn = { [weak self] playButton in
+            guard let self = self else { return }
+            
+            let audioURL = AudioRecorderManager.shared.getFileURL()
+            
+            // Vérifiez si le fichier existe à l'URL donnée
+            guard FileManager.default.fileExists(atPath: audioURL.path) else {
+                print("Erreur : Le fichier audio n'existe pas")
+                return
+            }
+            
+        }
     }
-    
     func displayAudioReccord() {
         
         AudioRecorderManager.shared.sendReccord = { record in
-            ApiRequest.sharedInstance.sendSongApi(record.url) {  apiSuccess, shazamData in
+            
+            ApiRequest.sharedInstance.sendSongApi(record) {  apiSuccess, shazamData in
                 if apiSuccess {
                     DispatchQueue.main.async { [weak self] in
-                        if let retrieveArtist = shazamData?.result?.track?.subtitle , let retrieveTitle = shazamData?.result?.track?.title {
+                        if let retrieveArtist = shazamData?.result?.track?.subtitle,
+                           let retrieveTitle = shazamData?.result?.track?.title {
                             
                             self?.sendDataToVc(data: shazamData!)
                             
-                            let songWithoutFeat = removeFeaturing(from: retrieveTitle)
-                            
-                            let trackWithoutFeat = formatTrackName(songWithoutFeat)
-                            
-                            let track = removeContentInParentheses(from: trackWithoutFeat)
-                            
-                            let artist = removeAndContent(artistName: retrieveArtist)
-                            
+                            let songWithoutFeat = retrieveTitle.removingContentInParentheses()
+                            let trackWithoutFeat = songWithoutFeat.formattedTrackName()
+                            let artist = retrieveArtist.removingAndContent()
+                            print(trackWithoutFeat)
+                            print(songWithoutFeat)
                             AudioRecorderManager.shared.finishRecording(success: true)
                             if apiSuccess {
                                 self?.recordButton.resetButton()
                             }
-                            SearchRequest.sharedInstance.myTupleValue = (artist, track)
+                            SearchRequest.sharedInstance.myTupleValue = (artist, trackWithoutFeat)
                             ResultSample.sharedInstance.displayTrack()
                         }
                     }
@@ -115,104 +148,37 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         }
         
     }
+    
+    
+    
 }
-
-func removeFeaturing(from artistName: String) -> String {
-    if let featRange = artistName.range(of: "feat") {
-        let artistWithoutFeaturing = artistName[..<featRange.lowerBound]
-        if let artistWithoutParenthesis = artistWithoutFeaturing.lastIndex(of: "(") {
-            let artistWithoutSpace = artistWithoutFeaturing.prefix(upTo: artistWithoutParenthesis).trimmingCharacters(in: .whitespaces)
-            return String(artistWithoutSpace)
-        } else {
-            return String(artistWithoutFeaturing)
+extension String {
+    func formattedTrackName() -> String {
+        self.replacingOccurrences(of: " ", with: "%20")
+            .replacingOccurrences(of: "’", with: "")
+            .replacingOccurrences(of: "'", with: "'")
+            .replacingOccurrences(of: "?", with: "")
+            .replacingOccurrences(of: "é", with: "e")
+            .replacingOccurrences(of: "à", with: "a")
+            .replacingOccurrences(of: "-", with: "%20")
+    }
+    
+    func removingAndContent() -> String {
+        if let indexAnd = self.range(of: "&") {
+            return String(self[..<indexAnd.lowerBound])
         }
-        
-    } else {
-        return artistName
+        return self
     }
-}
-
-
-func removeContentInParentheses(from track: String) -> String {
-    var result = track
     
-    // Recherche la première parenthèse ouvrante "("
-    if let openParenthesisRange = result.range(of: "(") {
-        // Recherche la première parenthèse fermante ")" après la première parenthèse ouvrante
-        if let closeParenthesisRange = result.range(of: ")", options: [], range: openParenthesisRange.upperBound..<result.endIndex, locale: nil) {
-            // Supprime le contenu entre les parenthèses, y compris les parenthèses elles-mêmes
-            result.removeSubrange(openParenthesisRange.lowerBound...closeParenthesisRange.lowerBound)
+    func removingContentInParentheses() -> String {
+        var result = self
+        while let openParenthesisRange = result.range(of: "(") {
+            if let closeParenthesisRange = result.range(of: ")", options: [], range: openParenthesisRange.upperBound..<result.endIndex) {
+                result.removeSubrange(openParenthesisRange.lowerBound...closeParenthesisRange.lowerBound)
+            } else {
+                break // No matching closing parenthesis
+            }
         }
-    }
-    
-    // Supprime les espaces et retours à la ligne excédentaires autour du texte restant
-    result = result.trimmingCharacters(in: .whitespacesAndNewlines)
-    
-    return result
-}
-func removeAndContent(artistName : String) -> String {
-    
-    if let indexAnd = artistName.range(of: "&") {
-        var elementWithoutAnd = artistName[..<indexAnd.lowerBound]
-        
-        return String(elementWithoutAnd)
-    }
-    
-    return artistName
-    
-}
-
-func performModal(secondVc: UIViewController) {
-    
-}
-
-
-func formatTrackName(_ artistName: String) -> String {
-    var mediaName = ""
-    
-    artistName.forEach { char in
-        switch char {
-        case " ":
-            mediaName += "%20"
-            
-        case "’":
-            mediaName += ""
-            
-        case "'":
-            mediaName += "'"
-            
-            
-        case "?":
-            
-            mediaName += ""
-            
-            
-        case "é":
-            
-            mediaName += "e"
-            
-            
-        case "à":
-            
-            mediaName += "a"
-            
-            
-        case "-":
-            
-            mediaName += "%20"
-            
-        default:
-            mediaName += String(char)
-        }
-    }
-    
-    return mediaName
-}
-extension ViewController : Delegation {
-    func superviseResult(result: Bool?) {
-        
-        //  performModal(fromViewController: self)
-        
-        
+        return result.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
