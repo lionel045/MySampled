@@ -8,9 +8,11 @@ Découvrez les samples cachés dans vos morceaux préférés en utilisant une te
 
 ## 🛠 Prérequis
 
-- Xcode : Notre environnement de développement de choix pour compiler et exécuter l'application. Clé API via RapidAPI : Vous devez générer une clé API pour Shazam en visitant Shazam API sur RapidAPI. 🔑 Configuration de la clé API Pour intégrer l'API Shazam dans MySampled :
+- Disposer d'un mac
 
-  Obtenir la clé API : Rendez-vous sur Shazam API sur RapidAPI et générer votre clé API. Création du fichier ApiKey.plist : Dans Xcode, créez un fichier ApiKey.plist au sein de votre projet. Ajout de la clé API dans ApiKey.plist : Ouvrez le fichier ApiKey.plist. Créez un nouveau dictionnaire avec la clé X-RapidAPI-Key. Insérez la clé API que vous avez obtenue de RapidAPI comme valeur pour cette clé.
+- Disposer de Xcode : Notre environnement de développement de choix pour compiler et exécuter l'application. Clé API via RapidAPI : Vous devez générer une clé API pour Shazam en visitant Shazam API sur RapidAPI. 🔑 Configuration de la clé API Pour intégrer l'API Shazam dans MySampled :
+
+  Obtenir la clé API : Rendez-vous sur [https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing](RapidAPI) et générer votre clé API Shazam. Création du fichier ApiKey.plist : Dans Xcode, créez un fichier ApiKey.plist au sein de votre projet. Ajout de la clé API dans ApiKey.plist : Ouvrez le fichier ApiKey.plist. Créez un nouveau dictionnaire avec la clé X-RapidAPI-Key. Insérez la clé API que vous avez obtenue de RapidAPI comme valeur pour cette clé.
 
 ## 📲 Installation
 
@@ -18,8 +20,9 @@ Découvrez les samples cachés dans vos morceaux préférés en utilisant une te
 ```bash
 git clone https://github.com/lionel045/MySampled
 ```
-2. Ouvrez le projet dans Xcode : Lancez Xcode et ouvrez le dossier du projet. Configurez [ApiKey.plist](https://github.com/lionel045/MySampled/blob/main/ApiKey.plist) : Assurez-vous que le fichier [ApiKey.plist](https://github.com/lionel045/MySampled/blob/main/ApiKey.plist) contient la clé API Shazam correcte. 
-3.  Exécutez l'application : Compilez et lancez l'application sur votre simulateur ou appareil iOS.
+2. Ouvrez le projet dans Xcode : Lancez Xcode et ouvrez le dossier du projet.
+3. Selectionner le fichier ApiKey.plist : Dans section Value de X-RapidAPI-Key ajouter la clé api générer précédemment
+4.  Exécutez l'application : Compilez et lancez l'application sur votre simulateur ou appareil iOS.
 
 # RoadMap 
 🚧 État du Projet
