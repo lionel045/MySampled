@@ -1,81 +1,108 @@
 import UIKit
-import Lottie
 
-class ButtonReccordView: UIButton {
+class ButtonReccordView: UIButton, CAAnimationDelegate {
     
     private var stopButton : UIButton!
-    private var reccordButton: UIButton!
+    private var recordButton: UIButton!
     private var playButton = UIButton(type: .custom)
     private var pulseAnimation: PulseAnimation!
     var ringBack: ((UIButton) -> ())?
+    private var recordArm: UIImageView!
     var testPlayBtn: ((UIButton)->())?
+    private var recordArmBottomConstraint: NSLayoutConstraint!
+    private var rotationCompletion: (() -> Void)?
+    private var armAnimationCompletion: (() -> Void)?
     override init(frame: CGRect) {
         super.init(frame: frame)
         //  setUpStopButton()
-        circleReccordButton()
-
+        circleRecordButton()
+        setUpRecordArm()
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func circleReccordButton() {
-        let diameter: CGFloat = 250
-        reccordButton = UIButton(frame: CGRect(x: 0, y: 0, width: diameter, height: diameter))
-        reccordButton.center = center
-        reccordButton.setTitle("Appuie", for: .normal)
-        reccordButton.layer.cornerRadius = diameter / 2
-        reccordButton.clipsToBounds = true
-        reccordButton.setTitleColor(.white, for: .normal)
-        reccordButton.addTarget(self, action: #selector(handleTapGesture), for: .touchUpInside)
-        reccordButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = reccordButton.bounds
-        gradientLayer.colors = [
-            UIColor(red: 4/255, green: 2/255, blue: 10/255, alpha: 1).cgColor,
-            UIColor(red: 29/255, green: 128/255, blue: 229/255, alpha: 1).cgColor,
-            UIColor(red: 194/255, green: 137/255, blue: 235/255, alpha: 1).cgColor
-        ]
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
-        reccordButton.layer.insertSublayer(gradientLayer, at: 0)
-        
-        self.addSubview(reccordButton)
-        
+    private func setUpRecordArm() {
+        recordArm = UIImageView(image: UIImage(named: "bras")) // Remplacez "recordArm" par le nom de votre image de bras de lecture
+        recordArm.contentMode = .scaleAspectFill
+        recordArm.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(recordArm)
+        recordArmBottomConstraint = recordArm.bottomAnchor.constraint(equalTo: self.centerYAnchor, constant: 60) // La constante initiale
+        // Par exemple, si le pivot est en bas à gauche du bras de lecture :
         NSLayoutConstraint.activate([
-            reccordButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            reccordButton.centerYAnchor.constraint(equalTo: centerYAnchor),
-            reccordButton.widthAnchor.constraint(equalToConstant: diameter),
-            reccordButton.heightAnchor.constraint(equalToConstant: diameter)
-        ])
-        
-        // Lottie animation setup
-        let animationDiameter: CGFloat = diameter + 140
-        let animationView = LottieAnimationView()
-        animationView.animation = LottieAnimation.named("Blob")
-        animationView.loopMode = .loop
-        animationView.play()
-        animationView.translatesAutoresizingMaskIntoConstraints = false
-        animationView.isUserInteractionEnabled = false
-        self.addSubview(animationView)
-        self.sendSubviewToBack(animationView)
-        NSLayoutConstraint.activate([
-            animationView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            animationView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            animationView.widthAnchor.constraint(equalToConstant: animationDiameter),
-            animationView.heightAnchor.constraint(equalToConstant: animationDiameter)
+            recordArm.leadingAnchor.constraint(equalTo: trailingAnchor, constant: -129), // Ajuster en fonction de votre layout
+            recordArm.bottomAnchor.constraint(equalTo: self.centerYAnchor, constant: 60),
+            recordArm.widthAnchor.constraint(equalToConstant: 80), // La largeur de votre bras de lecture
+            recordArm.heightAnchor.constraint(equalToConstant: 180) // La hauteur de votre bras de lecture
         ])
     }
     
+    private func animateRecordArmToTouchRecord() {
+        
+        let rotationAngle = 80 * (CGFloat.pi / 180)
+        UIView.animate(withDuration: 9.90, delay: 0,options: .curveEaseOut,
+                       animations:  {
+            
+            self.recordArm.transform = CGAffineTransform(rotationAngle: rotationAngle)
+            self.layoutIfNeeded()
+        }, completion: { _ in
+            
+            self.armAnimationCompletion = {
+                self.recordArm.transform = .identity
+            }
+        })
+                       
+    }
     
-  
+    private func circleRecordButton() {
+        recordButton = UIButton(frame: .zero)
+        recordButton.center = self.center
+        recordButton.setBackgroundImage(UIImage(named: "vinyle"), for: .normal)  // Set it to clear if you want the transparent parts to show
+        recordButton.imageView?.contentMode = .scaleAspectFill // Set contentMode for the imageView of the button
+        recordButton.backgroundColor = .clear
+        recordButton.clipsToBounds = true
+        recordButton.addTarget(self, action: #selector(handleTapGesture), for: .touchUpInside)
+        recordButton.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(recordButton)
+        
+        NSLayoutConstraint.activate([
+            recordButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -35),
+            recordButton.centerYAnchor.constraint(equalTo: centerYAnchor),
+            recordButton.widthAnchor.constraint(equalToConstant: 300),
+            recordButton.heightAnchor.constraint(equalToConstant: 300)
+        ])
+        
+        // Set the cornerRadius to make the button circular
+        recordButton.layer.cornerRadius = 150 // Assuming the button's width and height are 200
+    }
+    
+    private func startRotatingView(view: UIView, duration: Double = 1.0, completion: (() -> Void)? = nil) {
+        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        rotationAnimation.fromValue = 0
+        rotationAnimation.toValue = CGFloat.pi * 2
+        rotationAnimation.duration = duration
+        rotationAnimation.repeatCount = Float(10 / duration)
+        rotationAnimation.isRemovedOnCompletion = false
+        rotationAnimation.fillMode = .forwards
+        rotationAnimation.delegate = self
+        view.layer.add(rotationAnimation, forKey: "rotationAnimation")
+        
+        self.animateRecordArmToTouchRecord()
 
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { _ in
+                completion?()
+            self.armAnimationCompletion?()
+            let animationFinish = true
+            }
+    }
     
-    
-    
-    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        if flag {
+            // Call the completion handler if the animation finished
+            rotationCompletion?()
+            rotationCompletion = nil
+        }
+    }
+
     private func setUpStopButton(){
         stopButton = UIButton(type: .custom)
         stopButton.contentMode = .scaleAspectFit
@@ -96,51 +123,16 @@ class ButtonReccordView: UIButton {
     }
     
     @objc func handleTapGesture() {
-        guard reccordButton.isEnabled else {
+        guard recordButton.isEnabled else {
             return
         }
-        
-        ringBack?(reccordButton)
-        
-        checkRecordButtonState(reccordButton)
-        reccordButton.isEnabled = false
-        
-        if pulseAnimation == nil {
-            createPositionPulseAnimation()
-        }
-        
-        UIView.animate(withDuration: 4) { [self] in
-            reccordButton.layer.opacity = 0.7
-        } completion: { [weak self] finish in
-            self?.pulseAnimation.removeFromSuperview()
-            self?.pulseAnimation = nil
-            self?.reccordButton.layer.opacity = 1
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-                self?.reccordButton.isEnabled = true
-            }
-        }
-    }
     
-    func checkRecordButtonState(_ button: UIButton) {
-        if button.isEnabled {
-            let generator = UIImpactFeedbackGenerator(style: .medium)
-            generator.prepare()
-            generator.impactOccurred()
-        }
+        ringBack?(recordButton)
+                recordButton.isEnabled = false
+        startRotatingView(view: recordButton, duration: 2) {
+            self.recordButton.isEnabled = true
+          }
     }
-    
-    func createPositionPulseAnimation() {
-        pulseAnimation = PulseAnimation(frame: bounds)
-        self.addSubview(pulseAnimation)
-        pulseAnimation.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            pulseAnimation.centerXAnchor.constraint(equalTo: centerXAnchor),
-            pulseAnimation.centerYAnchor.constraint(equalTo: centerYAnchor),
-        ])
+     
     }
-    
-    func resetButton() {
-        reccordButton.layer.removeAllAnimations()
-        reccordButton.layer.opacity = 1
-    }
-}
+

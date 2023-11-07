@@ -6,34 +6,31 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     func superviseResult(result: Bool?) {
         print("ok")
     }
-    
     var isRecording = false
     var animatedView: UIView!
     var recordButton: ButtonReccordView!
-    
+    var checkIfSongFound: ((Bool?) -> ())?
+    var songFound = false
     var sendResultToSecondVc : ((ShazamResponse?) -> ())?
     @IBOutlet weak var reponseDeCall: UILabel!
     @IBOutlet weak var imageArtist: UIImageView!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
-    var audioPlayer: AVAudioPlayer?
-    /*
-     override func viewDidAppear(_ animated: Bool) {
+    
+   /*  override func viewDidAppear(_ animated: Bool) {
      super.viewDidAppear(animated)
      
      let secondVc = SecondViewController()
      self.present(secondVc, animated: true, completion: nil)
      }
-     
-     */
+*/
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
         
-        displayAudioReccord()
-        
-        
+       // displayAudioReccord()
+
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
@@ -53,8 +50,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
     }
     
-    
-    
     func sendDataToVc(data: ShazamResponse) {
         
         guard let backgroundImage = data.result?.track?.images?.background else {return}
@@ -70,7 +65,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         
         do {
             
-            try recordingSession.setCategory(.playAndRecord, mode: .default)
+            try recordingSession.setCategory(.playAndRecord, options: [.mixWithOthers, .defaultToSpeaker])
             try recordingSession.setActive(true)
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
@@ -101,29 +96,36 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                 if let strongSelf = self {
                     // strongSelf.recordButton.performModal(fromViewController: strongSelf)
                     AudioRecorderManager.shared.startRecording()
+                    self?.startMonitoringSongFound()
+
                 }
             }
         }
         
-        recordButton.testPlayBtn = { [weak self] playButton in
-            guard let self = self else { return }
-            
-            let audioURL = AudioRecorderManager.shared.getFileURL()
-            
-            // Vérifiez si le fichier existe à l'URL donnée
-            guard FileManager.default.fileExists(atPath: audioURL.path) else {
-                print("Erreur : Le fichier audio n'existe pas")
-                return
+    }
+    
+    func startMonitoringSongFound() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6) { [weak self] in
+            guard let strongSelf = self else { return }
+
+            if !strongSelf.songFound{
+                AudioRecorderManager.shared.startRecording()
+                print("Deuxieme tentative")
+              //  self?.displayAudioReccord()
             }
-            
+            else {
+            }
         }
     }
+
+    
+    
     func displayAudioReccord() {
         
         AudioRecorderManager.shared.sendReccord = { record in
-            
             ApiRequest.sharedInstance.sendSongApi(record) {  apiSuccess, shazamData in
                 if apiSuccess {
+                    self.songFound = true
                     DispatchQueue.main.async { [weak self] in
                         if let retrieveArtist = shazamData?.result?.track?.subtitle,
                            let retrieveTitle = shazamData?.result?.track?.title {
@@ -137,12 +139,15 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                             print(songWithoutFeat)
                             AudioRecorderManager.shared.finishRecording(success: true)
                             if apiSuccess {
-                                self?.recordButton.resetButton()
+                               // self?.recordButton.resetButton()
                             }
                             SearchRequest.sharedInstance.myTupleValue = (artist, trackWithoutFeat)
                             ResultSample.sharedInstance.displayTrack()
                         }
                     }
+                }
+                else {
+                    self.songFound = false
                 }
             }
         }

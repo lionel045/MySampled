@@ -79,14 +79,21 @@ class ApiRequest {
             do {
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(ShazamResponse.self, from: data)
-                let str = String(decoding: data, as: UTF8.self) // Permet de checker les logs en cas de problème
-                print(jsonData.result?.track?.subtitle)
+                let str = String(decoding: data, as: UTF8.self) // Pour le logging
                 print(str)
-                completion?(true,jsonData)
+
+                // Vérification de la chaîne `subtitle`
+                if let subtitle = jsonData.result?.track?.subtitle, !subtitle.isEmpty {
+                    print(subtitle)
+                    completion?(true, jsonData)
+                } else {
+                    print("Subtitle est vide")
+                    completion?(false, nil)
+                }
                 
             } catch {
                 print("error \(error.localizedDescription)")
-                
+               // completion?(false, nil)
             }
             
         }

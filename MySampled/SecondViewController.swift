@@ -7,10 +7,11 @@ protocol Delegation {
 class SecondViewController: UIViewController {
     var delegate: Delegation?
     var ImageUrl: UIImage?
-    var currentStackView =  UIStackView()
+    let currentStackView =  UIStackView()
     var imageView = UIImageView()
-    var playButton = UIButton()
-    var shareButton = UIButton()
+    let playButton = UIButton()
+    
+    let shareButton = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -36,8 +37,8 @@ class SecondViewController: UIViewController {
             self.imageView.trailingAnchor.constraint(lessThanOrEqualTo: self.view.trailingAnchor),
             self.imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             self.imageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-            self.imageView.widthAnchor.constraint(lessThanOrEqualTo: self.view.widthAnchor),
-            self.imageView.heightAnchor.constraint(lessThanOrEqualTo: self.view.heightAnchor)
+            self.imageView.widthAnchor.constraint(equalToConstant: 300 ),
+            self.imageView.heightAnchor.constraint(equalToConstant: 350)
         ])
     }
 

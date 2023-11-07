@@ -6,7 +6,6 @@ class AudioRecorderManager: NSObject {
     private var audioEngine: AVAudioEngine?
     private var audioFile: AVAudioFile?
     var sendReccord: ((URL) -> Void)?
-    
     func setupAudioSession() {
         do {
             try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .defaultToSpeaker])
@@ -38,8 +37,6 @@ class AudioRecorderManager: NSObject {
             return
         }
         
-        let sampleRate = Int(audioFormat!.sampleRate)
-        let channels = Int(audioFormat!.channelCount)
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVSampleRateKey: Int(audioFormat!.sampleRate),
@@ -68,12 +65,12 @@ class AudioRecorderManager: NSObject {
             print("Error: Couldn't start AVAudioEngine.")
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.45) { [weak self] in
             self?.stopRecording()
         }
     }
     
-    func stopRecording() {
+   private func stopRecording() {
         audioEngine?.stop()
         audioEngine?.inputNode.removeTap(onBus: 0)
         self.finishRecording(success: true)
@@ -85,22 +82,21 @@ class AudioRecorderManager: NSObject {
         let fileSaved = getFileURL()
         if success {
             print("Recording completed successfully.")
-            
-            
-            
-            
+
         } else {
             print("Recording failed.")
         }
     }
     
-    func finalizeAudioFile() {
+    
+    
+    private func finalizeAudioFile() {
         audioFile = nil // Libère l'objet AVAudioFile, ce qui devrait finaliser l'écriture du fichier
         let fileURL = getFileURL()
         self.sendReccord?(fileURL)
     }
     
-    func getFileURL() -> URL {
+  private func getFileURL() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0].appendingPathComponent("recording.m4a")
     }
