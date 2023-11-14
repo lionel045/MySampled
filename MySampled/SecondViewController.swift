@@ -6,11 +6,11 @@ protocol Delegation {
 
 class SecondViewController: UIViewController {
     var delegate: Delegation?
-    var ImageUrl: UIImage?
+    var imageUrl: UIImage?
     let currentStackView =  UIStackView()
     var imageView = UIImageView()
     let playButton = UIButton()
-    
+    var findResult : Bool?
     let shareButton = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class SecondViewController: UIViewController {
         self.view.backgroundColor = .gray
         
         initImage()
-        imageView.image = ImageUrl
+        imageView.image = imageUrl
         loadStackView()
         
         
@@ -41,7 +41,7 @@ class SecondViewController: UIViewController {
             self.imageView.heightAnchor.constraint(equalToConstant: 350)
         ])
     }
-
+    
     
     func initShareButton(){
         let diameter = 30
@@ -77,7 +77,7 @@ class SecondViewController: UIViewController {
             currentStackView.widthAnchor.constraint(equalToConstant: 200),
             currentStackView.heightAnchor.constraint(equalToConstant: 100),
             currentStackView.centerXAnchor.constraint(equalTo: imageView.centerXAnchor)
-        
+            
         ])
         initPlayButton()
         initShareButton()
@@ -87,21 +87,30 @@ class SecondViewController: UIViewController {
     }
     
     func addCoverImage(imageCoverURL: String) {
-        
-        var findResult : Bool?
-        // Créez une tâche URLSession pour télécharger les données de l'image à partir de l'URL
         if let url = URL(string: imageCoverURL) {
-            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            let task = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+                guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                    print("Erreur de réponse HTTP")
+                    self?.delegate?.superviseResult(result: false)
+                    return
+                }
+
                 if let data = data, let image = UIImage(data: data) {
-                    // Mettez à jour l'image sur le fil principal
-                    print(url)
                     DispatchQueue.main.async {
-                        self.imageView.image = image
-                        self.delegate?.superviseResult(result: findResult)
+                        self?.imageView.image = image
+                        self?.delegate?.superviseResult(result: true)
+
                     }
+
+                    } else {
+                    print("Erreur de téléchargement de l'image ou format incorrect")
+                    self?.delegate?.superviseResult(result: false)
                 }
             }
             task.resume()
         }
     }
+
+    
+ 
 }

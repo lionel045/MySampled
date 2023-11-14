@@ -29,7 +29,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         
         setupView()
         
-       // displayAudioReccord()
+        displayAudioReccord()
 
     }
     
@@ -92,7 +92,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         ])
         
         recordButton.ringBack = { [weak self] button in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            DispatchQueue.main.asyncAfter(deadline: .now()) { [weak self] in
                 if let strongSelf = self {
                     // strongSelf.recordButton.performModal(fromViewController: strongSelf)
                     AudioRecorderManager.shared.startRecording()
