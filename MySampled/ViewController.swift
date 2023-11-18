@@ -17,19 +17,19 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     
-   /*  override func viewDidAppear(_ animated: Bool) {
+     override func viewDidAppear(_ animated: Bool) {
      super.viewDidAppear(animated)
      
      let secondVc = SecondViewController()
      self.present(secondVc, animated: true, completion: nil)
      }
-*/
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
         
-        displayAudioReccord()
+      //®  displayAudioReccord()
 
     }
     

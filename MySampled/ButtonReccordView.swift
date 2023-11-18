@@ -90,7 +90,6 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         
         Timer.scheduledTimer(withTimeInterval: 8, repeats: false) { _ in
             completion?()
-            let animationFinish = true
         }
     }
     
@@ -106,6 +105,9 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
   
     @objc func handleTapGesture() {
         if  recordButton.isEnabled  {
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.prepare()
+            generator.impactOccurred()
             ringBack?(recordButton)
             recordButton.isEnabled = false
             recordButton.setBackgroundImage(UIImage(named: "vinyle"), for: .normal) // For keep the same fade of color

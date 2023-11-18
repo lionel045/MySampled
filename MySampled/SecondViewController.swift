@@ -1,5 +1,5 @@
 import UIKit
-
+import AVFoundation
 protocol Delegation {
     func superviseResult(result: Bool?)
 }
@@ -15,30 +15,42 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = .gray
+        self.view.backgroundColor = .white
         
         initImage()
-        imageView.image = imageUrl
-        loadStackView()
+        // imageView.image = imageUrl
+        //  loadStackView()
         
         
     }
     
-    func initImage() {
+    private func initImage() {
         self.imageView = UIImageView()
+<<<<<<< Updated upstream
+        self.imageView.contentMode = .scaleToFill
+=======
         self.imageView.contentMode = .scaleAspectFit
-        self.imageView.image = UIImage(named: "user")
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+        guard let image = UIImage(named: "user") else {return}
+        let cropImage = self.cropImage(image: image)
+        self.imageView.image = cropImage
+    
         self.imageView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(self.imageView)
         NSLayoutConstraint.activate([
-            self.imageView.topAnchor.constraint(greaterThanOrEqualTo: self.view.topAnchor),
-            self.imageView.bottomAnchor.constraint(lessThanOrEqualTo: self.view.bottomAnchor),
+            //self.imageView.topAnchor.constraint(greaterThanOrEqualTo: self.view.topAnchor),
+            //self.imageView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 300),
             self.imageView.leadingAnchor.constraint(greaterThanOrEqualTo: self.view.leadingAnchor),
             self.imageView.trailingAnchor.constraint(lessThanOrEqualTo: self.view.trailingAnchor),
             self.imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            self.imageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-            self.imageView.widthAnchor.constraint(equalToConstant: 300 ),
-            self.imageView.heightAnchor.constraint(equalToConstant: 350)
+            self.imageView.topAnchor.constraint(equalTo: self.view.topAnchor)
+            
         ])
     }
     
@@ -94,15 +106,16 @@ class SecondViewController: UIViewController {
                     self?.delegate?.superviseResult(result: false)
                     return
                 }
-
+                
                 if let data = data, let image = UIImage(data: data) {
                     DispatchQueue.main.async {
-                        self?.imageView.image = image
+                        let cropImage = self?.cropImage(image: image)
+                        self?.imageView.image = cropImage
                         self?.delegate?.superviseResult(result: true)
-
+                        
                     }
-
-                    } else {
+                    
+                } else {
                     print("Erreur de téléchargement de l'image ou format incorrect")
                     self?.delegate?.superviseResult(result: false)
                 }
@@ -110,7 +123,36 @@ class SecondViewController: UIViewController {
             task.resume()
         }
     }
-
     
- 
+    
+    
+}
+
+extension SecondViewController {
+    
+    
+    func cropImage(image: UIImage) -> UIImage {
+        
+        let maxSize = CGSize(width: 400, height: 400)
+            
+        let availableRect = AVMakeRect(aspectRatio: image.size, insideRect: .init(origin: .zero, size: maxSize))
+        let targetSize = availableRect.size
+        
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = 1
+        let renderer = UIGraphicsImageRenderer(size: targetSize, format: format)
+        
+        let resized = renderer.image { (context) in
+            image.draw(in: CGRect(origin: .zero, size: targetSize))
+            
+        }
+        
+        return resized
+    }
+    
+    
+    
+    
+    
+    
 }

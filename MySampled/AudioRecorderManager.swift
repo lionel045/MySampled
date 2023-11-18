@@ -79,7 +79,6 @@ class AudioRecorderManager: NSObject {
     }
     
     func finishRecording(success: Bool) {
-        let fileSaved = getFileURL()
         if success {
             print("Recording completed successfully.")
 
