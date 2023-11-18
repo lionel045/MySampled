@@ -26,17 +26,7 @@ class SecondViewController: UIViewController {
     
     private func initImage() {
         self.imageView = UIImageView()
-<<<<<<< Updated upstream
-        self.imageView.contentMode = .scaleToFill
-=======
         self.imageView.contentMode = .scaleAspectFit
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         guard let image = UIImage(named: "user") else {return}
         let cropImage = self.cropImage(image: image)
         self.imageView.image = cropImage

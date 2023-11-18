@@ -32,7 +32,6 @@
 		B4D92B632AB91845003BE57D /* ResultTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D92B5D2AB91845003BE57D /* ResultTrack.swift */; };
 		B4D92B642AB91845003BE57D /* RetrieveResultTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D92B5E2AB91845003BE57D /* RetrieveResultTrack.swift */; };
 		B4D92B652AB91845003BE57D /* SampledIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D92B5F2AB91845003BE57D /* SampledIn.swift */; };
-		B4DAF8F32B0932540031A9A0 /* ApiKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4DAF8F22B0932540031A9A0 /* ApiKey.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +63,6 @@
 		B4D92B5D2AB91845003BE57D /* ResultTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTrack.swift; sourceTree = "<group>"; };
 		B4D92B5E2AB91845003BE57D /* RetrieveResultTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveResultTrack.swift; sourceTree = "<group>"; };
 		B4D92B5F2AB91845003BE57D /* SampledIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampledIn.swift; sourceTree = "<group>"; };
-		B4DAF8F22B0932540031A9A0 /* ApiKey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKey.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,19 +145,7 @@
 		B471057E2A86B29500DDB6C2 /* MySampled */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-				B4DAF8F22B0932540031A9A0 /* ApiKey.plist */,
-=======
 				B41642A22B07F3A4002443AA /* ApiKey.plist */,
->>>>>>> Stashed changes
-=======
-				B41642A22B07F3A4002443AA /* ApiKey.plist */,
->>>>>>> Stashed changes
-=======
-				B41642A22B07F3A4002443AA /* ApiKey.plist */,
->>>>>>> Stashed changes
 				B41503062A981DD90077FCBC /* Data */,
 				B41503042A981D8C0077FCBC /* Controlleur */,
 				B41503022A981D560077FCBC /* View */,
@@ -231,7 +217,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					B471057B2A86B29500DDB6C2 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -264,19 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-				B4DAF8F32B0932540031A9A0 /* ApiKey.plist in Resources */,
-=======
 				B41642A32B07F3A5002443AA /* ApiKey.plist in Resources */,
->>>>>>> Stashed changes
-=======
-				B41642A32B07F3A5002443AA /* ApiKey.plist in Resources */,
->>>>>>> Stashed changes
-=======
-				B41642A32B07F3A5002443AA /* ApiKey.plist in Resources */,
->>>>>>> Stashed changes
 				B459BA742ADD9A0300161568 /* Blob.json in Resources */,
 				B441C1F32AE081B300089E8C /* playButton.png in Resources */,
 				B441C1F12AE01E9700089E8C /* user.png in Resources */,
@@ -412,7 +386,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -473,7 +446,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
