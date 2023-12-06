@@ -4,9 +4,10 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     lazy var imageArtistSample: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
         imageView.image = UIImage(named: "artist1")
-        imageView.clipsToBounds = false
+        imageView.layer.cornerRadius = frame.width / 2
+       // imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -44,6 +45,13 @@ class CustomCollectionViewCell: UICollectionViewCell {
         setupViews()
     }
     
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageArtistSample.layer.cornerRadius = 10
+        imageArtistSample.clipsToBounds = true
+    }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) n'a pas été implémenté")
     }
@@ -62,8 +70,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             imageArtistSample.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             imageArtistSample.topAnchor.constraint(equalTo: topAnchor, constant: 5),
-            imageArtistSample.widthAnchor.constraint(equalToConstant: 100),
-            imageArtistSample.heightAnchor.constraint(equalToConstant: 100)
+            imageArtistSample.widthAnchor.constraint(equalToConstant: 80),
+            imageArtistSample.heightAnchor.constraint(equalToConstant: 80)
         ])
     }
     

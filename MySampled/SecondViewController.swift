@@ -11,7 +11,9 @@ class SecondViewController: UIViewController {
     var dataImages: [UIImage] = [
         UIImage(named: "artist1")!,
         UIImage(named: "artist2")!,
-        UIImage(named: "artist3")!
+        UIImage(named: "artist3")!,
+        UIImage(named: "artist4")!,
+        UIImage(named: "artist5")!,
     ]
         var currentStackView = UIStackView()
     var infoViewScroll: ViewInfoScroll!
@@ -23,13 +25,12 @@ class SecondViewController: UIViewController {
         initScrollView()
         infoViewScroll.sampleCollectionView.dataSource = self
         infoViewScroll.sampleCollectionView.delegate = self
+        
         infoViewScroll.sampleCollectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "CustomCell")
         view.bringSubviewToFront(scrollView)
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        
         
         let bottomOfImage = artistImageView.frame.maxY
         scrollView.contentInset = UIEdgeInsets(top: bottomOfImage, left: 0, bottom: 0, right: 0)
@@ -83,33 +84,45 @@ class SecondViewController: UIViewController {
 
 
 }
-extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     
     
+    //    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    //            // Here we determine the number of sections based on the dataImages count
+    //            // Assuming you want a new section for every set of 3 images
+    //            return Int(ceil(Double(dataImages.count) / 3.0))
+    //        }
+    //
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataImages.count
-
+        // Number of items in a given section
+        // If it's the last section, return the remaining items
+        return 3
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-            return 10 // Espacement entre les cellules
-        }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as? CustomCollectionViewCell else {
-                  fatalError("Unable to dequeue CustomCollectionViewCell")
-              }
-              // Configurez la cellule avec l'image à l'index correspondant
-              let image = dataImages[indexPath.item]
-              cell.imageArtistSample.image = image
-              
-              return cell
+            fatalError("Unable to dequeue CustomCollectionViewCell")
+        }
+        // Configurez la cellule avec l'image à l'index correspondant
+        let image = dataImages[indexPath.item]
+        cell.imageArtistSample.image = image
+        
+        return cell
     }
-    
-    
-    
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            // Votre logique de calcul de la taille de la cellule ici
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+           let sectionInsets = layout.sectionInset
+           let spacingBetweenCells = layout.minimumLineSpacing
+           let width = collectionView.bounds.width - sectionInsets.left - sectionInsets.right
+           let height: CGFloat = 90 // ou une hauteur dynamique si nécessaire
+
+           return CGSize(width: width, height: height)
+        }
     
 }
+
+

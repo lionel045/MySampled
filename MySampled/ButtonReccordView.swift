@@ -15,7 +15,7 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         super.init(frame: frame)
         //  setUpStopButton()
         circleRecordButton()
-        setUpRecordArm()
+       // setUpRecordArm()
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -35,21 +35,21 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         ])
     }
     
-    private func animateRecordArmToTouchRecord() {
-        
-        let rotationAngle = 80 * (CGFloat.pi / 180)
-        UIView.animate(withDuration: 8, delay: 0,options: .curveEaseOut,
-                       animations:  {
-            
-            self.recordArm.transform = CGAffineTransform(rotationAngle: rotationAngle)
-            self.layoutIfNeeded()
-        }, completion: { _ in
-            self.armAnimationCompletion = {
-                self.recordArm.transform = .identity
-            }
-        })
-        
-    }
+//    private func animateRecordArmToTouchRecord() {
+//        
+//        let rotationAngle = 80 * (CGFloat.pi / 180)
+//        UIView.animate(withDuration: 8, delay: 0,options: .curveEaseOut,
+//                       animations:  {
+//            
+//            self.recordArm.transform = CGAffineTransform(rotationAngle: rotationAngle)
+//            self.layoutIfNeeded()
+//        }, completion: { _ in
+//            self.armAnimationCompletion = {
+//                self.recordArm.transform = .identity
+//            }
+//        })
+//        
+//    }
     
     private func circleRecordButton() {
         recordButton = UIButton(frame: .zero)
@@ -62,7 +62,7 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         self.addSubview(recordButton)
         
         NSLayoutConstraint.activate([
-            recordButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -35),
+            recordButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             recordButton.centerYAnchor.constraint(equalTo: centerYAnchor),
             recordButton.widthAnchor.constraint(equalToConstant: 300),
             recordButton.heightAnchor.constraint(equalToConstant: 300)
@@ -86,7 +86,6 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         rotationAnimation.delegate = self
         view.layer.add(rotationAnimation, forKey: "rotationAnimation")
         
-        self.animateRecordArmToTouchRecord()
         Timer.scheduledTimer(withTimeInterval: 8, repeats: false) { _ in
             completion?()
         }

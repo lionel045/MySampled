@@ -24,14 +24,14 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
  
     override func viewDidAppear(_ animated: Bool) {
          super.viewDidAppear(animated)
-    
+        
          let secondVc = SecondViewController()
          self.present(secondVc, animated: true, completion: nil)
          }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = .black
         setupView()
         
         displayAudioReccord()

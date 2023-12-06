@@ -9,25 +9,39 @@ import UIKit
 import Foundation
 class ViewInfoScroll: UIView {
     
- private var titleArtist: UILabel!
- private var titleSong: UILabel!
- private var currentView: UIView!
- lazy var sampleCollectionView: UICollectionView = {
+    private var titleArtist: UILabel!
+    private var titleSong: UILabel!
+    private var currentView: UIView!
+    private lazy var titleSample: UILabel = {
+        
+        let label = UILabel()
+        label.text = "Sample"
+        label.numberOfLines = 0
+        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 26)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    lazy var sampleCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-     layout.scrollDirection = .vertical
-     layout.itemSize = CGSize(width: 400, height: 90)
-     
-        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-          collectionView.backgroundColor = .clear
-            
+        layout.scrollDirection = .vertical
+     //   layout.itemSize = CGSize(width: 400, height: 90)
+        layout.minimumInteritemSpacing = 10 // Espacement entre les items sur la même ligne
+        layout.minimumLineSpacing = 10 // Espacement entre les lignes
+        
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .clear
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.contentInsetAdjustmentBehavior = .always
+        
         return collectionView
         
     }()
- private var currentStackView = UIStackView()
+    private var currentStackView = UIStackView()
     private var gradient = CAGradientLayer()
     override init(frame: CGRect) {
         super.init(frame: frame)
-       initViewInfoScroll()
+        initViewInfoScroll()
     }
     
     required init?(coder: NSCoder) {
@@ -35,14 +49,14 @@ class ViewInfoScroll: UIView {
     }
     
     override func layoutSubviews() {
-            super.layoutSubviews()
-            gradient.frame = currentView.bounds // Mise à jour de la taille du gradient
-        }
-
+        super.layoutSubviews()
+        gradient.frame = currentView.bounds // Mise à jour de la taille du gradient
+    }
+    
     
     func initViewInfoScroll(){
         currentView = UIView()
-
+        
         
         currentView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(currentView)
@@ -52,12 +66,13 @@ class ViewInfoScroll: UIView {
             self.currentView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.currentView.heightAnchor.constraint(equalToConstant: 600)
         ])
-         
+        
         gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor] // De transparent à noir
         gradient.locations = [0.1, 0.3]
         currentView.layer.insertSublayer(gradient, at: 0)
         
         loadStackView()
+        initLabelSample()
         initSampleCollectionView()
     }
     
@@ -66,15 +81,15 @@ class ViewInfoScroll: UIView {
         currentView.addSubview(sampleCollectionView)
         
         NSLayoutConstraint.activate([
-        
-            sampleCollectionView.topAnchor.constraint(equalTo: currentStackView.bottomAnchor, constant: 90),
+            
+            sampleCollectionView.topAnchor.constraint(equalTo: titleSample.bottomAnchor, constant: 20),
             sampleCollectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             sampleCollectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            sampleCollectionView.heightAnchor.constraint(equalToConstant: 300)
+            sampleCollectionView.heightAnchor.constraint(equalToConstant: 400)
             
         ])
         print(self.sampleCollectionView.frame.width)
-
+        
     }
     
     
@@ -86,20 +101,20 @@ class ViewInfoScroll: UIView {
         currentStackView.translatesAutoresizingMaskIntoConstraints = false
         
         currentView.addSubview(currentStackView)
-
+        
         NSLayoutConstraint.activate([
             currentStackView.leadingAnchor.constraint(equalTo: currentView.leadingAnchor, constant: 30),
             currentStackView.trailingAnchor.constraint(equalTo: currentView.trailingAnchor),
-            currentStackView.topAnchor.constraint(equalTo: currentView.topAnchor, constant: 90 )
+            currentStackView.topAnchor.constraint(equalTo: currentView.topAnchor, constant: 70 )
         ])
-
+        
         initLabelTitleArtist()
         initLabelTitleSong()
-
+        
         currentStackView.addArrangedSubview(titleArtist)
         currentStackView.addArrangedSubview(titleSong)
     }
-
+    
     private func initLabelTitleArtist() {
         titleArtist = UILabel()
         titleArtist.text = "Artiste"
@@ -107,13 +122,26 @@ class ViewInfoScroll: UIView {
         titleArtist.textColor = .white
         titleArtist.numberOfLines = 0
     }
-
+    
     private func initLabelTitleSong() {
         titleSong = UILabel()
         titleSong.text = "Titre de la chanson"
         titleSong.font = UIFont.systemFont(ofSize: 31)
         titleSong.textColor = .white
         titleSong.numberOfLines = 0
+    }
+    
+    private func initLabelSample(){
+        
+        currentView.addSubview(titleSample)
+        
+        
+        NSLayoutConstraint.activate([
+            titleSample.topAnchor.constraint(equalTo: currentStackView.bottomAnchor, constant: 30),
+            titleSample.leadingAnchor.constraint(equalTo: currentView.leadingAnchor,constant: 30),
+            
+        ])
+        
     }
     
     

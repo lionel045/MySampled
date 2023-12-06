@@ -35,9 +35,7 @@ class ResultSample {
                    !destArtistsSet.contains(destArtistName) {
                     
                     print("Voici l'artiste qui a sampler : \(destArtistName) et voici le son avec lequel il a sampler: \(trackName)")
-                    
                     self.sampleCallback?(nil, destArtistName)
-                    
                     destArtistsSet.insert(destArtistName)
                 }
             }

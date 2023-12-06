@@ -59,8 +59,7 @@ class ArtistImageView: UIView {
             mirrorImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             mirrorImageView.heightAnchor.constraint(equalToConstant: 400) // Réfléchir seulement le tiers inférieur
         ])
-        
-        
+       
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.clear.cgColor, UIColor.white.cgColor]
         gradient.locations = [0.8, 1]
@@ -79,20 +78,14 @@ class ArtistImageView: UIView {
                 ])
     }
     
-    
-    
-    
     func addCoverImage(imageCoverURL: String) async throws   {
         guard let url = URL(string: imageCoverURL) else { return }
         let (data , _) = try await URLSession.shared.data(from: url)
-        
         if let image = UIImage(data: data) {
             await MainActor.run {
                 let cropImage = self.resize(image: image)
                 self.imageView.image = cropImage
                 self.mirrorImageView.image = cropImage
-               
-                
             }
             
         } else {
