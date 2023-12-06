@@ -65,7 +65,7 @@ class AudioRecorderManager: NSObject {
             print("Error: Couldn't start AVAudioEngine.")
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 7) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
             self?.stopRecording()
         }
     }

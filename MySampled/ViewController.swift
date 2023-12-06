@@ -39,16 +39,27 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     }
     
     
-    func sendDataToVc(data: ShazamResponse) {
+    func sendDataToVc(data: ShazamResponse) async {
         
         let shazamObject = data
         
         guard let backgroundImage = shazamObject.result?.track?.images?.background else { return }
         
+        guard let artist: (String) = shazamObject.result?.track?.subtitle else { return }
+        
+        guard let song: (String) = shazamObject.result?.track?.title else { return }
+                
+        let artistAndSong =  (artist,song)
+        
         let vc = SecondViewController()
-        vc.addCoverImage(imageCoverURL:backgroundImage)
-        vc.modalTransitionStyle = .flipHorizontal
-        self.present(vc, animated: true)
+        Task {
+          //  try await  ImageDownloadService().downloadImage(artistImage: backgroundImage)
+          try await vc.artistImageView.addCoverImage(imageCoverURL: backgroundImage)
+            
+        }
+            vc.modalTransitionStyle = .flipHorizontal
+            self.present(vc, animated: true)
+       
     }
     
     func setupView() {
@@ -119,9 +130,9 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                     DispatchQueue.main.async { [weak self] in
                         if let retrieveArtist = shazamData?.result?.track?.subtitle,
                            let retrieveTitle = shazamData?.result?.track?.title {
-                            
-                            self?.sendDataToVc(data: shazamData!)
-                            
+                            Task {
+                             await self?.sendDataToVc(data: shazamData!)
+                            }
                             let songWithoutFeat = retrieveTitle.removingContentInParentheses()
                             let trackWithoutFeat = songWithoutFeat.formattedTrackName()
                             let artist = retrieveArtist.removingAndContent()
@@ -171,6 +182,10 @@ extension String {
         }
         return result.trimmingCharacters(in: .whitespacesAndNewlines)
     }
+    
+    
+    
+    
 }
 
 
