@@ -87,13 +87,7 @@ class SecondViewController: UIViewController {
 extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     
-    
-    //    func numberOfSections(in collectionView: UICollectionView) -> Int {
-    //            // Here we determine the number of sections based on the dataImages count
-    //            // Assuming you want a new section for every set of 3 images
-    //            return Int(ceil(Double(dataImages.count) / 3.0))
-    //        }
-    //
+ 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // Number of items in a given section
         // If it's the last section, return the remaining items
@@ -114,10 +108,10 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             // Votre logique de calcul de la taille de la cellule ici
-        let layout = collectionViewLayout as! UICollectionViewFlowLayout
-           let sectionInsets = layout.sectionInset
+           let layout = collectionViewLayout as! UICollectionViewFlowLayout  // on cast l'element pour nous s'assurer que c'est une cellule
+           let sectionInsets = layout.sectionInset // Nous recuperons les marges par default
            let spacingBetweenCells = layout.minimumLineSpacing
-           let width = collectionView.bounds.width - sectionInsets.left - sectionInsets.right
+           let width = collectionView.bounds.width - sectionInsets.left - sectionInsets.right // calcul
            let height: CGFloat = 90 // ou une hauteur dynamique si nécessaire
 
            return CGSize(width: width, height: height)

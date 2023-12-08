@@ -60,11 +60,12 @@ class ViewInfoScroll: UIView {
         
         currentView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(currentView)
+        
         NSLayoutConstraint.activate([
             self.currentView.topAnchor.constraint(equalTo: self.topAnchor),
             self.currentView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.currentView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.currentView.heightAnchor.constraint(equalToConstant: 600)
+            self.currentView.heightAnchor.constraint(greaterThanOrEqualToConstant: 900)
         ])
         
         gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor] // De transparent à noir
