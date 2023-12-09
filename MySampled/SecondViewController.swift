@@ -86,8 +86,6 @@ class SecondViewController: UIViewController {
             
         ])
     }
-
-
 }
 extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -106,8 +104,6 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as? CustomCollectionViewCell else {
             fatalError("Unable to dequeue CustomCollectionViewCell")
         }
-        
-        
         let numberOfItemsPerSection = 3  // Renommez pour plus de clarté
         
         let indexArrayImage = indexPath.section * numberOfItemsPerSection + indexPath.item
@@ -122,7 +118,6 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
         }
         
         return cell
-        
     }
     
     
