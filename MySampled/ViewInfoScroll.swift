@@ -47,13 +47,21 @@ class ViewInfoScroll: UIView {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.48),
                                               heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+<<<<<<< HEAD
         item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 5, bottom: 5, trailing: 5)
+=======
+        item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+>>>>>>> Work on front
 
         // Configuration du groupe horizontal
         let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(400), // Ajusté pour encourager le défilement
                                                heightDimension: .absolute(150))
         
+<<<<<<< HEAD
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+=======
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
+>>>>>>> Work on front
         
         // Configuration de la section avec défilement horizontal
         let section = NSCollectionLayoutSection(group: group)
