@@ -2,18 +2,23 @@ import UIKit
 import AVFoundation
 
 class SecondViewController: UIViewController {
+  
     
     var artistImageView: ArtistImageView!
     var scrollView: UIScrollView!
     var titleArtist: UILabel!
     var titleSong: UILabel!
     var currentView: UIView!
+    
+    var currentIndex: Int?
     var dataImages: [UIImage] = [
         UIImage(named: "artist1")!,
         UIImage(named: "artist2")!,
         UIImage(named: "artist3")!,
         UIImage(named: "artist4")!,
         UIImage(named: "artist5")!,
+        UIImage(named: "artist6")!,
+       
     ]
         var currentStackView = UIStackView()
     var infoViewScroll: ViewInfoScroll!
@@ -25,7 +30,6 @@ class SecondViewController: UIViewController {
         initScrollView()
         infoViewScroll.sampleCollectionView.dataSource = self
         infoViewScroll.sampleCollectionView.delegate = self
-        
         infoViewScroll.sampleCollectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "CustomCell")
         view.bringSubviewToFront(scrollView)
     }
@@ -57,10 +61,10 @@ class SecondViewController: UIViewController {
         view.addSubview(scrollView)
 
         NSLayoutConstraint.activate([
-           scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+           scrollView.topAnchor.constraint(equalTo: view.topAnchor,constant: 0),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: 0),
         ])
         initViewScroll()
         scrollView.clipsToBounds = false
@@ -69,6 +73,7 @@ class SecondViewController: UIViewController {
     
     private func initViewScroll(){
         infoViewScroll = ViewInfoScroll()
+
           infoViewScroll.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(infoViewScroll)
 
@@ -87,36 +92,38 @@ class SecondViewController: UIViewController {
 extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     
- 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // Number of items in a given section
-        // If it's the last section, return the remaining items
+        // Chaque section a maintenant 4 éléments (2x2)
         return 3
     }
     
-    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        // Le nombre total d'éléments divisé par le nombre d'éléments par section
+        return Int(ceil(Double(dataImages.count) / 3.0))
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as? CustomCollectionViewCell else {
             fatalError("Unable to dequeue CustomCollectionViewCell")
         }
-        // Configurez la cellule avec l'image à l'index correspondant
-        let image = dataImages[indexPath.item]
-        cell.imageArtistSample.image = image
+        
+        
+        let numberOfItemsPerSection = 3  // Renommez pour plus de clarté
+        
+        let indexArrayImage = indexPath.section * numberOfItemsPerSection + indexPath.item
+        
+        print(indexArrayImage)
+        
+        if indexArrayImage < dataImages.count {
+            let image = dataImages[indexArrayImage]
+            cell.imageArtistSample.image = image
+        } else {
+            cell.imageArtistSample.image = nil
+        }
         
         return cell
+        
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            // Votre logique de calcul de la taille de la cellule ici
-           let layout = collectionViewLayout as! UICollectionViewFlowLayout  // on cast l'element pour nous s'assurer que c'est une cellule
-           let sectionInsets = layout.sectionInset // Nous recuperons les marges par default
-           let spacingBetweenCells = layout.minimumLineSpacing
-           let width = collectionView.bounds.width - sectionInsets.left - sectionInsets.right // calcul
-           let height: CGFloat = 90 // ou une hauteur dynamique si nécessaire
-
-           return CGSize(width: width, height: height)
-        }
+    
     
 }
-
-

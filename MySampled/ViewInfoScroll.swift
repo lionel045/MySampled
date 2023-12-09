@@ -23,20 +23,43 @@ class ViewInfoScroll: UIView {
         return label
     }()
     lazy var sampleCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-     //   layout.itemSize = CGSize(width: 400, height: 90)
-        layout.minimumInteritemSpacing = 10 // Espacement entre les items sur la même ligne
-        layout.minimumLineSpacing = 10 // Espacement entre les lignes
+         // Utilisez le layout compositional que vous allez créer
+         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
+         collectionView.backgroundColor = .clear
+         collectionView.translatesAutoresizingMaskIntoConstraints = false
+         collectionView.contentInsetAdjustmentBehavior = .always
+        collectionView.delaysContentTouches = false
+        //  collectionView.showsHorizontalScrollIndicator = true
         
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .clear
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.contentInsetAdjustmentBehavior = .always
+         return collectionView
+     }()
+    
+    func createCompositionalLayout() -> UICollectionViewLayout {
+        // Configuration de l'item
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.48),
+                                              heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+
+        // Configuration du groupe horizontal
+        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(400), // Ajusté pour encourager le défilement
+                                               heightDimension: .absolute(150))
         
-        return collectionView
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
         
-    }()
+        // Configuration de la section avec défilement horizontal
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
+      
+        // Création du layout complet avec les sections définies
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        layout.collectionView?.bounces = false
+        layout.collectionView?.bouncesZoom = false
+        return layout
+        
+     
+    }
+
     private var currentStackView = UIStackView()
     private var gradient = CAGradientLayer()
     override init(frame: CGRect) {
@@ -82,18 +105,18 @@ class ViewInfoScroll: UIView {
         currentView.addSubview(sampleCollectionView)
         
         NSLayoutConstraint.activate([
-            
             sampleCollectionView.topAnchor.constraint(equalTo: titleSample.bottomAnchor, constant: 20),
-            sampleCollectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            sampleCollectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            sampleCollectionView.leadingAnchor.constraint(equalTo: currentView.leadingAnchor),
+            sampleCollectionView.trailingAnchor.constraint(equalTo: currentView.trailingAnchor),
+            sampleCollectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             sampleCollectionView.heightAnchor.constraint(equalToConstant: 400)
-            
         ])
-        print(self.sampleCollectionView.frame.width)
-        
+ 
+        sampleCollectionView.bounces = false
+        sampleCollectionView.bouncesZoom = false
+
     }
-    
-    
+ 
     private func loadStackView() {
         currentStackView.axis = .vertical
         currentStackView.spacing = 3
@@ -136,7 +159,6 @@ class ViewInfoScroll: UIView {
         
         currentView.addSubview(titleSample)
         
-        
         NSLayoutConstraint.activate([
             titleSample.topAnchor.constraint(equalTo: currentStackView.bottomAnchor, constant: 30),
             titleSample.leadingAnchor.constraint(equalTo: currentView.leadingAnchor,constant: 30),
@@ -144,7 +166,7 @@ class ViewInfoScroll: UIView {
         ])
         
     }
-    
-    
-    
 }
+
+
+
