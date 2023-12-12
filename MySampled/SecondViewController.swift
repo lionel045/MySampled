@@ -2,12 +2,7 @@ import UIKit
 import AVFoundation
 
 class SecondViewController: UIViewController {
-  
-<<<<<<< HEAD
-    
-  
-=======
->>>>>>> Work on front
+
     
     var artistImageView: ArtistImageView!
     var scrollView: UIScrollView!
@@ -17,21 +12,13 @@ class SecondViewController: UIViewController {
     
     var currentIndex: Int?
     var dataImages: [UIImage] = [
-<<<<<<< HEAD
 //        UIImage(named: "artist1")!,
 //        UIImage(named: "artist2")!,
 //        UIImage(named: "artist3")!,
 //        UIImage(named: "artist4")!,
 //        UIImage(named: "artist5")!,
 //        UIImage(named: "artist6")!,
-=======
-        UIImage(named: "artist1")!,
-        UIImage(named: "artist2")!,
-        UIImage(named: "artist3")!,
-        UIImage(named: "artist4")!,
-        UIImage(named: "artist5")!,
-        UIImage(named: "artist6")!,
->>>>>>> Work on front
+ 
        
     ]
     
@@ -124,11 +111,8 @@ class SecondViewController: UIViewController {
     
     private func initViewScroll(){
         infoViewScroll = ViewInfoScroll()
-<<<<<<< HEAD
         infoViewScroll.delegation = self
-=======
 
->>>>>>> Work on front
           infoViewScroll.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(infoViewScroll)
 
@@ -152,18 +136,14 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // Le nombre total d'éléments divisé par le nombre d'éléments par section
-<<<<<<< HEAD
         return Int(ceil(Double(dataSample.count) / 3.0))
-=======
-        return Int(ceil(Double(dataImages.count) / 3.0))
->>>>>>> Work on front
+
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as? CustomCollectionViewCell else {
             fatalError("Unable to dequeue CustomCollectionViewCell")
         }
-<<<<<<< HEAD
 
         let numberOfItemsPerSection = 3
         let indexArrayImage = indexPath.section * numberOfItemsPerSection + indexPath.item
@@ -180,27 +160,10 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
             cell.labelArtistSample.text = ""
         }
 
-=======
-        
-        
-        let numberOfItemsPerSection = 3  // Renommez pour plus de clarté
-        
-        let indexArrayImage = indexPath.section * numberOfItemsPerSection + indexPath.item
-        
-        print(indexArrayImage)
-        
-        if indexArrayImage < dataImages.count {
-            let image = dataImages[indexArrayImage]
-            cell.imageArtistSample.image = image
-        } else {
-            cell.imageArtistSample.image = nil
-        }
-        
->>>>>>> Work on front
+            
         return cell
         
     }
-<<<<<<< HEAD
 
     
     
@@ -220,8 +183,3 @@ extension SecondViewController: labelDelegation {
     }
     
 }
-=======
-    
-    
-}
->>>>>>> Work on front

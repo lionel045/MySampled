@@ -14,9 +14,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     lazy var labelSongSample: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 13)
+        label.font = UIFont(name: "Aharoni", size: 13)
         label.text = ""
-        label.sizeToFit()
         label.numberOfLines = 0
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -25,11 +24,10 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     lazy var labelArtistSample: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 13)
+        label.font = UIFont(name: "Aharoni", size: 13)
         label.text = ""
        // label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 0
-        label.sizeToFit()
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -38,7 +36,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     lazy var stacksampleView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.distribution = .fill
+        stackView.distribution = .fillProportionally
         stackView.spacing = 5
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
