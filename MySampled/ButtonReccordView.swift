@@ -35,22 +35,6 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         ])
     }
     
-//    private func animateRecordArmToTouchRecord() {
-//        
-//        let rotationAngle = 80 * (CGFloat.pi / 180)
-//        UIView.animate(withDuration: 8, delay: 0,options: .curveEaseOut,
-//                       animations:  {
-//            
-//            self.recordArm.transform = CGAffineTransform(rotationAngle: rotationAngle)
-//            self.layoutIfNeeded()
-//        }, completion: { _ in
-//            self.armAnimationCompletion = {
-//                self.recordArm.transform = .identity
-//            }
-//        })
-//        
-//    }
-    
     private func circleRecordButton() {
         recordButton = UIButton(frame: .zero)
         recordButton.center = self.center
