@@ -1,11 +1,6 @@
 import UIKit
 import AVFoundation
 
-
-
-
-
-
 protocol ArtistDelegate {
     
 
@@ -93,7 +88,6 @@ class ArtistImageView: UIView {
         ])
     }
     
-
     func updateFrontUi(imageArtist: UIImage){
         
         DispatchQueue.main.async  { [weak self] in
