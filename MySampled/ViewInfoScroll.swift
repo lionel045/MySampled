@@ -64,7 +64,6 @@ class ViewInfoScroll: UIView {
         layout.collectionView?.bouncesZoom = false
         return layout
         
-     
     }
 
     private var currentStackView = UIStackView()
@@ -83,11 +82,8 @@ class ViewInfoScroll: UIView {
         gradient.frame = currentView.bounds // Mise à jour de la taille du gradient
     }
     
-    
     func initViewInfoScroll(){
         currentView = UIView()
-        
-        
         currentView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(currentView)
         
@@ -117,7 +113,6 @@ class ViewInfoScroll: UIView {
             }
         }
     }
-    
     
    private func initSampleCollectionView(){
         sampleCollectionView.translatesAutoresizingMaskIntoConstraints = false // Ajouté cette ligne
