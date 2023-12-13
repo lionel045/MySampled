@@ -9,5 +9,6 @@
 # règle pour ignorer ApiKey.plist
 build/XCBuildData/aaabddf0ad9124183b7d3142df4bc648.xcbuilddata
 ApiKey.plist
+xcuserdata/
 # Code Injection
 ...
