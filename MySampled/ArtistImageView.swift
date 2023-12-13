@@ -1,11 +1,6 @@
 import UIKit
 import AVFoundation
 
-
-
-
-
-
 protocol ArtistDelegate {
     
 
@@ -93,27 +88,13 @@ class ArtistImageView: UIView {
         ])
     }
     
-    //    func addCoverImage(imageCoverURL: String) async throws   {
-    //        guard let url = URL(string: imageCoverURL) else { return }
-    //        let (data , _) = try await URLSession.shared.data(from: url)
-    //        if let image = UIImage(data: data) {
-    //            await MainActor.run {
-    //                let cropImage = self.resize(image: image)
-    //                self.imageView.image = cropImage
-    //                self.mirrorImageView.image = cropImage
-    //            }
-    //
-    //        } else {
-    //            print("Erreur de téléchargement de l'image ou format incorrect")
-    //        }
-    //    }
-    
     func updateFrontUi(imageArtist: UIImage){
         
         DispatchQueue.main.async  { [weak self] in
             if let strongSelf = self {
                 let cropImage = strongSelf.resize(image: imageArtist)
                 self?.imageView.image =  cropImage
+                self?.imageView.alpha = 0.8
                 self?.mirrorImageView.image = cropImage
             }
         }

@@ -9,5 +9,12 @@
 # règle pour ignorer ApiKey.plist
 build/XCBuildData/aaabddf0ad9124183b7d3142df4bc648.xcbuilddata
 ApiKey.plist
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+MySampled.xcodeproj/project.xcworkspace/xcuserdata/
+
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
 # Code Injection
 ...

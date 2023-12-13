@@ -36,7 +36,6 @@ struct TrackSample: Codable {
     
     struct Track: Codable {
         let artist: Artist?
-        var imageDownloaded: Data?
         let full_artist_name: String?
         let id: Int?
         let label: String?

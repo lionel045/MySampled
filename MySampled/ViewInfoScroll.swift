@@ -26,12 +26,11 @@ class ViewInfoScroll: UIView {
         label.text = "Sample"
         label.numberOfLines = 0
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 26)
+        label.font = UIFont(name: "Aharoni", size: 26)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     lazy var sampleCollectionView: UICollectionView = {
-         // Utilisez le layout compositional que vous allez créer
          let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
          collectionView.backgroundColor = .clear
          collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -47,33 +46,22 @@ class ViewInfoScroll: UIView {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.48),
                                               heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-<<<<<<< HEAD
-        item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 5, bottom: 5, trailing: 5)
-=======
-        item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
->>>>>>> Work on front
+        item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 5, bottom: 5, trailing: -33)
+  
 
         // Configuration du groupe horizontal
-        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(400), // Ajusté pour encourager le défilement
+        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(400),
                                                heightDimension: .absolute(150))
-        
-<<<<<<< HEAD
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-=======
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
->>>>>>> Work on front
-        
         // Configuration de la section avec défilement horizontal
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
       
-        // Création du layout complet avec les sections définies
         let layout = UICollectionViewCompositionalLayout(section: section)
         layout.collectionView?.bounces = false
         layout.collectionView?.bouncesZoom = false
         return layout
         
-     
     }
 
     private var currentStackView = UIStackView()
@@ -92,11 +80,8 @@ class ViewInfoScroll: UIView {
         gradient.frame = currentView.bounds // Mise à jour de la taille du gradient
     }
     
-    
     func initViewInfoScroll(){
         currentView = UIView()
-        
-        
         currentView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(currentView)
         
@@ -126,7 +111,6 @@ class ViewInfoScroll: UIView {
             }
         }
     }
-    
     
    private func initSampleCollectionView(){
         sampleCollectionView.translatesAutoresizingMaskIntoConstraints = false // Ajouté cette ligne
@@ -170,7 +154,7 @@ class ViewInfoScroll: UIView {
     private func initLabelTitleArtist() {
         titleArtist = UILabel()
         titleArtist.text = "Artiste"
-        titleArtist.font = UIFont.systemFont(ofSize: 33)
+        titleArtist.font = UIFont(name: "Aharoni", size: 37)
         titleArtist.textColor = .white
         titleArtist.numberOfLines = 0
     }
@@ -178,7 +162,7 @@ class ViewInfoScroll: UIView {
     private func initLabelTitleSong() {
         titleSong = UILabel()
         titleSong.text = "Titre de la chanson"
-        titleSong.font = UIFont.systemFont(ofSize: 31)
+        titleSong.font = UIFont(name: "Aharoni", size: 35)
         titleSong.textColor = .white
         titleSong.numberOfLines = 0
     }
