@@ -61,7 +61,6 @@ class SecondViewController: UIViewController {
     func addSampleArray(sampleRetrieve: [TrackSample?]) async {
         dataSample = sampleRetrieve
         dataImages = []
-        // Télécharger les images pour chaque échantillon
         for sample in sampleRetrieve {
             if let url = sample?.source_track?.medium_image_url {
                 let image = try? await ImageDownloadService.downloadSampleImage(artistImage: url)

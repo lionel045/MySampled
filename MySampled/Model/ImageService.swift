@@ -17,7 +17,6 @@ class ImageService {
     }
 
 }
-
 enum NetworkError: Error {
     case invalidURL, downloadFailed
 }
