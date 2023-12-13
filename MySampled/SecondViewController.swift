@@ -3,13 +3,11 @@ import AVFoundation
 
 class SecondViewController: UIViewController {
 
-    
     var artistImageView: ArtistImageView!
     var scrollView: UIScrollView!
     var titleArtist: UILabel!
     var titleSong: UILabel!
     var currentView: UIView!
-    
     var currentIndex: Int?
     var dataImages: [UIImage] = [
 //        UIImage(named: "artist1")!,
@@ -160,13 +158,8 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
             cell.labelArtistSample.text = ""
         }
 
-            
         return cell
-        
     }
-
-    
-    
 }
 
 extension SecondViewController: ArtistDelegate {

@@ -26,7 +26,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.font = UIFont(name: "Aharoni", size: 13)
         label.text = ""
-       // label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 0
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -49,7 +48,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
         setupViews()
     }
     
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         imageArtistSample.layer.cornerRadius = 10
@@ -65,7 +63,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     addSubview(stacksampleView)
         stacksampleView.addArrangedSubview(labelSongSample)
         stacksampleView.addArrangedSubview(labelArtistSample)
-        
+
         initImageSample()
         initStackViewSample()
     }
