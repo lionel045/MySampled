@@ -31,7 +31,6 @@ class ViewInfoScroll: UIView {
         return label
     }()
     lazy var sampleCollectionView: UICollectionView = {
-         // Utilisez le layout compositional que vous allez créer
          let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
          collectionView.backgroundColor = .clear
          collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -51,14 +50,13 @@ class ViewInfoScroll: UIView {
   
 
         // Configuration du groupe horizontal
-        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(400), // Ajusté pour encourager le défilement
+        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(400),
                                                heightDimension: .absolute(150))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         // Configuration de la section avec défilement horizontal
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
       
-        // Création du layout complet avec les sections définies
         let layout = UICollectionViewCompositionalLayout(section: section)
         layout.collectionView?.bounces = false
         layout.collectionView?.bouncesZoom = false

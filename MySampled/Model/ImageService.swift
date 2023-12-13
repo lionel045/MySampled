@@ -15,8 +15,7 @@ class ImageService {
         let (data, _) = try await URLSession.shared.data(from: url)
         return UIImage(data: data)
     }
-    
-    
+
 }
 
 enum NetworkError: Error {

@@ -68,8 +68,6 @@ class SecondViewController: UIViewController {
                 dataImages.append(image!)
                 
                 print(sample?.source_track?.full_artist_name)
-            } else {
-                // Ajouter nil si aucune URL n'est disponible
             }
         }
         DispatchQueue.main.async {
