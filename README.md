@@ -21,7 +21,7 @@ Découvrez les samples cachés dans vos morceaux préférés en utilisant une te
 git clone https://github.com/lionel045/MySampled
 ```
 2. Ouvrez le projet dans Xcode : Lancez Xcode et ouvrez le dossier du projet.
-3. Selectionner le fichier ApiKey.plist : Dans section Value de X-RapidAPI-Key ajouter la clé api générer précédemment
+3. Crée un fichier ApiKey.plist : Dans la section root ajouté ***X-RapidAPI-Key*** dans row ajouté la clé api générer précédemment.
 4.  Exécutez l'application : Compilez et lancez l'application sur votre simulateur ou appareil iOS.
 
 # RoadMap 
