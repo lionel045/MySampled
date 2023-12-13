@@ -12,6 +12,8 @@ ApiKey.plist
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
+MySampled.xcodeproj/project.xcworkspace/xcuserdata/
+
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 # Code Injection
