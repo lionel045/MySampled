@@ -10,7 +10,6 @@ class SecondViewController: UIViewController {
     var currentView: UIView!
     lazy var dismissButton = {
         var button = UIButton(type: .custom)
-       // button.setTitle("X", for: .normal)
         button.setImage(UIImage(named: "close"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.addTarget(self, action: #selector(dismissCurrentView), for: .touchUpInside)
@@ -94,8 +93,7 @@ class SecondViewController: UIViewController {
             if let url = sample?.source_track?.medium_image_url {
                 let image = try? await ImageDownloadService.downloadSampleImage(artistImage: url)
                 dataImages.append(image!)
-                
-                print(sample?.source_track?.full_artist_name)
+              
             }
         }
         DispatchQueue.main.async {

@@ -1,11 +1,11 @@
 import Foundation
-
+// Api class for shazam request
 class ApiRequest {
     static let sharedInstance = ApiRequest()
     
     let boundary = "---011000010111000001101001"
     
-    // Supprimez la clé API directement écrite ici
+ 
     var headers: [String: String] {
         [
             "content-type": "multipart/form-data; boundary=\(boundary)",
@@ -14,7 +14,7 @@ class ApiRequest {
         ]
     }
     
-    // Propriété pour stocker la clé API
+    // save the apiKey stored in apiKey.plist
     private var apiKey: String {
         guard let key = Bundle.main.apiKey(named: "X-RapidAPI-Key") else {
             fatalError("API Key not found in ApiKey.plist")
@@ -25,7 +25,6 @@ class ApiRequest {
     
     func sendSongApi(_ relativePath: URL, completion: ((Bool, _ shazamData: ShazamResponse?) -> ())?) {
         let url = URL(string: "https://shazam-api6.p.rapidapi.com/shazam/recognize/")!
-        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = headers
@@ -39,10 +38,7 @@ class ApiRequest {
         ]
         
         let boundary = "---011000010111000001101001"
-        
         var body = Data()
-        var _: NSError? = nil
-        
         for param in parameters {
             let paramName = param["name"]!
             
@@ -82,7 +78,6 @@ class ApiRequest {
                 let str = String(decoding: data, as: UTF8.self) // Pour le logging
                 print(str)
 
-                // Vérification de la chaîne `subtitle`
                 if let subtitle = jsonData.result?.track?.subtitle, !subtitle.isEmpty {
                     print(subtitle)
                     completion?(true, jsonData)
@@ -93,7 +88,7 @@ class ApiRequest {
                 
             } catch {
                 print("error \(error.localizedDescription)")
-               // completion?(false, nil)
+
             }
             
         }

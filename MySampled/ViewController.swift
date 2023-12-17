@@ -98,7 +98,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                 if let strongSelf = self {
                     // strongSelf.recordButton.performModal(fromViewController: strongSelf)
                      AudioRecorderManager.shared.startRecording()
-                    self?.startMonitoringSongFound()
+                    strongSelf.startMonitoringSongFound()
                     
                 }
             }
@@ -128,12 +128,12 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                     DispatchQueue.main.async { [weak self] in
                         if let retrieveArtist = shazamData?.result?.track?.subtitle,
                            let retrieveTitle = shazamData?.result?.track?.title {
-                            let songWithoutFeat = retrieveTitle.removingContentInParentheses()
+                            let songWithoutFeat = retrieveTitle.removingContentInParenthesesAndBrackets()
                             let trackWithoutFeat = songWithoutFeat.formattedTrackName()
                             let artist = retrieveArtist.removingAndContent()
-                            print(trackWithoutFeat)
+                            //print(trackWithoutBracket)
                             print(songWithoutFeat)
-                            SearchRequest.sharedInstance.myTupleValue = (artist, trackWithoutFeat)
+                            SearchRequest.sharedInstance.myTupleValue = (artist.lowercased(), trackWithoutFeat)
                             Task {
                               let sampleData = await  ResultSample.sharedInstance.displayTrack()
                               await self?.sendDataToVc(data: shazamData!,sampleData: sampleData)
@@ -164,27 +164,38 @@ extension String {
     }
     
     func removingAndContent() -> String {
-        if let indexAnd = self.range(of: "&") {
+        if let indexAnd = self.range(of: "&")  {
             return String(self[..<indexAnd.lowerBound])
         }
         return self
     }
     
-    func removingContentInParentheses() -> String {
+    
+    func removingContentInParenthesesAndBrackets() -> String {
         var result = self
+
+        // Supprimer le contenu entre parenthèses
         while let openParenthesisRange = result.range(of: "(") {
             if let closeParenthesisRange = result.range(of: ")", options: [], range: openParenthesisRange.upperBound..<result.endIndex) {
                 result.removeSubrange(openParenthesisRange.lowerBound...closeParenthesisRange.lowerBound)
             } else {
-                break // No matching closing parenthesis
+                break
             }
         }
+
+        // Supprimer tout après le premier crochet ouvrant "["
+        if let bracketRange = result.range(of: "[") {
+            result = String(result[..<bracketRange.lowerBound])
+        }
+
         return result.trimmingCharacters(in: .whitespacesAndNewlines)
     }
-    
-    
-    
-    
 }
+
+    
+    
+    
+    
+
 
 
