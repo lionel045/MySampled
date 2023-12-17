@@ -12,7 +12,11 @@ enum CustomError: Error {
     case artistNotFound
 }
 
+<<<<<<< HEAD
 
+=======
+//find Sample dest if the song was sampled
+>>>>>>> Work on the algorithm for retrieve sample
     class RetrieveResultTrack {
     
     static let sharedInstance = RetrieveResultTrack()

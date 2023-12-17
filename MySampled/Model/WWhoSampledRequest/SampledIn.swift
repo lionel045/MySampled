@@ -9,7 +9,11 @@ class SampledIn {
     private init() {
     }
     
+<<<<<<< HEAD
     // fetch Sample source if the song was sampled
+=======
+    // find Sample source if the current song contain a sample
+>>>>>>> Work on the algorithm for retrieve sample
     class SampledIn {
         
         static let sharedInstance = SampledIn()
@@ -26,7 +30,5 @@ class SampledIn {
             return sampleResponse.objects ?? []
         }
     }
-
-    
     
 }

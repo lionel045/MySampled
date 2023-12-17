@@ -265,5 +265,3 @@ struct MyShazamApple: Codable {
 struct HighlightsUrls: Codable {
     let artisthighlightsurl: String?
 }
-
-
