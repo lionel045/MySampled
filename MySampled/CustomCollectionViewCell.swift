@@ -7,7 +7,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
         imageView.contentMode = .scaleToFill
         imageView.image = UIImage(named: "artist1")
         imageView.layer.cornerRadius = frame.width / 2
-       // imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -43,8 +42,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let identifier = "CustomCell"
-
+        _ = "CustomCell"
         setupViews()
     }
     

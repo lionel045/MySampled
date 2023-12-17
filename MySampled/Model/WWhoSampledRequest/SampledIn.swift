@@ -9,6 +9,7 @@ class SampledIn {
     private init() {
     }
     
+    // fetch Sample source if the song was sampled
     class SampledIn {
         
         static let sharedInstance = SampledIn()

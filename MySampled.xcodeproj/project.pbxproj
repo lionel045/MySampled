@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B40EC30C2A937E3800FF9153 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EC30B2A937E3800FF9153 /* ApiRequest.swift */; };
-		B415030A2A981EA60077FCBC /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41503092A981EA60077FCBC /* PulseAnimation.swift */; };
 		B41642A32B07F3A5002443AA /* ApiKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41642A22B07F3A4002443AA /* ApiKey.plist */; };
 		B441C1F12AE01E9700089E8C /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = B441C1F02AE01E9700089E8C /* user.png */; };
 		B441C1F32AE081B300089E8C /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B441C1F22AE081B300089E8C /* playButton.png */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		B40EC30B2A937E3800FF9153 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
-		B41503092A981EA60077FCBC /* PulseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
 		B41642A22B07F3A4002443AA /* ApiKey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKey.plist; sourceTree = "<group>"; };
 		B441C1F02AE01E9700089E8C /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		B441C1F22AE081B300089E8C /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		B41503022A981D560077FCBC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B41503092A981EA60077FCBC /* PulseAnimation.swift */,
 				B47105852A86B29500DDB6C2 /* Main.storyboard */,
 				B46F45C22A97EEC700CA32A8 /* ButtonReccordView.swift */,
 				B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */,
@@ -274,7 +271,6 @@
 				B4CB61912B1FC16400A3352D /* CustomCollectionViewCell.swift in Sources */,
 				B4BFE2942B1603A500BC14DE /* ArtistImageView.swift in Sources */,
 				B4D92B622AB91845003BE57D /* SearchRequest.swift in Sources */,
-				B415030A2A981EA60077FCBC /* PulseAnimation.swift in Sources */,
 				B4BFE2962B1740D600BC14DE /* ImageDownloadService.swift in Sources */,
 				B4D92B642AB91845003BE57D /* RetrieveResultTrack.swift in Sources */,
 				B47105802A86B29500DDB6C2 /* AppDelegate.swift in Sources */,

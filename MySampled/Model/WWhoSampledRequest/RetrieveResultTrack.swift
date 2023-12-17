@@ -10,21 +10,14 @@ import Foundation
 enum CustomError: Error {
     case invalidUrl
     case artistNotFound
-    // Vous pouvez ajouter d'autres cas d'erreurs ici si nécessaire
 }
 
 
-struct RetrieveResultTrack {
+    class RetrieveResultTrack {
     
     static let sharedInstance = RetrieveResultTrack()
     
-    
-    
     private var artistId = 0
-    
-    // private init() {
-    //      }
-    
     func fetchResultTrack()  async throws -> ArtistInfo {
         
         let resultRequest = SearchRequest.sharedInstance

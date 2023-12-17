@@ -31,7 +31,7 @@ class SearchRequest {
             let json = try await NetworkService.shared.httpRequest(url: url, expecting: TrackResponse.self)
             if let result = json.objects {
                 for sampleResult in result {
-                    if sampleResult.full_artist_name!.contains(artist) {
+                    if sampleResult.full_artist_name!.lowercased().contains(artist) {
                         return sampleResult.id
                     }
                 }
