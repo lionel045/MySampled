@@ -2,39 +2,51 @@ import UIKit
 import AVFoundation
 
 class SecondViewController: UIViewController {
-
+    
     var artistImageView: ArtistImageView!
     var scrollView: UIScrollView!
     var titleArtist: UILabel!
     var titleSong: UILabel!
     var currentView: UIView!
+    lazy var dismissButton = {
+        var button = UIButton(type: .custom)
+       // button.setTitle("X", for: .normal)
+        button.setImage(UIImage(named: "close"), for: .normal)
+        button.imageView?.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(dismissCurrentView), for: .touchUpInside)
+        
+        return button
+    }()
     var currentIndex: Int?
     var dataImages: [UIImage] = [
-//        UIImage(named: "artist1")!,
-//        UIImage(named: "artist2")!,
-//        UIImage(named: "artist3")!,
-//        UIImage(named: "artist4")!,
-//        UIImage(named: "artist5")!,
-//        UIImage(named: "artist6")!,
- 
-       
+        //        UIImage(named: "artist1")!,
+        //        UIImage(named: "artist2")!,
+        //        UIImage(named: "artist3")!,
+        //        UIImage(named: "artist4")!,
+        //        UIImage(named: "artist5")!,
+        //        UIImage(named: "artist6")!,
+        
+        
     ]
     
-      var dataSample: [TrackSample?] = []
+    var dataSample: [TrackSample?] = []
     
-        var currentStackView = UIStackView()
+    var currentStackView = UIStackView()
     var infoViewScroll: ViewInfoScroll!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.black.withAlphaComponent(1)
-                
+        
         initArtistImageView()
         initScrollView()
+        initDismiss()
         infoViewScroll.sampleCollectionView.dataSource = self
         infoViewScroll.sampleCollectionView.delegate = self
         infoViewScroll.sampleCollectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "CustomCell")
         view.bringSubviewToFront(scrollView)
+        view.bringSubviewToFront(dismissButton) // Ceci place le bouton au-dessus de la scrollView
+
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -44,11 +56,28 @@ class SecondViewController: UIViewController {
         scrollView.contentSize = CGSize(width: scrollView.frame.width, height: scrollView.frame.height + bottomOfImage )
     }
 
+    
+    
+    func initDismiss(){
+        dismissButton.translatesAutoresizingMaskIntoConstraints = false
+          view.addSubview(dismissButton)
+
+          NSLayoutConstraint.activate([
+              dismissButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+              dismissButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10)
+          ])
+        
+    }
+
+    @objc func dismissCurrentView(){
+            self.dismiss(animated: true)
+    }
+    
     func addCoverImage(imageCoverURL: String,label:(String,String)) async {
         do {
             if let image = try await ImageService.shared.downloadImage(from: imageCoverURL) {
                 await MainActor.run {
-                 
+                    
                     self.artistImageView.delegation?.passData(artistInfoImage: image)
                     self.infoViewScroll.delegation?.retrieveNewLabel(labelArtistandSong: label)
                 }
@@ -70,8 +99,8 @@ class SecondViewController: UIViewController {
             }
         }
         DispatchQueue.main.async {
-                   self.infoViewScroll.sampleCollectionView.reloadData()
-               }
+            self.infoViewScroll?.sampleCollectionView.reloadData()
+        }
     }
     
     private func initArtistImageView() {
@@ -87,14 +116,14 @@ class SecondViewController: UIViewController {
             artistImageView.heightAnchor.constraint(equalToConstant: 400)
         ])
     }
-
+    
     private func initScrollView() {
         scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(scrollView)
-
+        
         NSLayoutConstraint.activate([
-           scrollView.topAnchor.constraint(equalTo: view.topAnchor,constant: 0),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor,constant: 0),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: 0),
@@ -107,10 +136,10 @@ class SecondViewController: UIViewController {
     private func initViewScroll(){
         infoViewScroll = ViewInfoScroll()
         infoViewScroll.delegation = self
-
-          infoViewScroll.translatesAutoresizingMaskIntoConstraints = false
+        
+        infoViewScroll.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(infoViewScroll)
-
+        
         NSLayoutConstraint.activate([
             infoViewScroll.topAnchor.constraint(equalTo: scrollView.topAnchor),
             infoViewScroll.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
@@ -132,29 +161,29 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // Le nombre total d'éléments divisé par le nombre d'éléments par section
         return Int(ceil(Double(dataSample.count) / 3.0))
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as? CustomCollectionViewCell else {
             fatalError("Unable to dequeue CustomCollectionViewCell")
         }
-
+        
         let numberOfItemsPerSection = 3
         let indexArrayImage = indexPath.section * numberOfItemsPerSection + indexPath.item
-
+        
         if indexArrayImage < dataSample.count {
             let trackSample = dataSample[indexArrayImage]
             let artistName = trackSample?.source_track?.full_artist_name ?? "Unknown Artist"
             let trackName = trackSample?.source_track?.track_name ?? "Unknown Track"
             cell.labelArtistSample.text = "\(artistName)"
             cell.labelSongSample.text = "\(trackName)"
-            cell.imageArtistSample.image = dataImages[indexArrayImage] ?? UIImage()
+            cell.imageArtistSample.image = dataImages[indexArrayImage]
         } else {
             cell.imageArtistSample.image = nil
             cell.labelArtistSample.text = ""
         }
-
+        
         return cell
     }
 }

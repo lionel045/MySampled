@@ -41,7 +41,7 @@ class ApiRequest {
         let boundary = "---011000010111000001101001"
         
         var body = Data()
-        var error: NSError? = nil
+        var _: NSError? = nil
         
         for param in parameters {
             let paramName = param["name"]!

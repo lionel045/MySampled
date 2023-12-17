@@ -3,15 +3,15 @@ import AVFoundation
 
 protocol ArtistDelegate {
     
-
+    
     func passData(artistInfoImage: UIImage)
-        
+    
 }
 
 
 class ArtistImageView: UIView {
     
-  private var imageView: UIImageView!
+    private var imageView: UIImageView!
     var delegation: ArtistDelegate?
     
     private var mirrorImageView: UIImageView!

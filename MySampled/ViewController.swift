@@ -26,18 +26,17 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
          super.viewDidAppear(animated)
         
          let secondVc = SecondViewController()
-         self.present(secondVc, animated: true, completion: nil)
+       self.present(secondVc, animated: true, completion: nil)
+
          }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .black
         setupView()
-        
         displayAudioReccord()
         
     }
-    
     
     func  sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?],[TrackSample?])) async {
         
@@ -57,6 +56,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             await vc.addCoverImage(imageCoverURL: backgroundImage,label: artistAndSong)
             await vc.addSampleArray(sampleRetrieve: sampleData.0)
         }
+        
             vc.modalTransitionStyle = .flipHorizontal
             self.present(vc, animated: true)
        
