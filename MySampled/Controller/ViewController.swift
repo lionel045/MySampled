@@ -93,11 +93,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
                 if let strongSelf = self {
                     // strongSelf.recordButton.performModal(fromViewController: strongSelf)
-<<<<<<< HEAD:MySampled/ViewController.swift
                      AudioRecorderManager.shared.startRecording()
-=======
-                    AudioRecorderManager.shared.startRecording()
->>>>>>> Work on the algorithm for retrieve sample:MySampled/Controller/ViewController.swift
                     strongSelf.startMonitoringSongFound()
                     
                 }
@@ -170,17 +166,11 @@ extension String {
         return self
     }
     
-<<<<<<< HEAD:MySampled/ViewController.swift
     
     func removingContentInParenthesesAndBrackets() -> String {
         var result = self
-
-        // Supprimer le contenu entre parenthèses
-=======
-    func removingContentInParenthesesAndBrackets() -> String {
-        var result = self
         
->>>>>>> Work on the algorithm for retrieve sample:MySampled/Controller/ViewController.swift
+        
         while let openParenthesisRange = result.range(of: "(") {
             if let closeParenthesisRange = result.range(of: ")", options: [], range: openParenthesisRange.upperBound..<result.endIndex) {
                 result.removeSubrange(openParenthesisRange.lowerBound...closeParenthesisRange.lowerBound)
@@ -188,30 +178,16 @@ extension String {
                 break
             }
         }
-<<<<<<< HEAD:MySampled/ViewController.swift
-
+        
         // Supprimer tout après le premier crochet ouvrant "["
         if let bracketRange = result.range(of: "[") {
             result = String(result[..<bracketRange.lowerBound])
         }
-
-        return result.trimmingCharacters(in: .whitespacesAndNewlines)
-    }
-}
-
-    
-    
-    
-    
-
-=======
-        
-        if let bracketRange = result.range(of: "[") {
-            result = String(result[..<bracketRange.lowerBound])
-        }
         
         return result.trimmingCharacters(in: .whitespacesAndNewlines)
     }
+    
 }
->>>>>>> Work on the algorithm for retrieve sample:MySampled/Controller/ViewController.swift
+    
+
 
