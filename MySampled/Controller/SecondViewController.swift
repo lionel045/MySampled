@@ -24,8 +24,6 @@ class SecondViewController: UIViewController {
         //        UIImage(named: "artist4")!,
         //        UIImage(named: "artist5")!,
         //        UIImage(named: "artist6")!,
-        
-        
     ]
     
     var dataSample: [TrackSample?] = []
@@ -42,6 +40,7 @@ class SecondViewController: UIViewController {
         initDismiss()
         infoViewScroll.sampleCollectionView.dataSource = self
         infoViewScroll.sampleCollectionView.delegate = self
+        self.infoViewScroll.delegation?.hideLabelSample(arrayOfSample: dataSample)
         infoViewScroll.sampleCollectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "CustomCell")
         view.bringSubviewToFront(scrollView)
         view.bringSubviewToFront(dismissButton) // Ceci place le bouton au-dessus de la scrollView
@@ -95,9 +94,12 @@ class SecondViewController: UIViewController {
                 dataImages.append(image!)
               
             }
+           
         }
+        self.infoViewScroll.delegation?.hideLabelSample(arrayOfSample: self.dataSample)
         DispatchQueue.main.async {
             self.infoViewScroll?.sampleCollectionView.reloadData()
+
         }
     }
     
@@ -180,6 +182,7 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
         } else {
             cell.imageArtistSample.image = nil
             cell.labelArtistSample.text = ""
+            
         }
         
         return cell
@@ -194,6 +197,14 @@ extension SecondViewController: ArtistDelegate {
 }
 
 extension SecondViewController: labelDelegation {
+    func hideLabelSample(arrayOfSample: [TrackSample?]) {
+        arrayOfSample.isEmpty ? infoViewScroll.hideLabel(stateOfLabel: true) : infoViewScroll.hideLabel(stateOfLabel: false)
+
+            
+        
+        
+    }
+    
     
     func retrieveNewLabel(labelArtistandSong: (String,String)) {
         infoViewScroll.updateLabel(label: labelArtistandSong)

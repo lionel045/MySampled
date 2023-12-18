@@ -1,5 +1,5 @@
 
-
+//Send to the vc any information of sample
 class ResultSample {
     
     static let sharedInstance = ResultSample()

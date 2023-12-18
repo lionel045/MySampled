@@ -49,9 +49,4 @@ class ImageDownloadService {
         return image
     }
         
-        
-    
-    
-    
-    
 }

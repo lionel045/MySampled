@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-
+// find Sample source if the current song was sampled in the otherSong
 class SampleOriginDetector {
     
     static let sharedInstance = SampleOriginDetector()

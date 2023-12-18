@@ -1,4 +1,5 @@
 import Foundation
+// make query in the api for retrieve the track
 class SearchRequest {
     
     static let sharedInstance = SearchRequest()

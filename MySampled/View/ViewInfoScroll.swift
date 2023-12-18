@@ -11,7 +11,7 @@ import Foundation
 protocol labelDelegation {
     
     func retrieveNewLabel(labelArtistandSong: (String, String))
-    
+    func hideLabelSample(arrayOfSample: [TrackSample?])
 }
 
 class ViewInfoScroll: UIView {
@@ -78,6 +78,12 @@ class ViewInfoScroll: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         gradient.frame = currentView.bounds // Mise à jour de la taille du gradient
+    }
+    
+    func hideLabel(stateOfLabel:Bool){
+        
+        titleSample.isHidden = stateOfLabel  ?  true : false
+        
     }
     
     func initViewInfoScroll(){
@@ -179,6 +185,3 @@ class ViewInfoScroll: UIView {
         
     }
 }
-
-
-

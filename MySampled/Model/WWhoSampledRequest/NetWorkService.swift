@@ -1,5 +1,5 @@
 import Foundation
-
+// generical class who make the network call
 class NetworkService {
     
     enum CustomError: Error {
