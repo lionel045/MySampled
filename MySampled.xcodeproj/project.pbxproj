@@ -13,7 +13,9 @@
 		B441C1F32AE081B300089E8C /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B441C1F22AE081B300089E8C /* playButton.png */; };
 		B459BA722ADD997700161568 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B459BA712ADD997700161568 /* Lottie */; };
 		B459BA742ADD9A0300161568 /* Blob.json in Resources */ = {isa = PBXBuildFile; fileRef = B459BA732ADD9A0300161568 /* Blob.json */; };
-		B46B65D62B29150E008C181B /* Aharoni.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B46B65D52B29150E008C181B /* Aharoni.ttf */; };
+		B46735F52B37630B005A1954 /* SampleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46735F42B37630B005A1954 /* SampleHeaderView.swift */; };
+		B46735F72B376314005A1954 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46735F62B376314005A1954 /* SecondViewController.swift */; };
+		B46735F92B3763D8005A1954 /* Aharoni.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B46735F82B3763D8005A1954 /* Aharoni.ttf */; };
 		B46F45C32A97EEC700CA32A8 /* ButtonReccordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F45C22A97EEC700CA32A8 /* ButtonReccordView.swift */; };
 		B47105802A86B29500DDB6C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471057F2A86B29500DDB6C2 /* AppDelegate.swift */; };
 		B47105822A86B29500DDB6C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47105812A86B29500DDB6C2 /* SceneDelegate.swift */; };
@@ -23,7 +25,6 @@
 		B471058C2A86B29900DDB6C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B471058A2A86B29900DDB6C2 /* LaunchScreen.storyboard */; };
 		B48CC5A32B1CEAFE00B7467F /* ViewInfoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CC5A22B1CEAFE00B7467F /* ViewInfoScroll.swift */; };
 		B4AC44FB2AC1E8CE008A9047 /* AudioRecorderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC44FA2AC1E8CE008A9047 /* AudioRecorderManager.swift */; };
-		B4B93EFE2ACC2CB100BDFF8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B93EFD2ACC2CB100BDFF8D /* SecondViewController.swift */; };
 		B4BFE2942B1603A500BC14DE /* ArtistImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */; };
 		B4BFE2962B1740D600BC14DE /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFE2952B1740D500BC14DE /* ImageDownloadService.swift */; };
 		B4CA77F52B277AFA0084BF63 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA77F42B277AFA0084BF63 /* ImageService.swift */; };
@@ -42,7 +43,9 @@
 		B441C1F02AE01E9700089E8C /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		B441C1F22AE081B300089E8C /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
 		B459BA732ADD9A0300161568 /* Blob.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Blob.json; sourceTree = "<group>"; };
-		B46B65D52B29150E008C181B /* Aharoni.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aharoni.ttf; path = "../../../../../Downloads/Aharoni-Font 2/Aharoni-Font/Aharoni.ttf"; sourceTree = "<group>"; };
+		B46735F42B37630B005A1954 /* SampleHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleHeaderView.swift; sourceTree = "<group>"; };
+		B46735F62B376314005A1954 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "../../../../../Desktop/recuperation modif/SecondViewController.swift"; sourceTree = "<group>"; };
+		B46735F82B3763D8005A1954 /* Aharoni.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aharoni.ttf; path = "../../../../../Desktop/recuperation modif/Aharoni.ttf"; sourceTree = "<group>"; };
 		B46F45C22A97EEC700CA32A8 /* ButtonReccordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReccordView.swift; sourceTree = "<group>"; };
 		B471057C2A86B29500DDB6C2 /* MySampled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySampled.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B471057F2A86B29500DDB6C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +57,6 @@
 		B471058D2A86B29900DDB6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48CC5A22B1CEAFE00B7467F /* ViewInfoScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInfoScroll.swift; sourceTree = "<group>"; };
 		B4AC44FA2AC1E8CE008A9047 /* AudioRecorderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderManager.swift; sourceTree = "<group>"; };
-		B4B93EFD2ACC2CB100BDFF8D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistImageView.swift; sourceTree = "<group>"; };
 		B4BFE2952B1740D500BC14DE /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
 		B4CA77F42B277AFA0084BF63 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
@@ -91,24 +93,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-
-		B41503022A981D560077FCBC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B47105852A86B29500DDB6C2 /* Main.storyboard */,
-				B46F45C22A97EEC700CA32A8 /* ButtonReccordView.swift */,
-				B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */,
-				B48CC5A22B1CEAFE00B7467F /* ViewInfoScroll.swift */,
-				B4CB61902B1FC16400A3352D /* CustomCollectionViewCell.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-
 		B41503042A981D8C0077FCBC /* Controlleur */ = {
 			isa = PBXGroup;
 			children = (
-				B4B93EFD2ACC2CB100BDFF8D /* SecondViewController.swift */,
+				B46735F62B376314005A1954 /* SecondViewController.swift */,
 				B47105832A86B29500DDB6C2 /* ViewController.swift */,
 			);
 			name = Controlleur;
@@ -167,6 +155,7 @@
 				B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */,
 				B48CC5A22B1CEAFE00B7467F /* ViewInfoScroll.swift */,
 				B4CB61902B1FC16400A3352D /* CustomCollectionViewCell.swift */,
+				B46735F42B37630B005A1954 /* SampleHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,7 +176,7 @@
 		B4DD16DA2B28FCCF0008FF98 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				B46B65D52B29150E008C181B /* Aharoni.ttf */,
+				B46735F82B3763D8005A1954 /* Aharoni.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -257,8 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41642A32B07F3A5002443AA /* ApiKey.plist in Resources */,
+				B46735F92B3763D8005A1954 /* Aharoni.ttf in Resources */,
 				B459BA742ADD9A0300161568 /* Blob.json in Resources */,
-				B46B65D62B29150E008C181B /* Aharoni.ttf in Resources */,
 				B441C1F32AE081B300089E8C /* playButton.png in Resources */,
 				B441C1F12AE01E9700089E8C /* user.png in Resources */,
 				B471058C2A86B29900DDB6C2 /* LaunchScreen.storyboard in Resources */,
@@ -276,18 +265,19 @@
 			files = (
 				B4D92B632AB91845003BE57D /* ResultTrack.swift in Sources */,
 				B47105842A86B29500DDB6C2 /* ViewController.swift in Sources */,
-				B4B93EFE2ACC2CB100BDFF8D /* SecondViewController.swift in Sources */,
 				B48CC5A32B1CEAFE00B7467F /* ViewInfoScroll.swift in Sources */,
 				B4D92B602AB91845003BE57D /* NetWorkService.swift in Sources */,
 				B4CB61912B1FC16400A3352D /* CustomCollectionViewCell.swift in Sources */,
 				B4BFE2942B1603A500BC14DE /* ArtistImageView.swift in Sources */,
 				B4D92B622AB91845003BE57D /* SearchRequest.swift in Sources */,
+				B46735F72B376314005A1954 /* SecondViewController.swift in Sources */,
 				B4BFE2962B1740D600BC14DE /* ImageDownloadService.swift in Sources */,
 				B4D92B642AB91845003BE57D /* RetrieveResultTrack.swift in Sources */,
 				B47105802A86B29500DDB6C2 /* AppDelegate.swift in Sources */,
 				B4CA77F52B277AFA0084BF63 /* ImageService.swift in Sources */,
 				B40EC30C2A937E3800FF9153 /* ApiRequest.swift in Sources */,
 				B4D92B652AB91845003BE57D /* SampledIn.swift in Sources */,
+				B46735F52B37630B005A1954 /* SampleHeaderView.swift in Sources */,
 				B4AC44FB2AC1E8CE008A9047 /* AudioRecorderManager.swift in Sources */,
 				B47105822A86B29500DDB6C2 /* SceneDelegate.swift in Sources */,
 				B46F45C32A97EEC700CA32A8 /* ButtonReccordView.swift in Sources */,

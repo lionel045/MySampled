@@ -14,7 +14,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     lazy var labelSongSample: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Aharoni", size: 13)
-        label.text = ""
+        label.text = "Son Sampler"
         label.numberOfLines = 0
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -24,7 +24,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     lazy var labelArtistSample: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Aharoni", size: 13)
-        label.text = ""
+        label.text = "Artist"
         label.numberOfLines = 0
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +42,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        _ = "CustomCell"
+        let identifier = "CustomCell"
         setupViews()
     }
     
