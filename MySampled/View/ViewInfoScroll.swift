@@ -34,6 +34,8 @@ class ViewInfoScroll: UIView {
 
          let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
         collectionView.register(SampleHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SampleHeaderView.reuseIdentifier)
+        
+        collectionView.register(SampledInHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SampledInHeaderView.reuseIdentifier)
 
          collectionView.backgroundColor = .clear
          collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -46,38 +48,46 @@ class ViewInfoScroll: UIView {
     
     func createCompositionalLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, environment) -> NSCollectionLayoutSection? in
-            // Configuration de l'item
-            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.50), // chaque item prend un tiers de la largeur
-                                                  heightDimension: .absolute(100)) // hauteur fixe pour chaque item
+            // Configuration de base de l'item
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.50), heightDimension: .absolute(100))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
-            item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 0)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 0)
 
-            // Configuration du groupe horizontal
-            let horizontalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
-                                                             heightDimension: .fractionalHeight(0.50)) // hauteur fixe pour le groupe
+            
+            let config = UICollectionViewCompositionalLayoutConfiguration()
+            config.interSectionSpacing = 60
+            // Configuration de base du groupe horizontal
+            let horizontalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.50))
             let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: horizontalGroupSize, repeatingSubitem: item, count: 2)
 
-            // Configuration du groupe vertical
-            let verticalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                           heightDimension: .fractionalHeight(0.45)) // ajustez la hauteur selon vos besoins
+            // Configuration de base du groupe vertical
+            let verticalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.45))
             let verticalGroup = NSCollectionLayoutGroup.vertical(layoutSize: verticalGroupSize, repeatingSubitem: horizontalGroup, count: 2)
 
-            // Configuration de la section avec défilement horizontal
+            // Configuration de la section
             let section = NSCollectionLayoutSection(group: verticalGroup)
             section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
-
-            // Configuration de l'en-tête de section pour "Sample"
-            let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                    heightDimension: .absolute(44)) // hauteur fixe pour l'en-tête
-            let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize,
-                                                                     elementKind: UICollectionView.elementKindSectionHeader,
-                                                                     alignment: .top)
+            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0)
+            
+            
+        
+            // Configuration de l'en-tête de section en fonction de la sectionIndex
+            let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(25))
+            var headerIdentifier = String()
+            if sectionIndex == 0 {
+                headerIdentifier = SampleHeaderView.reuseIdentifier
+            } else {
+                headerIdentifier = SampledInHeaderView.reuseIdentifier
+            }
+            let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+            header.pinToVisibleBounds = true
             section.boundarySupplementaryItems = [header]
 
             return section
         }
         return layout
     }
+
 
 
     private var currentStackView = UIStackView()
@@ -143,9 +153,10 @@ class ViewInfoScroll: UIView {
         NSLayoutConstraint.activate([
             sampleCollectionView.topAnchor.constraint(equalTo: currentStackView.bottomAnchor, constant: 20),
             sampleCollectionView.leadingAnchor.constraint(equalTo: currentView.leadingAnchor),
+            
             sampleCollectionView.trailingAnchor.constraint(equalTo: currentView.trailingAnchor),
             sampleCollectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            sampleCollectionView.heightAnchor.constraint(equalToConstant: 500)
+            sampleCollectionView.heightAnchor.constraint(equalToConstant: 600)
         ])
  
         sampleCollectionView.bounces = false

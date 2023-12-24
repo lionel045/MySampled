@@ -23,6 +23,9 @@ class ResultSample {
         let originDetector = SampleOriginDetector.sharedInstance
         let sampledIn = SampledIn.sharedInstance
         
+         sampleSource = []
+         sampleDest  = []
+        
         do {
             let sourceSamples = try await originDetector.retrieveCurrentSample()
             for sample in sourceSamples {
@@ -30,7 +33,7 @@ class ResultSample {
                 if !artistsSrcSet.contains(artistName){
                     processSample(sample: sample, isSource: true)
                     artistsSrcSet.insert(artistName)
-                    sampleDest.append(sample)
+                    sampleSource.append(sample)
                 }
             }
             
@@ -44,8 +47,8 @@ class ResultSample {
                 }
                 
             }
-            print("il y a \(sourceSamples.count) sample sur ce son, \(sampleDest.count) reprises dessus")
-            return (sourceSamples,sampleDest)
+            print("il y a \(sampleSource.count) sample sur ce son, \(sampleDest.count) reprises dessus")
+            return (sampleSource,sampleDest)
         } catch {
             print("Erreur : \(error)")
         }

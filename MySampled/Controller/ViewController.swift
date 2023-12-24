@@ -50,7 +50,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         let vc = SecondViewController()
         Task {
             await vc.addCoverImage(imageCoverURL: backgroundImage,label: artistAndSong)
-            await vc.addSampleArray(sampleRetrieve: sampleData.0)
+            await vc.addSampleArray(containSample: sampleData.0 , sampledIn: sampleData.1)
         }
         
         vc.modalTransitionStyle = .flipHorizontal
