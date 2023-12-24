@@ -20,7 +20,7 @@ class SampledIn {
             let artistInfo = try await resultTrack.fetchResultTrack()
             let artistId = artistInfo.id
             
-            let samplesUrl = URL(string: "https://www.whosampled.com/apimob/v1/track-samples/?source_track=\(artistId)&format=json&limit=5")!
+            let samplesUrl = URL(string: "https://www.whosampled.com/apimob/v1/track-samples/?source_track=\(artistId)&format=json&limit=6")!
             
             let sampleResponse: TrackSampleResponse = try await NetworkService.shared.httpRequest(url: samplesUrl, expecting: TrackSampleResponse.self)
             return sampleResponse.objects ?? []

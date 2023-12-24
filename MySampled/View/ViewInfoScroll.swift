@@ -51,11 +51,11 @@ class ViewInfoScroll: UIView {
             // Configuration de base de l'item
             let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.50), heightDimension: .absolute(100))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
-            item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 0)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0)
 
             
             let config = UICollectionViewCompositionalLayoutConfiguration()
-            config.interSectionSpacing = 60
+            config.interSectionSpacing = 40
             // Configuration de base du groupe horizontal
             let horizontalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.50))
             let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: horizontalGroupSize, repeatingSubitem: item, count: 2)
@@ -174,7 +174,7 @@ class ViewInfoScroll: UIView {
         currentView.addSubview(currentStackView)
         
         NSLayoutConstraint.activate([
-            currentStackView.leadingAnchor.constraint(equalTo: currentView.leadingAnchor, constant: 30),
+            currentStackView.leadingAnchor.constraint(equalTo: currentView.leadingAnchor, constant: 15),
             currentStackView.trailingAnchor.constraint(equalTo: currentView.trailingAnchor),
             currentStackView.topAnchor.constraint(equalTo: currentView.topAnchor, constant: 70 )
         ])

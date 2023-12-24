@@ -68,7 +68,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     func initImageSample() {
         NSLayoutConstraint.activate([
-            imageArtistSample.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            imageArtistSample.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             imageArtistSample.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             imageArtistSample.widthAnchor.constraint(equalToConstant: 90),
             imageArtistSample.heightAnchor.constraint(equalToConstant: 90)
@@ -79,7 +79,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             stacksampleView.leadingAnchor.constraint(equalTo: imageArtistSample.trailingAnchor, constant: 10),
             stacksampleView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            stacksampleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            stacksampleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
             stacksampleView.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -10),
         ])
     }

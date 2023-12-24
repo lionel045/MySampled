@@ -111,8 +111,8 @@
 				B41642A22B07F3A4002443AA /* ApiKey.plist */,
 				B4DD16DA2B28FCCF0008FF98 /* Font */,
 				B459BA732ADD9A0300161568 /* Blob.json */,
-				B471058A2A86B29900DDB6C2 /* LaunchScreen.storyboard */,
 				B471058D2A86B29900DDB6C2 /* Info.plist */,
+				B471058A2A86B29900DDB6C2 /* LaunchScreen.storyboard */,
 				B47105812A86B29500DDB6C2 /* SceneDelegate.swift */,
 				B471057F2A86B29500DDB6C2 /* AppDelegate.swift */,
 				B47105882A86B29900DDB6C2 /* Assets.xcassets */,
@@ -154,8 +154,8 @@
 			children = (
 				B47105852A86B29500DDB6C2 /* Main.storyboard */,
 				B46F45C22A97EEC700CA32A8 /* ButtonReccordView.swift */,
-				B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */,
 				B48CC5A22B1CEAFE00B7467F /* ViewInfoScroll.swift */,
+				B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */,
 				B4CB61902B1FC16400A3352D /* CustomCollectionViewCell.swift */,
 				B46735F42B37630B005A1954 /* SampleHeaderView.swift */,
 				B46735FA2B376D1B005A1954 /* SampledInHeaderView.swift */,
@@ -168,8 +168,8 @@
 			children = (
 				B4D92B5A2AB91845003BE57D /* NetWorkService.swift */,
 				B4D92B5D2AB91845003BE57D /* ResultTrack.swift */,
-				B4D92B5E2AB91845003BE57D /* RetrieveResultTrack.swift */,
 				B4D92B5F2AB91845003BE57D /* SampledIn.swift */,
+				B4D92B5E2AB91845003BE57D /* RetrieveResultTrack.swift */,
 				B4D92B5B2AB91845003BE57D /* SampleOriginDetector.swift */,
 				B4D92B5C2AB91845003BE57D /* SearchRequest.swift */,
 			);

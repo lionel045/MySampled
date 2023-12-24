@@ -63,8 +63,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         
         do {
             
-            try recordingSession.setCategory(.playAndRecord, options: [.mixWithOthers, .defaultToSpeaker])
-            try recordingSession.setActive(true)
+            try recordingSession.setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers,.allowBluetoothA2DP, .allowBluetooth, .defaultToSpeaker])
+            try recordingSession.setActive(true, options: .notifyOthersOnDeactivation)
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
