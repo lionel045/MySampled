@@ -23,7 +23,9 @@ class AudioRecorderManager: NSObject {
     
     func startRecording() {
         audioEngine = AVAudioEngine()
-        let audioFormat = AVAudioFormat(standardFormatWithSampleRate: 48000, channels: 2)
+        let audioSession = AVAudioSession.sharedInstance()
+        let sampleRate = audioSession.sampleRate
+        let audioFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: sampleRate, channels: AVAudioChannelCount(audioSession.outputNumberOfChannels), interleaved: false)
         
         guard let inputNode = audioEngine?.inputNode else {
             print("Error: Couldn't fetch inputNode.")
