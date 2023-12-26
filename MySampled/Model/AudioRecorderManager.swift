@@ -2,15 +2,20 @@ import AVFoundation
 
 class AudioRecorderManager: NSObject {
     static let shared = AudioRecorderManager()
-    
+    private override init(){}
+
     private var audioEngine: AVAudioEngine?
     private var audioFile: AVAudioFile?
     var sendReccord: ((URL) -> Void)?
+    
+    
+    
     func setupAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .defaultToSpeaker])
-            
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers,.allowBluetoothA2DP, .allowBluetooth,.defaultToSpeaker])
             try AVAudioSession.sharedInstance().setActive(true)
+            
+        
         } catch {
             print("Setting up audio session failed.")
         }
@@ -18,7 +23,9 @@ class AudioRecorderManager: NSObject {
     
     func startRecording() {
         audioEngine = AVAudioEngine()
-        let audioFormat = AVAudioFormat(standardFormatWithSampleRate: 48000, channels: 2)
+        let audioSession = AVAudioSession.sharedInstance()
+        let sampleRate = audioSession.sampleRate
+        let audioFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: sampleRate, channels: AVAudioChannelCount(audioSession.outputNumberOfChannels), interleaved: false)
         
         guard let inputNode = audioEngine?.inputNode else {
             print("Error: Couldn't fetch inputNode.")
@@ -99,4 +106,23 @@ class AudioRecorderManager: NSObject {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0].appendingPathComponent("recording.m4a")
     }
+}
+
+extension AVAudioSession {
+
+static var isHeadphonesConnected: Bool {
+    return sharedInstance().isHeadphonesConnected
+    print("Yaaaaa")
+}
+
+var isHeadphonesConnected: Bool {
+    return !currentRoute.outputs.filter { $0.isHeadphones }.isEmpty
+}
+
+}
+
+extension AVAudioSessionPortDescription {
+var isHeadphones: Bool {
+    return portType == AVAudioSession.Port.headphones
+}
 }

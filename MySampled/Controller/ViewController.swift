@@ -33,9 +33,10 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .black
+       
         setupView()
         displayAudioReccord()
-        
+      
     }
     
     func  sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?],[TrackSample?])) async {
@@ -50,7 +51,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         let vc = SecondViewController()
         Task {
             await vc.addCoverImage(imageCoverURL: backgroundImage,label: artistAndSong)
-            await vc.addSampleArray(sampleRetrieve: sampleData.0)
+            await vc.addSampleArray(containSample: sampleData.0 , sampledIn: sampleData.1)
         }
         
         vc.modalTransitionStyle = .flipHorizontal
@@ -63,8 +64,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         
         do {
             
-            try recordingSession.setCategory(.playAndRecord, options: [.mixWithOthers, .defaultToSpeaker])
-            try recordingSession.setActive(true)
+            try recordingSession.setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers,.allowBluetoothA2DP, .allowBluetooth, .defaultToSpeaker])
+            try recordingSession.setActive(true, options: .notifyOthersOnDeactivation)
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
