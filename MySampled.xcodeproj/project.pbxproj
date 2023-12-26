@@ -25,6 +25,7 @@
 		B47105892A86B29900DDB6C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47105882A86B29900DDB6C2 /* Assets.xcassets */; };
 		B471058C2A86B29900DDB6C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B471058A2A86B29900DDB6C2 /* LaunchScreen.storyboard */; };
 		B48CC5A32B1CEAFE00B7467F /* ViewInfoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CC5A22B1CEAFE00B7467F /* ViewInfoScroll.swift */; };
+		B4991BB02B3977E800AA3A1F /* SampleMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4991BAF2B3977E800AA3A1F /* SampleMinute.swift */; };
 		B4AC44FB2AC1E8CE008A9047 /* AudioRecorderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC44FA2AC1E8CE008A9047 /* AudioRecorderManager.swift */; };
 		B4BFE2942B1603A500BC14DE /* ArtistImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */; };
 		B4BFE2962B1740D600BC14DE /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFE2952B1740D500BC14DE /* ImageDownloadService.swift */; };
@@ -58,6 +59,7 @@
 		B471058B2A86B29900DDB6C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B471058D2A86B29900DDB6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48CC5A22B1CEAFE00B7467F /* ViewInfoScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInfoScroll.swift; sourceTree = "<group>"; };
+		B4991BAF2B3977E800AA3A1F /* SampleMinute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMinute.swift; sourceTree = "<group>"; };
 		B4AC44FA2AC1E8CE008A9047 /* AudioRecorderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderManager.swift; sourceTree = "<group>"; };
 		B4BFE2932B1603A500BC14DE /* ArtistImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistImageView.swift; sourceTree = "<group>"; };
 		B4BFE2952B1740D500BC14DE /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				B4D92B5E2AB91845003BE57D /* RetrieveResultTrack.swift */,
 				B4D92B5B2AB91845003BE57D /* SampleOriginDetector.swift */,
 				B4D92B5C2AB91845003BE57D /* SearchRequest.swift */,
+				B4991BAF2B3977E800AA3A1F /* SampleMinute.swift */,
 			);
 			path = WWhoSampledRequest;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				B4BFE2962B1740D600BC14DE /* ImageDownloadService.swift in Sources */,
 				B4D92B642AB91845003BE57D /* RetrieveResultTrack.swift in Sources */,
 				B47105802A86B29500DDB6C2 /* AppDelegate.swift in Sources */,
+				B4991BB02B3977E800AA3A1F /* SampleMinute.swift in Sources */,
 				B4CA77F52B277AFA0084BF63 /* ImageService.swift in Sources */,
 				B40EC30C2A937E3800FF9153 /* ApiRequest.swift in Sources */,
 				B4D92B652AB91845003BE57D /* SampledIn.swift in Sources */,

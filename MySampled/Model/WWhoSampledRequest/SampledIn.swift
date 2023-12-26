@@ -9,13 +9,13 @@ class SampledIn {
     private init() {
     }
     
-    // find Sample source if the current song contain a sample
+    // find if the current song retrieve with Shazam was sampled in other song
     class SampledIn {
         
         static let sharedInstance = SampledIn()
         var sampleInfo = ResultSample()
         
-        func wasSampledIN() async throws -> [TrackSample] {
+        func wasSampledIn() async throws -> [TrackSample] {
             let resultTrack = RetrieveResultTrack.sharedInstance
             let artistInfo = try await resultTrack.fetchResultTrack()
             let artistId = artistInfo.id

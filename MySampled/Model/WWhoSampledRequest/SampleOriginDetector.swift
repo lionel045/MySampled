@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-// find Sample source if the current song was sampled in the otherSong
+// find Sample dest for information sample
 class SampleOriginDetector {
     
     static let sharedInstance = SampleOriginDetector()
@@ -10,19 +10,22 @@ class SampleOriginDetector {
     
     var sendSampleInfo: (([TrackSample?]) ->())?
     
+    
     class SampleOriginDetector {
         
         static let sharedInstance = SampleOriginDetector()
         
-        func retrieveCurrentSample() async throws -> [TrackSample] {
+        func retrieveCurrentSample() async throws -> ([TrackSample]) {
             let resultTrack = RetrieveResultTrack.sharedInstance
             let artistInfo = try await resultTrack.fetchResultTrack()
             let artistId = artistInfo.id
-            
             let samplesUrl = URL(string: "https://www.whosampled.com/apimob/v1/track-samples/?dest_track=\(artistId)&format=json")!
             
             let sampleResponse: TrackSampleResponse = try await NetworkService.shared.httpRequest(url: samplesUrl, expecting: TrackSampleResponse.self)
-            return sampleResponse.objects ?? []
+            
+
+            
+            return (sampleResponse.objects ?? [] )
         }
     }
     
@@ -34,11 +37,12 @@ struct TrackSample: Codable {
         let resource_uri: String?
     }
     
-    struct Track: Codable {
+        struct Track: Codable {
         let artist: Artist?
         let full_artist_name: String?
         let id: Int?
         let label: String?
+        var minuteSample: String?
         let large_image_url: String?
         let medium_image_url: String?
         let release_name: String?
@@ -51,7 +55,7 @@ struct TrackSample: Codable {
         let youtube_syndicate: Bool?
     }
     
-    let dest_track: Track?
+    var dest_track: Track?
     let id: Int?
     let resource_uri: String?
     var source_track: Track?

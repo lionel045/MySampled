@@ -40,7 +40,7 @@ class ImageDownloadService {
         let request = URLRequest(url: url)
        
         let (data,_) = try await URLSession.shared.data(for: request)
-        print(url)
+      //  print(url)
         guard let image = (UIImage(data: data)) else {
             print("Impossible de charger l'image")
             return nil

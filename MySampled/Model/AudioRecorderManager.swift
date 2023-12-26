@@ -12,7 +12,7 @@ class AudioRecorderManager: NSObject {
     
     func setupAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers,.allowBluetoothA2DP, .allowBluetooth, .defaultToSpeaker])
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers,.allowBluetoothA2DP, .allowBluetooth,.defaultToSpeaker])
             try AVAudioSession.sharedInstance().setActive(true)
             
         

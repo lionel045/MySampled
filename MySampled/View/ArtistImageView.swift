@@ -8,7 +8,6 @@ protocol ArtistDelegate {
     
 }
 
-
 class ArtistImageView: UIView {
     
     private var imageView: UIImageView!

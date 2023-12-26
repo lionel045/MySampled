@@ -33,9 +33,10 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .black
+       
         setupView()
         displayAudioReccord()
-        
+      
     }
     
     func  sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?],[TrackSample?])) async {

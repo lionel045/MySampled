@@ -13,20 +13,37 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     lazy var labelSongSample: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Aharoni", size: 13)
+        label.font = UIFont(name: "Aharoni", size: 15)
         label.text = "Son Sampler"
         label.numberOfLines = 0
         label.textColor = .white
+        label.sizeToFit()
+        label.lineBreakMode = .byWordWrapping
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
+    lazy var labelSampleMinute: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: "Aharoni", size: 14)
+        label.text = ""
+        label.numberOfLines = 0
+        label.textColor = .white
+        label.sizeToFit()
+     //   label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     lazy var labelArtistSample: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Aharoni", size: 13)
+        label.font = UIFont(name: "Aharoni", size: 15)
         label.text = "Artist"
         label.numberOfLines = 0
         label.textColor = .white
+        label.sizeToFit()
+
+        label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -61,9 +78,11 @@ class CustomCollectionViewCell: UICollectionViewCell {
     addSubview(stacksampleView)
         stacksampleView.addArrangedSubview(labelSongSample)
         stacksampleView.addArrangedSubview(labelArtistSample)
+        stacksampleView.addArrangedSubview(labelSampleMinute)
 
         initImageSample()
         initStackViewSample()
+        
     }
     
     func initImageSample() {
@@ -79,8 +98,9 @@ class CustomCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             stacksampleView.leadingAnchor.constraint(equalTo: imageArtistSample.trailingAnchor, constant: 10),
             stacksampleView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            stacksampleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-            stacksampleView.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -10),
+            stacksampleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10),
+            stacksampleView.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -10),
         ])
     }
+
 }
