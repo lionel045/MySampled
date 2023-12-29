@@ -12,6 +12,8 @@ protocol labelDelegation {
     
     func retrieveNewLabel(labelArtistandSong: (String, String))
     func hideLabelSample(arrayOfSample: [TrackSample?])
+    func checkStateDataSampleSource() -> [TrackSample?]
+    func checkStateDataSampleDest()-> [TrackSample?]
 }
 
 class ViewInfoScroll: UIView {
@@ -20,65 +22,63 @@ class ViewInfoScroll: UIView {
     private var titleSong: UILabel!
     private var currentView: UIView!
     var delegation: labelDelegation?
-//    private lazy var titleSample: UILabel = {
-//        
-//        let label = UILabel()
-//        label.text = "Sample"
-//        label.numberOfLines = 0
-//        label.textColor = .white
-//        label.font = UIFont(name: "Aharoni", size: 26)
-//        label.translatesAutoresizingMaskIntoConstraints = false
-//        return label
-//    }()
-    lazy var sampleCollectionView: UICollectionView = {
 
-         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
+    lazy var sampleCollectionView: UICollectionView = {
+        // Initialiser avec un layout temporaire
+        let tempLayout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: tempLayout)
         collectionView.register(SampleHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SampleHeaderView.reuseIdentifier)
-        
         collectionView.register(SampledInHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SampledInHeaderView.reuseIdentifier)
 
-         collectionView.backgroundColor = .clear
-         collectionView.translatesAutoresizingMaskIntoConstraints = false
-         collectionView.contentInsetAdjustmentBehavior = .always
+        collectionView.backgroundColor = .clear
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.contentInsetAdjustmentBehavior = .always
         collectionView.delaysContentTouches = false
-        //  collectionView.showsHorizontalScrollIndicator = true
-        
-         return collectionView
-     }()
+        // collectionView.showsHorizontalScrollIndicator = true
+
+        return collectionView
+    }()
+
     
-    func createCompositionalLayout() -> UICollectionViewLayout {
+    func updateLayout(){
+        
+        let sampleSource = self.delegation?.checkStateDataSampleSource() ?? []
+           let sampleDest = self.delegation?.checkStateDataSampleDest() ?? []
+           
+        sampleCollectionView.setCollectionViewLayout(createCompositionalLayout(sampleSource: sampleSource, sampleDest: sampleDest), animated: true)
+    }
+    
+    
+    func createCompositionalLayout(sampleSource: [TrackSample?], sampleDest: [TrackSample?]) -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, environment) -> NSCollectionLayoutSection? in
             // Configuration de base de l'item
             let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0)
-
             
-            let config = UICollectionViewCompositionalLayoutConfiguration()
-            config.interSectionSpacing = 40
-            // Configuration de base du groupe horizontal
-            let horizontalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.50))
-            let horizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: horizontalGroupSize, repeatingSubitem: item, count: 1)
+            // Déterminer le nombre d'éléments dans la section
+            let itemCount = sectionIndex == 0 ? sampleSource.count : sampleDest.count
 
-            // Configuration de base du groupe vertical
-            let verticalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.45))
-            let verticalGroup = NSCollectionLayoutGroup.vertical(layoutSize: verticalGroupSize, repeatingSubitem: horizontalGroup, count: 2)
+                 let group: NSCollectionLayoutGroup
+                 if itemCount < 2 {
+                     // Groupe horizontal pour les sections avec moins de deux éléments
+                     let horizontalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100))
+                     group = NSCollectionLayoutGroup.horizontal(layoutSize: horizontalGroupSize, subitems: [item])
+                 } else {
+                     // Groupe vertical pour les autres cas
+                     let verticalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.45))
+                     group = NSCollectionLayoutGroup.vertical(layoutSize: verticalGroupSize, subitems: [item])
+                     group.interItemSpacing = .fixed(10)
+                }
 
             // Configuration de la section
-            let section = NSCollectionLayoutSection(group: verticalGroup)
+            let section = NSCollectionLayoutSection(group: group)
             section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
-            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0)
+            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
             
-            
-        
-            // Configuration de l'en-tête de section en fonction de la sectionIndex
+            // Configuration de l'en-tête de section
             let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(25))
-            var headerIdentifier = String()
-            if sectionIndex == 0 {
-                headerIdentifier = SampleHeaderView.reuseIdentifier
-            } else {
-                headerIdentifier = SampledInHeaderView.reuseIdentifier
-            }
+            let headerIdentifier = sectionIndex == 0 ? SampleHeaderView.reuseIdentifier : SampledInHeaderView.reuseIdentifier
             let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
             header.pinToVisibleBounds = true
             section.boundarySupplementaryItems = [header]
@@ -87,6 +87,7 @@ class ViewInfoScroll: UIView {
         }
         return layout
     }
+
 
 
 
@@ -202,15 +203,5 @@ class ViewInfoScroll: UIView {
         titleSong.numberOfLines = 0
     }
     
-//    private func initLabelSample(){
-//        
-//        currentView.addSubview(titleSample)
-//        
-//        NSLayoutConstraint.activate([
-//            titleSample.topAnchor.constraint(equalTo: currentStackView.bottomAnchor, constant: 30),
-//            titleSample.leadingAnchor.constraint(equalTo: currentView.leadingAnchor,constant: 30),
-//            
-//        ])
-//        
-//    }
+
 }
