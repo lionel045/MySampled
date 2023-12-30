@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 class ImageService {
     static let shared = ImageService()
-    
+
     func downloadImage(from urlString: String) async throws -> UIImage? {
         guard let url = URL(string: urlString) else { throw NetworkError.invalidURL }
         let (data, _) = try await URLSession.shared.data(from: url)

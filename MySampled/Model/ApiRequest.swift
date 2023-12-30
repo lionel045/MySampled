@@ -2,10 +2,9 @@ import Foundation
 // Api class for shazam request
 class ApiRequest {
     static let sharedInstance = ApiRequest()
-    
+
     let boundary = "---011000010111000001101001"
-    
- 
+
     var headers: [String: String] {
         [
             "content-type": "multipart/form-data; boundary=\(boundary)",
@@ -13,7 +12,7 @@ class ApiRequest {
             "X-RapidAPI-Host": "shazam-api6.p.rapidapi.com"
         ]
     }
-    
+
     // save the apiKey stored in apiKey.plist
     private var apiKey: String {
         guard let key = Bundle.main.apiKey(named: "X-RapidAPI-Key") else {
@@ -21,14 +20,13 @@ class ApiRequest {
         }
         return key
     }
-    
-    
-    func sendSongApi(_ relativePath: URL, completion: ((Bool, _ shazamData: ShazamResponse?) -> ())?) {
+
+    func sendSongApi(_ relativePath: URL, completion: ((Bool, _ shazamData: ShazamResponse?) -> Void)?) {
         let url = URL(string: "https://shazam-api6.p.rapidapi.com/shazam/recognize/")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = headers
-        
+
         let parameters = [
             [
                 "name": "upload_file",
@@ -36,42 +34,41 @@ class ApiRequest {
                 "contentType": "audio/mpeg"
             ]
         ]
-        
+
         let boundary = "---011000010111000001101001"
         var body = Data()
         for param in parameters {
             let paramName = param["name"]!
-            
+
             body.append("--\(boundary)\r\n".data(using: .utf8)!)
             body.append("Content-Disposition: form-data; name=\"\(paramName)\"; filename=\"\(param["fileName"]!)\"\r\n".data(using: .utf8)!)
             body.append("Content-Type: \(param["contentType"]!)\r\n\r\n".data(using: .utf8)!)
-            
+
             if let fileData = try? Data(contentsOf: relativePath) {
                 body.append(fileData)
                 body.append("\r\n".data(using: .utf8)!)
-            }
-            else {
+            } else {
                 print("Impossible de lire le fichier \(param["fileName"]!)")
             }
         }
-        
+
         body.append("--\(boundary)--\r\n".data(using: .utf8)!)
-        
+
         request.httpBody = body
-        
+
         let session = URLSession.shared
-        let dataTask = session.dataTask(with: request) { (data, response, error) in
+        let dataTask = session.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 print("Erreur lors de l'envoi de la requête : \(error.localizedDescription)")
                 return
             }
-            
+
             guard let data = data, error == nil else {
                 print("Aucune donnée reçue.")
-                completion?(false,nil)
+                completion?(false, nil)
                 return
             }
-            
+
             do {
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(ShazamResponse.self, from: data)
@@ -85,14 +82,14 @@ class ApiRequest {
                     print("Subtitle est vide")
                     completion?(false, nil)
                 }
-                
+
             } catch {
                 print("error \(error.localizedDescription)")
 
             }
-            
+
         }
-        
+
         dataTask.resume()
     }
 }
@@ -107,7 +104,6 @@ extension Bundle {
         return nil
     }
 }
-
 
 struct ShazamResponse: Codable {
     let status: Bool?

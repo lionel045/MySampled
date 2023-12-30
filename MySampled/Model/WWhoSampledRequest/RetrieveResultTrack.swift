@@ -12,100 +12,162 @@ enum CustomError: Error {
     case artistNotFound
 }
 
-    //find Sample dest if the song was sampled
+    // find Sample dest if the song was sampled
     class RetrieveResultTrack {
-    
+
     static let sharedInstance = RetrieveResultTrack()
-    
+
     private var artistId = 0
     func fetchResultTrack()  async throws -> ArtistInfo {
-        
+
         let resultRequest = SearchRequest.sharedInstance
         guard let idArtist = await resultRequest.performSearch() else {
-            
+
             throw CustomError.artistNotFound
         }
-        
+
         let artistUrl = URL(string: "https://www.whosampled.com/apimob/v1/track/\(idArtist)/?format=json")!
-        
-        
+
         let artist: ArtistInfo = try await NetworkService.shared.httpRequest(url: artistUrl, expecting: ArtistInfo.self)
         return artist
     }
 }
 
-
-
 struct ArtistInfo: Codable {
     struct Artist: Codable {
-        let artist_name: String
-        let cover_count: String
-        let exists_as_artist: Bool
-        let exists_as_producer: Bool
+        let artistName: String
+        let coverCount: String
+        let existsAsArtist: Bool
+        let existsAsProducer: Bool
         let id: String
-        let large_image_url: String
-        let medium_image_url: String
-        let remix_count: String
-        let resource_uri: String
-        let sample_count: String
-        let small_image_url: String
+        let largeImageUrl: String
+        let mediumImageUrl: String
+        let remixCount: String
+        let resourceUri: String
+        let sampleCount: String
+        let smallImageUrl: String
+
+        enum CodingKeys: String, CodingKey {
+            case artistName = "artist_name"
+            case coverCount = "cover_count"
+            case existsAsArtist = "exists_as_artist"
+            case existsAsProducer = "exists_as_producer"
+            case id
+            case largeImageUrl = "large_image_url"
+            case mediumImageUrl = "medium_image_url"
+            case remixCount = "remix_count"
+            case resourceUri = "resource_uri"
+            case sampleCount = "sample_count"
+            case smallImageUrl = "small_image_url"
+        }
     }
-    
+
     struct Producer: Codable {
-        let artist_name: String?
-        let cover_count: String?
-        let exists_as_artist: Bool?
-        let exists_as_producer: Bool?
+        let artistName: String?
+        let coverCount: String?
+        let existsAsArtist: Bool?
+        let existsAsProducer: Bool?
         let id: String?
-        let large_image_url: String?
-        let medium_image_url: String?
-        let remix_count: String?
-        let resource_uri: String?
-        let sample_count: String?
-        let small_image_url: String?
+        let largeImageUrl: String?
+        let mediumImageUrl: String?
+        let remixCount: String?
+        let resourceUri: String?
+        let sampleCount: String?
+        let smallImageUrl: String?
+        enum CodingKeys: String, CodingKey {
+            case artistName = "artist_name"
+            case coverCount = "cover_count"
+            case existsAsArtist = "exists_as_artist"
+            case existsAsProducer = "exists_as_producer"
+            case id
+            case largeImageUrl = "large_image_url"
+            case mediumImageUrl = "medium_image_url"
+            case remixCount = "remix_count"
+            case resourceUri = "resource_uri"
+            case sampleCount = "sample_count"
+            case smallImageUrl = "small_image_url"
+        }
     }
-    
+
     let artist: Artist
-    //let collab_artist1: Any?
-    //let collab_artist2: Any?
-    let cover_count: Int
-    let covered_count: Int
-    let featuring_artist1: FeaturingArtist?
-    let full_artist_name: String
+    let coverCount: Int
+    let coveredCount: Int
+    let featuringArtist1: FeaturingArtist?
+    let fullArtistName: String
     let genre: String
     let id: Int
     let label: String
-    let large_image_url: String?
-    let medium_image_url: String
+    let largeImageUrl: String?
+    let mediumImageUrl: String
     let producer1: Producer?
     let producer2: Producer?
-    let release_name: String
-    let release_year: String
-    let remix_count: Int
-    let remixed_count: Int
-    let resource_uri: String
-    let sample_count: Int
-    let sampled_count: Int
-    let small_image_url: String
-    let spotify_id: String?
-    let spotify_id_verified: Bool?
-    let track_name: String?
-    let youtube_id: String?
-    let youtube_syndicate: Bool?
+    let releaseName: String
+    let releaseYear: String
+    let remixCount: Int
+    let remixedCount: Int
+    let resourceUri: String
+    let sampleCount: Int
+    let sampledCount: Int
+    let smallImageUrl: String
+    let spotifyId: String?
+    let spotifyIdVerified: Bool?
+    let trackName: String?
+    let youtubeId: String?
+    let youtubeSyndicate: Bool?
+
+    enum CodingKeys: String, CodingKey {
+        case artist
+        case coverCount = "cover_count"
+        case coveredCount = "covered_count"
+        case featuringArtist1 = "featuring_artist1"
+        case fullArtistName = "full_artist_name"
+        case genre
+        case id
+        case label
+        case largeImageUrl = "large_image_url"
+        case mediumImageUrl = "medium_image_url"
+        case producer1 = "producer1"
+        case producer2 = "producer2"
+        case releaseName = "release_name"
+        case releaseYear = "release_year"
+        case remixCount = "remix_count"
+        case remixedCount = "remixed_count"
+        case resourceUri = "resource_uri"
+        case sampleCount = "sample_count"
+        case sampledCount = "sampled_count"
+        case smallImageUrl = "small_image_url"
+        case spotifyId = "spotify_id"
+        case spotifyIdVerified = "spotify_id_verified"
+        case trackName = "track_name"
+        case youtubeId = "youtube_id"
+        case youtubeSyndicate = "youtube_syndicate"
+    }
 }
 
 struct FeaturingArtist: Codable {
-    let artist_name: String
-    let cover_count: String
-    let exists_as_artist: Bool
-    let exists_as_producer: Bool
+    let artistName: String
+    let coverCount: String
+    let existsAsArtist: Bool
+    let existsAsProducer: Bool
     let id: String
-    let large_image_url: String
-    let medium_image_url: String
-    let remix_count: String
-    let resource_uri: String
-    let sample_count: String
-    let small_image_url: String
+    let largeImageUrl: String
+    let mediumImageUrl: String
+    let remixCount: String
+    let resourceUri: String
+    let sampleCount: String
+    let smallImageUrl: String
+
+    enum CodingKeys: String, CodingKey {
+        case artistName = "artist_name"
+        case coverCount = "cover_count"
+        case existsAsArtist = "exists_as_artist"
+        case existsAsProducer = "exists_as_producer"
+        case id
+        case largeImageUrl = "large_image_url"
+        case mediumImageUrl = "medium_image_url"
+        case remixCount = "remix_count"
+        case resourceUri = "resource_uri"
+        case sampleCount = "sample_count"
+        case smallImageUrl = "small_image_url"
+    }
 }
-
-

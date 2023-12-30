@@ -1,7 +1,7 @@
 import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
-    
+
     lazy var imageArtistSample: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
@@ -10,7 +10,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-    
+
     lazy var labelSongSample: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Aharoni", size: 15)
@@ -34,7 +34,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     lazy var labelArtistSample: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Aharoni", size: 15)
@@ -47,7 +47,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     lazy var stacksampleView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -56,13 +56,13 @@ class CustomCollectionViewCell: UICollectionViewCell {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         let identifier = "CustomCell"
         setupViews()
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
         imageArtistSample.layer.cornerRadius = 10
@@ -72,7 +72,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) n'a pas été implémenté")
     }
-    
+
     private func setupViews() {
        addSubview(imageArtistSample)
     addSubview(stacksampleView)
@@ -82,9 +82,9 @@ class CustomCollectionViewCell: UICollectionViewCell {
 
         initImageSample()
         initStackViewSample()
-        
+
     }
-    
+
     func initImageSample() {
         NSLayoutConstraint.activate([
             imageArtistSample.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
@@ -93,13 +93,13 @@ class CustomCollectionViewCell: UICollectionViewCell {
             imageArtistSample.heightAnchor.constraint(equalToConstant: 90)
         ])
     }
-    
+
     func initStackViewSample() {
         NSLayoutConstraint.activate([
             stacksampleView.leadingAnchor.constraint(equalTo: imageArtistSample.trailingAnchor, constant: 10),
             stacksampleView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             stacksampleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10),
-            stacksampleView.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -10),
+            stacksampleView.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -10)
         ])
     }
 

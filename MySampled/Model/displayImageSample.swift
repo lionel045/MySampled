@@ -3,13 +3,13 @@ import UIKit
 
 enum ApiError: Error {
     case invalidResponse
-   
+
 }
-//This class aims to make query
+// This class aims to make query
 class SearchApiRequest {
-    
+
     static let shared = SearchApiRequest()
-    
+
     func makeRequest(query: String) async throws -> [TrackQuery]? {
         guard let url = URL(string: "https://itunes.apple.com/search?term=\(query)&media=music&country=US&limit=5") else {
             throw URLError(.badURL)
@@ -27,26 +27,23 @@ class SearchApiRequest {
         return trackInfo.results
     }
 
-    
-    func downloadImageArtist(urlImage: URL?) async throws  -> UIImage? {
-        
+    func downloadImageArtist(urlImage: URL?) async throws -> UIImage? {
+
         guard let urlImage = urlImage else { return nil }
-        
+
         let request = URLRequest(url: urlImage)
-        let (data,response) = try await URLSession.shared.data(for: request)
-        
+        let (data, response) = try await URLSession.shared.data(for: request)
+
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
             throw URLError(.badServerResponse)
         }
-        
+
         let image = UIImage(data: data)
-        
+
         return image
-        
+
     }
 }
-    
-
 
 struct TrackQuery: Codable {
     var wrapperType: String?

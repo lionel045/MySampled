@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class SampledInHeaderView: UICollectionReusableView {
     static let reuseIdentifier = "SampledInHeaderViewReuse"
 
@@ -36,4 +35,3 @@ class SampledInHeaderView: UICollectionReusableView {
         fatalError("init(coder:) has not been implemented")
     }
 }
-

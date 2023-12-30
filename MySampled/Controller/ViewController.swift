@@ -2,71 +2,69 @@ import UIKit
 import AVFoundation
 
 protocol Delegation {
-    
+
     func sendData( data: ShazamResponse)
-    
-    
+
 }
 
 class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
-    
-    
+
     var animatedView: UIView!
     var recordButton: ButtonReccordView!
-    var checkIfSongFound: ((Bool?) -> ())?
+    var checkIfSongFound: ((Bool?) -> Void)?
     var songFound = false
-    var sendResultToSecondVc : ((ShazamResponse?) -> ())?
+    var sendResultToSecondVc: ((ShazamResponse?) -> Void)?
     @IBOutlet weak var reponseDeCall: UILabel!
     @IBOutlet weak var imageArtist: UIImageView!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var delegate: Delegation?
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+
         let secondVc = SecondViewController()
         self.present(secondVc, animated: true, completion: nil)
-        
+
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .black
-       
+
         setupView()
         displayAudioReccord()
-      
+
     }
-    
-    func  sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?],[TrackSample?])) async {
-        
+
+    func  sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?], [TrackSample?])) async {
+
         let shazamObject = data
         guard let backgroundImage = shazamObject.result?.track?.images?.background else { return }
         guard let artist: (String) = shazamObject.result?.track?.subtitle else { return }
         guard let song: (String) = shazamObject.result?.track?.title else { return }
-    
-        let artistAndSong =  (artist,song)
-        
-        let vc = SecondViewController()
+
+        let artistAndSong =  (artist, song)
+
+        let secondVc = SecondViewController()
         Task {
-            await vc.addCoverImage(imageCoverURL: backgroundImage,label: artistAndSong)
-            await vc.addSampleArray(containSample: sampleData.0 , sampledIn: sampleData.1)
+            await secondVc.addCoverImage(imageCoverURL: backgroundImage, label: artistAndSong)
+            await secondVc.addSampleArray(containSample: sampleData.0, sampledIn: sampleData.1)
         }
-        
-        vc.modalTransitionStyle = .flipHorizontal
-        self.present(vc, animated: true)
-        
+
+        secondVc.modalTransitionStyle = .flipHorizontal
+        self.present(secondVc, animated: true)
+
     }
-    
+
     func setupView() {
         recordingSession = AVAudioSession.sharedInstance()
-        
+
         do {
-            
-            try recordingSession.setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers,.allowBluetoothA2DP, .allowBluetooth, .defaultToSpeaker])
+
+            try recordingSession.setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowBluetoothA2DP, .allowBluetooth, .defaultToSpeaker])
             try recordingSession.setActive(true, options: .notifyOthersOnDeactivation)
-            recordingSession.requestRecordPermission() { [unowned self] allowed in
+            recordingSession.requestRecordPermission { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
                         self.initReccordButton()
@@ -77,9 +75,9 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         } catch {
         }
     }
-    
+
     func initReccordButton() {
-        
+
         recordButton = ButtonReccordView(frame: self.view.bounds)
         self.view.addSubview(recordButton)
         recordButton.translatesAutoresizingMaskIntoConstraints = false
@@ -89,35 +87,34 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             recordButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             recordButton.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
-        
-        recordButton.ringBack = { [weak self] button in
+
+        recordButton.ringBack = { [weak self] _ in
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
                 if let strongSelf = self {
                     // strongSelf.recordButton.performModal(fromViewController: strongSelf)
                      AudioRecorderManager.shared.startRecording()
                     strongSelf.startMonitoringSongFound()
-                    
+
                 }
             }
         }
-        
+
     }
-    
+
     func startMonitoringSongFound() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 6) { [weak self] in
             guard let strongSelf = self else { return }
-            
-            if !strongSelf.songFound{
+
+            if !strongSelf.songFound {
                 // AudioRecorderManager.shared.startRecording()
-                //print("Deuxieme tentative")
-            }
-            else {
+                // print("Deuxieme tentative")
+            } else {
             }
         }
     }
-    
+
     func displayAudioReccord() {
-        
+
         AudioRecorderManager.shared.sendReccord = { record in
             ApiRequest.sharedInstance.sendSongApi(record) {  apiSuccess, shazamData in
                 if apiSuccess {
@@ -128,24 +125,22 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                             let songWithoutFeat = retrieveTitle.removingContentInParenthesesAndBrackets()
                             let trackWithoutFeat = songWithoutFeat.formattedTrackName()
                             let artist = retrieveArtist.removingAndContent()
-                            //print(trackWithoutBracket)
+                            // print(trackWithoutBracket)
                             print(songWithoutFeat)
                             SearchRequest.sharedInstance.myTupleValue = (artist.lowercased(), trackWithoutFeat)
                             Task {
                                 let sampleData = await  ResultSample.sharedInstance.displayTrack()
-                                await self?.sendDataToVc(data: shazamData!,sampleData: sampleData)
-                                
+                                await self?.sendDataToVc(data: shazamData!, sampleData: sampleData)
+
                             }
                         }
                     }
-                }
-                else {
+                } else {
                     self.songFound = false
                 }
             }
         }
-        
-    }
-    
-}
 
+    }
+
+}

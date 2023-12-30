@@ -8,19 +8,18 @@
 import Foundation
 import UIKit
 
-
 class ImageDownloadService {
-    
+
     func downloadImage(artistImage: String) async throws -> UIImage? {
-        
+
         guard let url = URL(string: artistImage) else {
-     
+
             return nil
         }
-        
+
         let request = URLRequest(url: url)
-        
-        let (data,_) = try await URLSession.shared.data(for: request)
+
+        let (data, _) = try await URLSession.shared.data(for: request)
         guard let image = (UIImage(data: data)) else {
             print("Impossible de charger l'image")
             return nil
@@ -28,18 +27,17 @@ class ImageDownloadService {
 
         return image
     }
-    
-    
+
     static func downloadSampleImage(artistImage: String) async throws -> UIImage? {
-        
+
         guard let url = URL(string: "https://www.whosampled.com" + artistImage) else {
-     
+
             return nil
         }
-        
+
         let request = URLRequest(url: url)
-       
-        let (data,_) = try await URLSession.shared.data(for: request)
+
+        let (data, _) = try await URLSession.shared.data(for: request)
       //  print(url)
         guard let image = (UIImage(data: data)) else {
             print("Impossible de charger l'image")
@@ -48,5 +46,5 @@ class ImageDownloadService {
 
         return image
     }
-        
+
 }

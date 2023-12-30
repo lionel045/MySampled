@@ -8,7 +8,6 @@
 import Foundation
 
 class SampleMinute {
-    
     static let sharedInstance = SampleMinute()
     private init() {}
 
@@ -44,9 +43,15 @@ class SampleMinute {
 }
 
 struct SampleInfo: Codable {
-    let sample_type: String?
-    let source_timing: String?
-    let dest_timing: String?
+    let sampletype: String?
+    let sourcetiming: String?
+    let desttiming: String?
+
+    enum CodingKeys: String, CodingKey {
+
+        case sampletype = "sample_type"
+        case sourcetiming = "source_timing"
+        case desttiming = "dest_timing"
+    }
+
 }
-
-

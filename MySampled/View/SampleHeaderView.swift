@@ -3,13 +3,13 @@
 import UIKit
 class SampleHeaderView: UICollectionReusableView {
     static let reuseIdentifier = "SampleHeaderViewReuse"
-    
+
     lazy var titleLabel: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
         label.textColor = .white
         label.font = UIFont(name: "Aharoni", size: 26)
-        
+
         return label
     }()
     override init(frame: CGRect) {
@@ -18,13 +18,13 @@ class SampleHeaderView: UICollectionReusableView {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(titleLabel)
         NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 15),
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor )
         ])
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
