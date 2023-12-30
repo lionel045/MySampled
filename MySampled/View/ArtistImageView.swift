@@ -1,12 +1,13 @@
-import UIKit
 import AVFoundation
+import UIKit
 
 protocol ArtistDelegate: AnyObject {
     func passData(artistInfoImage: UIImage)
 }
+
 class ArtistImageView: UIView {
     private var imageView: UIImageView!
-   var delegation: ArtistDelegate?
+    var delegation: ArtistDelegate?
     private var mirrorImageView: UIImageView!
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -14,13 +15,15 @@ class ArtistImageView: UIView {
             gradient.frame = mirrorImageView.bounds
         }
     }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupImageView()
         addMirrorEffect()
     }
 
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) n'a pas été implémenté")
     }
 
@@ -28,9 +31,9 @@ class ArtistImageView: UIView {
         imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
 
-        guard let image = UIImage(named: "user") else {return}
-        let cropImage = self.resize(image: image)
-        self.imageView.image = cropImage
+        guard let image = UIImage(named: "user") else { return }
+        let cropImage = resize(image: image)
+        imageView.image = cropImage
         imageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(imageView)
 
@@ -43,7 +46,6 @@ class ArtistImageView: UIView {
     }
 
     private func addMirrorEffect() {
-
         mirrorImageView = UIImageView()
         mirrorImageView.image = imageView.image
         mirrorImageView.contentMode = .scaleAspectFill
@@ -78,17 +80,17 @@ class ArtistImageView: UIView {
     }
 
     func updateFrontUi(imageArtist: UIImage) {
-
         DispatchQueue.main.async { [weak self] in
             if let strongSelf = self {
                 let cropImage = strongSelf.resize(image: imageArtist)
-                self?.imageView.image =  cropImage
+                self?.imageView.image = cropImage
                 self?.imageView.alpha = 0.8
                 self?.mirrorImageView.image = cropImage
             }
         }
     }
 }
+
 extension ArtistImageView {
     func resize(image: UIImage) -> UIImage {
         let maxSize = CGSize(width: 400, height: 400)
@@ -97,7 +99,7 @@ extension ArtistImageView {
         let format = UIGraphicsImageRendererFormat()
         format.scale = 1
         let renderer = UIGraphicsImageRenderer(size: targetSize, format: format)
-        let resized = renderer.image { (_) in
+        let resized = renderer.image { _ in
             image.draw(in: CGRect(origin: .zero, size: targetSize))
         }
         return resized

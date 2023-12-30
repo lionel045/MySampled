@@ -26,7 +26,8 @@ class SampleMinute {
 
         for sample in trackSamples {
             guard let sampleId = sample.id,
-                  let url = URL(string: "https://www.whosampled.com/apimob/v1/sample/\(sampleId)/?format=json") else {
+                  let url = URL(string: "https://www.whosampled.com/apimob/v1/sample/\(sampleId)/?format=json")
+            else {
                 continue
             }
 
@@ -48,10 +49,8 @@ struct SampleInfo: Codable {
     let desttiming: String?
 
     enum CodingKeys: String, CodingKey {
-
         case sampletype = "sample_type"
         case sourcetiming = "source_timing"
         case desttiming = "dest_timing"
     }
-
 }

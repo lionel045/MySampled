@@ -5,6 +5,7 @@ class NetworkService {
         case invalidUrl
         case invalidData
     }
+
     static let shared = NetworkService()
     func httpRequest<T: Codable>(url: URL?, expecting: T.Type) async throws -> T {
         guard let url = url else {

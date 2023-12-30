@@ -1,8 +1,7 @@
-import UIKit
 import AVFoundation
+import UIKit
 
 class SecondViewController: UIViewController {
-
     var artistImageView: ArtistImageView!
     var scrollView: UIScrollView!
     var titleArtist: UILabel!
@@ -16,6 +15,7 @@ class SecondViewController: UIViewController {
 
         return button
     }()
+
     var currentIndex: Int?
     var dataImages: [UIImage] = [
         //        UIImage(named: "artist1")!,
@@ -33,47 +33,45 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(1)
+        view.backgroundColor = UIColor.black.withAlphaComponent(1)
 
         initArtistImageView()
         initScrollView()
         initDismiss()
         infoViewScroll.sampleCollectionView.dataSource = self
         infoViewScroll.sampleCollectionView.delegate = self
-        self.infoViewScroll.delegation?.hideLabelSample(arrayOfSample: dataSample)
+        infoViewScroll.delegation?.hideLabelSample(arrayOfSample: dataSample)
         infoViewScroll.sampleCollectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "CustomCell")
         view.bringSubviewToFront(scrollView)
         view.bringSubviewToFront(dismissButton) // Ceci place le bouton au-dessus de la scrollView
-
     }
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
         let bottomOfImage = artistImageView.frame.maxY
         scrollView.contentInset = UIEdgeInsets(top: bottomOfImage, left: 0, bottom: 0, right: 0)
-        scrollView.contentSize = CGSize(width: scrollView.frame.width, height: scrollView.frame.height + bottomOfImage )
+        scrollView.contentSize = CGSize(width: scrollView.frame.width, height: scrollView.frame.height + bottomOfImage)
     }
 
     func initDismiss() {
         dismissButton.translatesAutoresizingMaskIntoConstraints = false
-          view.addSubview(dismissButton)
+        view.addSubview(dismissButton)
 
-          NSLayoutConstraint.activate([
-              dismissButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
-              dismissButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10)
-          ])
-
+        NSLayoutConstraint.activate([
+            dismissButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            dismissButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10)
+        ])
     }
 
     @objc func dismissCurrentView() {
-            self.dismiss(animated: true)
+        dismiss(animated: true)
     }
 
     func addCoverImage(imageCoverURL: String, label: (String, String)) async {
         do {
             if let image = try await ImageService.shared.downloadImage(from: imageCoverURL) {
                 await MainActor.run {
-
                     self.artistImageView.delegation?.passData(artistInfoImage: image)
                     self.infoViewScroll.delegation?.retrieveNewLabel(labelArtistandSong: label)
                 }
@@ -90,14 +88,11 @@ class SecondViewController: UIViewController {
             if let url = sample?.source_track?.medium_image_url {
                 let image = try? await ImageDownloadService.downloadSampleImage(artistImage: url)
                 dataImages.append(image!)
-
             }
-
         }
-        self.infoViewScroll.delegation?.hideLabelSample(arrayOfSample: self.dataSample)
+        infoViewScroll.delegation?.hideLabelSample(arrayOfSample: dataSample)
         DispatchQueue.main.async {
             self.infoViewScroll?.sampleCollectionView.reloadData()
-
         }
     }
 
@@ -147,17 +142,16 @@ class SecondViewController: UIViewController {
         ])
     }
 }
-extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
         // Chaque section a maintenant 4 éléments (2x2)
         return 3
     }
 
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in _: UICollectionView) -> Int {
         // Le nombre total d'éléments divisé par le nombre d'éléments par section
         return Int(ceil(Double(dataSample.count) / 3.0))
-
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -178,7 +172,6 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
         } else {
             cell.imageArtistSample.image = nil
             cell.labelArtistSample.text = ""
-
         }
 
         return cell
@@ -187,7 +180,7 @@ extension SecondViewController: UICollectionViewDataSource, UICollectionViewDele
 
 extension SecondViewController: ArtistDelegate {
     func passData(artistInfoImage: UIImage) {
-        self.artistImageView.updateFrontUi(imageArtist: artistInfoImage)
+        artistImageView.updateFrontUi(imageArtist: artistInfoImage)
     }
 }
 
@@ -195,5 +188,4 @@ extension SecondViewController: labelDelegation {
     func retrieveNewLabel(labelArtistandSong: (String, String)) {
         infoViewScroll.updateLabel(label: labelArtistandSong)
     }
-
 }

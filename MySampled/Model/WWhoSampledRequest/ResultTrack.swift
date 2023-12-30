@@ -1,6 +1,5 @@
 // Send to the vc any information of sample
 class ResultSample {
-
     static let sharedInstance = ResultSample()
     var sampleSource: [TrackSample] = []
     var sampleDest: [TrackSample] = []
@@ -15,13 +14,14 @@ class ResultSample {
         }
         print("Artiste \(isSource ? "sampler" : "qui a samplé") : \(artistName), Son : \(trackName) à la \(minute) ")
     }
+
     // Traitement des samples
     func displayTrack() async -> ([TrackSample?], [TrackSample?]) {
         let originDetector = SampleOriginDetector.sharedInstance
         let sampledIn = SampledIn.sharedInstance
         let sampledMinute = SampleMinute.sharedInstance
-         sampleSource = []
-         sampleDest  = []
+        sampleSource = []
+        sampleDest = []
         do {
             let sourceSamples = try await originDetector.retrieveCurrentSample()
             let (minuteOrigin, minuteSource) = try await sampledMinute.retrieveMinuteSample()
@@ -36,14 +36,13 @@ class ResultSample {
             }
             let destSamples = try await sampledIn.wasSampledIn()
             for (index, var sample) in destSamples.enumerated() {
-                guard let artistName = sample.destTrack?.fullArtistName else {continue}
+                guard let artistName = sample.destTrack?.fullArtistName else { continue }
                 if !artistsDestSet.contains(artistName) {
                     sample.destTrack?.minuteSample = minuteSource[index]?.desttiming
                     processSample(sample: sample, isSource: false)
                     artistsDestSet.insert(artistName)
                     sampleDest.append(sample)
                 }
-
             }
             print("il y a \(sampleSource.count) sample sur ce son, \(sampleDest.count) reprises dessus")
             return (sampleSource, sampleDest)

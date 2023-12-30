@@ -12,6 +12,7 @@ class SampleHeaderView: UICollectionReusableView {
 
         return label
     }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         // Configurez votre titleLabel ici
@@ -21,11 +22,12 @@ class SampleHeaderView: UICollectionReusableView {
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor )
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

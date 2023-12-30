@@ -2,14 +2,12 @@ import Foundation
 
 class ApiRequest {
     static let sharedInstance = ApiRequest()
-
     let boundary = "---011000010111000001101001"
-
     // Supprimez la clé API directement écrite ici
     var headers: [String: String] {
         [
             "content-type": "multipart/form-data; boundary=\(boundary)",
-            "X-RapidAPI-Key": apiKey,  // Utilisez la clé API chargée
+            "X-RapidAPI-Key": apiKey, // Utilisez la clé API chargée
             "X-RapidAPI-Host": "shazam-api6.p.rapidapi.com"
         ]
     }
@@ -24,11 +22,9 @@ class ApiRequest {
 
     func sendSongApi(_ relativePath: URL, completion: ((Bool, _ shazamData: ShazamResponse?) -> Void)?) {
         let url = URL(string: "https://shazam-api6.p.rapidapi.com/shazam/recognize/")!
-
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = headers
-
         let parameters = [
             [
                 "name": "upload_file",
@@ -38,13 +34,11 @@ class ApiRequest {
         ]
 
         let boundary = "---011000010111000001101001"
-
         var body = Data()
         var error: NSError?
 
         for param in parameters {
             let paramName = param["name"]!
-
             body.append("--\(boundary)\r\n".data(using: .utf8)!)
             body.append("Content-Disposition: form-data; name=\"\(paramName)\"; filename=\"\(param["fileName"]!)\"\r\n".data(using: .utf8)!)
             body.append("Content-Type: \(param["contentType"]!)\r\n\r\n".data(using: .utf8)!)
@@ -58,11 +52,9 @@ class ApiRequest {
         }
 
         body.append("--\(boundary)--\r\n".data(using: .utf8)!)
-
         request.httpBody = body
-
         let session = URLSession.shared
-        let dataTask = session.dataTask(with: request) { (data, _, error) in
+        let dataTask = session.dataTask(with: request) { data, _, error in
             if let error = error {
                 print("Erreur lors de l'envoi de la requête : \(error.localizedDescription)")
                 return
@@ -91,9 +83,8 @@ class ApiRequest {
 
             } catch {
                 print("error \(error.localizedDescription)")
-               // completion?(false, nil)
+                // completion?(false, nil)
             }
-
         }
 
         dataTask.resume()
@@ -102,7 +93,7 @@ class ApiRequest {
 
 extension Bundle {
     func apiKey(named name: String) -> String? {
-        if let url = self.url(forResource: "ApiKey", withExtension: "plist"),
+        if let url = url(forResource: "ApiKey", withExtension: "plist"),
            let data = try? Data(contentsOf: url),
            let config = try? PropertyListSerialization.propertyList(from: data, options: .mutableContainersAndLeaves, format: nil) as? [String: Any] {
             return config[name] as? String

@@ -1,17 +1,14 @@
 import Foundation
 
 class SampledIn {
-
     static let sharedInstance = SampledIn()
     var sampleInfo = ResultSample()
     var sendSampleOriginData: (([TrackSample?]) -> Void)?
     private var sampleResult: RetrieveResultTrack?
-    private init() {
-    }
+    private init() {}
 
     // find if the current song retrieve with Shazam was sampled in other song
     class SampledIn {
-
         static let sharedInstance = SampledIn()
         var sampleInfo = ResultSample()
 
@@ -26,5 +23,4 @@ class SampledIn {
             return sampleResponse.objects ?? []
         }
     }
-
 }

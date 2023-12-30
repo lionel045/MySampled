@@ -9,7 +9,7 @@ import Foundation
 
 extension String {
     func formattedTrackName() -> String {
-        self.replacingOccurrences(of: " ", with: "%20")
+        replacingOccurrences(of: " ", with: "%20")
             .replacingOccurrences(of: "’", with: "")
             .replacingOccurrences(of: "'", with: "'")
             .replacingOccurrences(of: "?", with: "")
@@ -20,7 +20,7 @@ extension String {
     }
 
     func removingAndContent() -> String {
-        if let indexAnd = self.range(of: "&") {
+        if let indexAnd = range(of: "&") {
             return String(self[..<indexAnd.lowerBound])
         }
         return self
@@ -30,8 +30,8 @@ extension String {
         var result = self
 
         while let openParenthesisRange = result.range(of: "(") {
-            if let closeParenthesisRange = result.range(of: ")", options: [], range: openParenthesisRange.upperBound..<result.endIndex) {
-                result.removeSubrange(openParenthesisRange.lowerBound...closeParenthesisRange.lowerBound)
+            if let closeParenthesisRange = result.range(of: ")", options: [], range: openParenthesisRange.upperBound ..< result.endIndex) {
+                result.removeSubrange(openParenthesisRange.lowerBound ... closeParenthesisRange.lowerBound)
             } else {
                 break
             }
@@ -44,5 +44,4 @@ extension String {
 
         return result.trimmingCharacters(in: .whitespacesAndNewlines)
     }
-
 }

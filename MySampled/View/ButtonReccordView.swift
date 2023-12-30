@@ -1,7 +1,6 @@
 import UIKit
 
 class ButtonReccordView: UIButton, CAAnimationDelegate {
-
     private var stopButton: UIButton!
     private var recordButton: UIButton!
     private var playButton = UIButton(type: .custom)
@@ -15,21 +14,24 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         super.init(frame: frame)
         //  setUpStopButton()
         circleRecordButton()
-       // setUpRecordArm()
+        // setUpRecordArm()
     }
-    required init?(coder: NSCoder) {
+
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     private func setUpRecordArm() {
         recordArm = UIImageView(image: UIImage(named: "bras"))
         recordArm.contentMode = .scaleAspectFill
         recordArm.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(recordArm)
-        recordArmBottomConstraint = recordArm.bottomAnchor.constraint(equalTo: self.centerYAnchor, constant: 60) // La constante initiale
+        addSubview(recordArm)
+        recordArmBottomConstraint = recordArm.bottomAnchor.constraint(equalTo: centerYAnchor, constant: 60) // La constante initiale
 
         NSLayoutConstraint.activate([
             recordArm.leadingAnchor.constraint(equalTo: trailingAnchor, constant: -129),
-            recordArm.bottomAnchor.constraint(equalTo: self.centerYAnchor, constant: 60),
+            recordArm.bottomAnchor.constraint(equalTo: centerYAnchor, constant: 60),
             recordArm.widthAnchor.constraint(equalToConstant: 80),
             recordArm.heightAnchor.constraint(equalToConstant: 180)
         ])
@@ -37,13 +39,13 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
 
     private func circleRecordButton() {
         recordButton = UIButton(frame: .zero)
-        recordButton.center = self.center
+        recordButton.center = center
         recordButton.setImage(UIImage(named: "vinyle"), for: .normal)
         recordButton.imageView?.contentMode = .scaleAspectFill // Set contentMode for the imageView of the button
         recordButton.clipsToBounds = true
         recordButton.addTarget(self, action: #selector(handleTapGesture), for: .touchUpInside)
         recordButton.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(recordButton)
+        addSubview(recordButton)
 
         NSLayoutConstraint.activate([
             recordButton.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -55,11 +57,9 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         // Set the cornerRadius to make the button circular
         recordButton.layer.cornerRadius = 150 // Assuming the button's width and height are 200
         //        recordButton.adjustsImageWhenHighlighted = false
-
     }
 
     private func startRotatingView(view: UIView, speedDuration: Double = 1.0, completion: (() -> Void)? = nil) {
-
         let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotationAnimation.fromValue = 0
         rotationAnimation.toValue = CGFloat.pi * 2
@@ -75,17 +75,17 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         }
     }
 
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    func animationDidStop(_: CAAnimation, finished flag: Bool) {
         if flag {
             // Call the completion handler if the animation finished
             rotationCompletion?()
-            self.armAnimationCompletion?()
+            armAnimationCompletion?()
             rotationCompletion = nil
         }
     }
 
     @objc func handleTapGesture() {
-        if  recordButton.isEnabled {
+        if recordButton.isEnabled {
             let generator = UIImpactFeedbackGenerator(style: .heavy)
             generator.prepare()
             generator.impactOccurred()
@@ -94,7 +94,6 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
             recordButton.setBackgroundImage(UIImage(named: "vinyle"), for: .normal) // For keep the same fade of color
             startRotatingView(view: recordButton, speedDuration: 3) {
                 self.recordButton.isEnabled = true
-
             }
         }
     }

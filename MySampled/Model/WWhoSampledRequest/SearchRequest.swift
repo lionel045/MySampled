@@ -1,11 +1,10 @@
 import Foundation
 // make query in the api for retrieve the track
 class SearchRequest {
-
     static let sharedInstance = SearchRequest()
     private var artistId = 0
     var resultTitle = RetrieveResultTrack.sharedInstance
-    var ringBack: ((Int) -> Void )?
+    var ringBack: ((Int) -> Void)?
     var myTuple: (artist: String, track: String) = ("", "")
 
     var myTupleValue: (artist: String, track: String) {

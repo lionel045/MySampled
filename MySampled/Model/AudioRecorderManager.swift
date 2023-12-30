@@ -2,14 +2,14 @@ import AVFoundation
 
 class AudioRecorderManager: NSObject {
     static let shared = AudioRecorderManager()
-    private override init() {}
+    override private init() {}
 
     private var audioEngine: AVAudioEngine?
     private var audioFile: AVAudioFile?
     var sendReccord: ((URL) -> Void)?
     func setupAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowBluetoothA2DP, .allowBluetooth, .defaultToSpeaker])
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowBluetoothA2DP,.defaultToSpeaker])
             try AVAudioSession.sharedInstance().setActive(true)
 
         } catch {
@@ -50,7 +50,7 @@ class AudioRecorderManager: NSObject {
             return
         }
 
-        inputNode.installTap(onBus: 0, bufferSize: 8192, format: audioFormat) { [weak self] (buffer, _) in
+        inputNode.installTap(onBus: 0, bufferSize: 8192, format: audioFormat) { [weak self] buffer, _ in
             do {
                 try self?.audioFile?.write(from: buffer)
             } catch let writeError {
@@ -69,12 +69,13 @@ class AudioRecorderManager: NSObject {
         }
     }
 
-   private func stopRecording() {
+    private func stopRecording() {
         audioEngine?.stop()
         audioEngine?.inputNode.removeTap(onBus: 0)
-        self.finishRecording(success: true)
+        finishRecording(success: true)
         finalizeAudioFile() // Nouvelle méthode pour finaliser le fichier
     }
+
     func finishRecording(success: Bool) {
         if success {
             print("Recording completed successfully.")
@@ -83,13 +84,14 @@ class AudioRecorderManager: NSObject {
             print("Recording failed.")
         }
     }
+
     private func finalizeAudioFile() {
         audioFile = nil // Libère l'objet AVAudioFile, ce qui devrait finaliser l'écriture du fichier
         let fileURL = getFileURL()
-        self.sendReccord?(fileURL)
+        sendReccord?(fileURL)
     }
 
-  private func getFileURL() -> URL {
+    private func getFileURL() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0].appendingPathComponent("recording.m4a")
     }

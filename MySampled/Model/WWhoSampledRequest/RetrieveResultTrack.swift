@@ -1,5 +1,5 @@
 //
-//  RetrieveTrackArtist.swift
+//  RetrieveResultTrack.swift
 //  WhoSampledApi
 //
 //  Created by Lion on 30/08/2023.
@@ -12,17 +12,14 @@ enum CustomError: Error {
     case artistNotFound
 }
 
-    // find Sample dest if the song was sampled
-    class RetrieveResultTrack {
-
+// find Sample dest if the song was sampled
+class RetrieveResultTrack {
     static let sharedInstance = RetrieveResultTrack()
 
     private var artistId = 0
-    func fetchResultTrack()  async throws -> ArtistInfo {
-
+    func fetchResultTrack() async throws -> ArtistInfo {
         let resultRequest = SearchRequest.sharedInstance
         guard let idArtist = await resultRequest.performSearch() else {
-
             throw CustomError.artistNotFound
         }
 
@@ -126,8 +123,8 @@ struct ArtistInfo: Codable {
         case label
         case largeImageUrl = "large_image_url"
         case mediumImageUrl = "medium_image_url"
-        case producer1 = "producer1"
-        case producer2 = "producer2"
+        case producer1
+        case producer2
         case releaseName = "release_name"
         case releaseYear = "release_year"
         case remixCount = "remix_count"

@@ -1,7 +1,6 @@
 import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
-
     lazy var imageArtistSample: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
@@ -30,7 +29,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         label.numberOfLines = 0
         label.textColor = .white
         label.sizeToFit()
-     //   label.lineBreakMode = .byWordWrapping
+        //   label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -59,7 +58,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let identifier = "CustomCell"
+        _ = "CustomCell"
         setupViews()
     }
 
@@ -69,20 +68,20 @@ class CustomCollectionViewCell: UICollectionViewCell {
         imageArtistSample.clipsToBounds = true
     }
 
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) n'a pas été implémenté")
     }
 
     private func setupViews() {
-       addSubview(imageArtistSample)
-    addSubview(stacksampleView)
+        addSubview(imageArtistSample)
+        addSubview(stacksampleView)
         stacksampleView.addArrangedSubview(labelSongSample)
         stacksampleView.addArrangedSubview(labelArtistSample)
         stacksampleView.addArrangedSubview(labelSampleMinute)
 
         initImageSample()
         initStackViewSample()
-
     }
 
     func initImageSample() {
@@ -102,5 +101,4 @@ class CustomCollectionViewCell: UICollectionViewCell {
             stacksampleView.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -10)
         ])
     }
-
 }

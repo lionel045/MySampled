@@ -3,7 +3,6 @@ import UIKit
 
 // find Sample dest for information sample
 class SampleOriginDetector {
-
     static let sharedInstance = SampleOriginDetector()
     private var sampleResult: RetrieveResultTrack?
     var sampleObject = [TrackSample]()
@@ -11,7 +10,6 @@ class SampleOriginDetector {
     var sendSampleInfo: (([TrackSample?]) -> Void)?
 
     class SampleOriginDetector {
-
         static let sharedInstance = SampleOriginDetector()
 
         func retrieveCurrentSample() async throws -> ([TrackSample]) {
@@ -22,10 +20,9 @@ class SampleOriginDetector {
 
             let sampleResponse: TrackSampleResponse = try await NetworkService.shared.httpRequest(url: samplesUrl, expecting: TrackSampleResponse.self)
 
-            return (sampleResponse.objects ?? [] )
+            return sampleResponse.objects ?? []
         }
     }
-
 }
 
 struct TrackSample: Codable {

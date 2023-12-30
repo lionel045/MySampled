@@ -1,14 +1,11 @@
-import UIKit
 import AVFoundation
+import UIKit
 
 protocol Delegation {
-
-    func sendData( data: ShazamResponse)
-
+    func sendData(data: ShazamResponse)
 }
 
 class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
-
     var animatedView: UIView!
     var recordButton: ButtonReccordView!
     var checkIfSongFound: ((Bool?) -> Void)?
@@ -18,31 +15,27 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     var audioRecorder: AVAudioRecorder!
     var delegate: Delegation?
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        let secondVc = SecondViewController()
-        self.present(secondVc, animated: true, completion: nil)
-
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        let secondVc = SecondViewController()
+//        present(secondVc, animated: true, completion: nil)
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .black
-
+        view.backgroundColor = UIColor(named: "darkMode")
         setupView()
         displayAudioReccord()
-
     }
 
-    func  sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?], [TrackSample?])) async {
-
+    func sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?], [TrackSample?])) async {
         let shazamObject = data
         guard let backgroundImage = shazamObject.result?.track?.images?.background else { return }
-        guard let artist: (String) = shazamObject.result?.track?.subtitle else { return }
-        guard let song: (String) = shazamObject.result?.track?.title else { return }
+        guard let artist: String = shazamObject.result?.track?.subtitle else { return }
+        guard let song: String = shazamObject.result?.track?.title else { return }
 
-        let artistAndSong =  (artist, song)
+        let artistAndSong = (artist, song)
 
         let secondVc = SecondViewController()
         Task {
@@ -51,33 +44,28 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         }
 
         secondVc.modalTransitionStyle = .flipHorizontal
-        self.present(secondVc, animated: true)
-
+        present(secondVc, animated: true)
     }
 
     func setupView() {
         recordingSession = AVAudioSession.sharedInstance()
 
         do {
-
-            try recordingSession.setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowBluetoothA2DP, .allowBluetooth, .defaultToSpeaker])
+            try recordingSession.setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowBluetoothA2DP, .defaultToSpeaker])
             try recordingSession.setActive(true, options: .notifyOthersOnDeactivation)
             recordingSession.requestRecordPermission { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
                         self.initReccordButton()
-                    } else {
-                    }
+                    } else {}
                 }
             }
-        } catch {
-        }
+        } catch {}
     }
 
     func initReccordButton() {
-
-        recordButton = ButtonReccordView(frame: self.view.bounds)
-        self.view.addSubview(recordButton)
+        recordButton = ButtonReccordView(frame: view.bounds)
+        view.addSubview(recordButton)
         recordButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             recordButton.topAnchor.constraint(equalTo: view.topAnchor),
@@ -90,13 +78,11 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
                 if let strongSelf = self {
                     // strongSelf.recordButton.performModal(fromViewController: strongSelf)
-                     AudioRecorderManager.shared.startRecording()
+                    AudioRecorderManager.shared.startRecording()
                     strongSelf.startMonitoringSongFound()
-
                 }
             }
         }
-
     }
 
     func startMonitoringSongFound() {
@@ -106,15 +92,13 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             if !strongSelf.songFound {
                 // AudioRecorderManager.shared.startRecording()
                 // print("Deuxieme tentative")
-            } else {
-            }
+            } else {}
         }
     }
 
     func displayAudioReccord() {
-
         AudioRecorderManager.shared.sendReccord = { record in
-            ApiRequest.sharedInstance.sendSongApi(record) {  apiSuccess, shazamData in
+            ApiRequest.sharedInstance.sendSongApi(record) { apiSuccess, shazamData in
                 if apiSuccess {
                     self.songFound = true
                     DispatchQueue.main.async { [weak self] in
@@ -127,9 +111,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                             print(songWithoutFeat)
                             SearchRequest.sharedInstance.myTupleValue = (artist.lowercased(), trackWithoutFeat)
                             Task {
-                                let sampleData = await  ResultSample.sharedInstance.displayTrack()
+                                let sampleData = await ResultSample.sharedInstance.displayTrack()
                                 await self?.sendDataToVc(data: shazamData!, sampleData: sampleData)
-
                             }
                         }
                     }
@@ -138,7 +121,5 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                 }
             }
         }
-
     }
-
 }

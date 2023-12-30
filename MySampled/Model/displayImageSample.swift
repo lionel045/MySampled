@@ -3,11 +3,10 @@ import UIKit
 
 enum ApiError: Error {
     case invalidResponse
-
 }
+
 // This class aims to make query
 class SearchApiRequest {
-
     static let shared = SearchApiRequest()
 
     func makeRequest(query: String) async throws -> [TrackQuery]? {
@@ -28,7 +27,6 @@ class SearchApiRequest {
     }
 
     func downloadImageArtist(urlImage: URL?) async throws -> UIImage? {
-
         guard let urlImage = urlImage else { return nil }
 
         let request = URLRequest(url: urlImage)
@@ -41,7 +39,6 @@ class SearchApiRequest {
         let image = UIImage(data: data)
 
         return image
-
     }
 }
 
