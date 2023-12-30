@@ -11,6 +11,7 @@
 		B41642A32B07F3A5002443AA /* ApiKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41642A22B07F3A4002443AA /* ApiKey.plist */; };
 		B441C1F12AE01E9700089E8C /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = B441C1F02AE01E9700089E8C /* user.png */; };
 		B441C1F32AE081B300089E8C /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B441C1F22AE081B300089E8C /* playButton.png */; };
+		B4573C652B4013C90033FBA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4573C642B4013C90033FBA7 /* Main.storyboard */; };
 		B459BA722ADD997700161568 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B459BA712ADD997700161568 /* Lottie */; };
 		B46735F52B37630B005A1954 /* SampleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46735F42B37630B005A1954 /* SampleHeaderView.swift */; };
 		B46735F72B376314005A1954 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46735F62B376314005A1954 /* SecondViewController.swift */; };
@@ -46,6 +47,7 @@
 		B41642A22B07F3A4002443AA /* ApiKey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKey.plist; sourceTree = "<group>"; };
 		B441C1F02AE01E9700089E8C /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		B441C1F22AE081B300089E8C /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		B4573C642B4013C90033FBA7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B46735F42B37630B005A1954 /* SampleHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleHeaderView.swift; sourceTree = "<group>"; };
 		B46735F62B376314005A1954 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "../../../../../Desktop/recuperation modif/SecondViewController.swift"; sourceTree = "<group>"; };
 		B46735F82B3763D8005A1954 /* Aharoni.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aharoni.ttf; path = "../../../../../Desktop/recuperation modif/Aharoni.ttf"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				B4CB61902B1FC16400A3352D /* CustomCollectionViewCell.swift */,
 				B46735F42B37630B005A1954 /* SampleHeaderView.swift */,
 				B46735FA2B376D1B005A1954 /* SampledInHeaderView.swift */,
+				B4573C642B4013C90033FBA7 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41642A32B07F3A5002443AA /* ApiKey.plist in Resources */,
+				B4573C652B4013C90033FBA7 /* Main.storyboard in Resources */,
 				B46735F92B3763D8005A1954 /* Aharoni.ttf in Resources */,
 				B441C1F32AE081B300089E8C /* playButton.png in Resources */,
 				B441C1F12AE01E9700089E8C /* user.png in Resources */,

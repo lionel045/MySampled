@@ -14,8 +14,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     var checkIfSongFound: ((Bool?) -> Void)?
     var songFound = false
     var sendResultToSecondVc: ((ShazamResponse?) -> Void)?
-    @IBOutlet weak var reponseDeCall: UILabel!
-    @IBOutlet weak var imageArtist: UIImageView!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var delegate: Delegation?
