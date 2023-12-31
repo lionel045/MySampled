@@ -13,7 +13,7 @@ ApiKey.plist
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 MySampled.xcodeproj/project.xcworkspace/xcuserdata/
-
+NetWorkService.swift
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 # Code Injection
