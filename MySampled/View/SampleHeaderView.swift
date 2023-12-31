@@ -3,7 +3,6 @@
 import UIKit
 class SampleHeaderView: UICollectionReusableView {
     static let reuseIdentifier = "SampleHeaderViewReuse"
-
     lazy var titleLabel: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
@@ -25,7 +24,6 @@ class SampleHeaderView: UICollectionReusableView {
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
-
     @available(*, unavailable)
     required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")

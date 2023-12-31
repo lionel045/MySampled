@@ -53,7 +53,6 @@ class ArtistImageView: UIView {
         mirrorImageView.transform = CGAffineTransform(scaleX: 1, y: -1)
         mirrorImageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(mirrorImageView)
-
         NSLayoutConstraint.activate([
             mirrorImageView.topAnchor.constraint(equalTo: imageView.bottomAnchor), // Commence juste en dessous de
             mirrorImageView.leadingAnchor.constraint(equalTo: leadingAnchor),

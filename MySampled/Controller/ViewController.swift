@@ -15,17 +15,18 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     var audioRecorder: AVAudioRecorder!
     var delegate: Delegation?
 
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        let secondVc = SecondViewController()
-//        present(secondVc, animated: true, completion: nil)
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        let secondVc = SecondViewController()
+        present(secondVc, animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "darkMode")
         setupView()
+        initReccordButton()
         displayAudioReccord()
     }
 
@@ -43,6 +44,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             await secondVc.addSampleArray(containSample: sampleData.0, sampledIn: sampleData.1)
         }
 
+        let feedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+        feedbackGenerator.impactOccurred()
         secondVc.modalTransitionStyle = .flipHorizontal
         present(secondVc, animated: true)
     }
@@ -56,8 +59,9 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             recordingSession.requestRecordPermission { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
-                        self.initReccordButton()
-                    } else {}
+                    } else {
+                        self.recordButton.isEnabled = false
+                    }
                 }
             }
         } catch {}

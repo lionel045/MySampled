@@ -9,7 +9,7 @@ class AudioRecorderManager: NSObject {
     var sendReccord: ((URL) -> Void)?
     func setupAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowBluetoothA2DP,.defaultToSpeaker])
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowBluetoothA2DP, .defaultToSpeaker])
             try AVAudioSession.sharedInstance().setActive(true)
 
         } catch {

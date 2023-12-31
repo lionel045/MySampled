@@ -56,7 +56,7 @@ class ViewInfoScroll: UIView {
                 group = NSCollectionLayoutGroup.horizontal(layoutSize: horizontalGroupSize, subitems: [item])
             } else {
                 // Groupe vertical pour les autres cas
-                let verticalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.45))
+                let verticalGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.40))
                 group = NSCollectionLayoutGroup.vertical(layoutSize: verticalGroupSize, subitems: [item])
                 group.interItemSpacing = .fixed(10)
             }
@@ -75,7 +75,7 @@ class ViewInfoScroll: UIView {
             return section
         }
         let config = UICollectionViewCompositionalLayoutConfiguration()
-        config.interSectionSpacing = 20 // Ajoutez de l'espace entre les sections.
+        config.interSectionSpacing = 15 // Ajoutez de l'espace entre les sections.
         layout.configuration = config
         return layout
     }
@@ -105,7 +105,7 @@ class ViewInfoScroll: UIView {
             currentView.topAnchor.constraint(equalTo: topAnchor),
             currentView.leadingAnchor.constraint(equalTo: leadingAnchor),
             currentView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            currentView.heightAnchor.constraint(greaterThanOrEqualToConstant: 900)
+            currentView.heightAnchor.constraint(greaterThanOrEqualToConstant: 800)
         ])
         gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor] // De transparent à noir
         gradient.locations = [0.1, 0.3]
@@ -149,7 +149,7 @@ class ViewInfoScroll: UIView {
         NSLayoutConstraint.activate([
             currentStackView.leadingAnchor.constraint(equalTo: currentView.leadingAnchor, constant: 15),
             currentStackView.trailingAnchor.constraint(equalTo: currentView.trailingAnchor),
-            currentStackView.topAnchor.constraint(equalTo: currentView.topAnchor, constant: 70)
+            currentStackView.topAnchor.constraint(equalTo: currentView.topAnchor, constant: 110)
         ])
         initLabelTitleArtist()
         initLabelTitleSong()

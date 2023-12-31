@@ -8,7 +8,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet var beginButton: UIButton!
-
     @IBAction func passOtherView(_: Any) {
         let firstViewController = ViewController()
         let transition = CATransition()

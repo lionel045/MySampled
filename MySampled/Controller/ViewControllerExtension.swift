@@ -36,12 +36,10 @@ extension String {
                 break
             }
         }
-
         // Supprimer tout après le premier crochet ouvrant "["
         if let bracketRange = result.range(of: "[") {
             result = String(result[..<bracketRange.lowerBound])
         }
-
         return result.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
