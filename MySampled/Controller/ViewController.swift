@@ -15,12 +15,12 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     var audioRecorder: AVAudioRecorder!
     var delegate: Delegation?
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        let secondVc = SecondViewController()
-        present(secondVc, animated: true, completion: nil)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        let secondVc = SecondViewController()
+//        present(secondVc, animated: true, completion: nil)
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +71,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         recordButton = ButtonReccordView(frame: view.bounds)
         view.addSubview(recordButton)
         recordButton.translatesAutoresizingMaskIntoConstraints = false
+        recordButton.clipsToBounds = false
         NSLayoutConstraint.activate([
             recordButton.topAnchor.constraint(equalTo: view.topAnchor),
             recordButton.bottomAnchor.constraint(equalTo: view.bottomAnchor),
@@ -81,7 +82,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         recordButton.ringBack = { [weak self] _ in
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
                 if let strongSelf = self {
-                    // strongSelf.recordButton.performModal(fromViewController: strongSelf)
                     AudioRecorderManager.shared.startRecording()
                     strongSelf.startMonitoringSongFound()
                 }
@@ -111,9 +111,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                             let songWithoutFeat = retrieveTitle.removingContentInParenthesesAndBrackets()
                             let trackWithoutFeat = songWithoutFeat.formattedTrackName()
                             let artist = retrieveArtist.removingAndContent()
-                            // print(trackWithoutBracket)
                             print(songWithoutFeat)
-                            SearchRequest.sharedInstance.myTupleValue = (artist.lowercased(), trackWithoutFeat)
+                            SearchRequest.sharedInstance.myTupleValue = (artist.lowercased(), trackWithoutFeat, retrieveTitle)
                             Task {
                                 let sampleData = await ResultSample.sharedInstance.displayTrack()
                                 await self?.sendDataToVc(data: shazamData!, sampleData: sampleData)

@@ -5,9 +5,8 @@ class SearchRequest {
     private var artistId = 0
     var resultTitle = RetrieveResultTrack.sharedInstance
     var ringBack: ((Int) -> Void)?
-    var myTuple: (artist: String, track: String) = ("", "")
-
-    var myTupleValue: (artist: String, track: String) {
+    var myTuple: (artist: String, trackUrl: String, track: String) = ("", "", "")
+    var myTupleValue: (artist: String, trackUrl: String, track: String) {
         get {
             return myTuple
         }
@@ -19,16 +18,17 @@ class SearchRequest {
     private init() {}
 
     func performSearch() async -> Int? {
-        let track = myTupleValue.track
+        let trackUrl = myTupleValue.trackUrl
         let artist = myTupleValue.artist
-        guard let url = URL(string: "https://www.whosampled.com/apimob/v1/search-track/?q=\(track)&auto=1&format=json") else {
+        let track = myTupleValue.track
+        guard let url = URL(string: "https://www.whosampled.com/apimob/v1/search-track/?q=\(trackUrl)&auto=1&format=json") else {
             print("Invalid URL")
             return nil
         }
         do {
             let json = try await NetworkService.shared.httpRequest(url: url, expecting: TrackResponse.self)
             if let result = json.objects {
-                for sampleResult in result where sampleResult.fullArtistName?.lowercased().contains(artist) == true {
+                for sampleResult in result where sampleResult.fullArtistName?.lowercased().contains(artist) == true || sampleResult.trackName?.lowercased() == track.lowercased() {
                     return sampleResult.id
                 }
             }

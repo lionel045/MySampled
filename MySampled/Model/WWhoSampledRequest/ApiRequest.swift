@@ -3,7 +3,6 @@ import Foundation
 class ApiRequest {
     static let sharedInstance = ApiRequest()
     let boundary = "---011000010111000001101001"
-    // Supprimez la clé API directement écrite ici
     var headers: [String: String] {
         [
             "content-type": "multipart/form-data; boundary=\(boundary)",

@@ -7,14 +7,8 @@ protocol ArtistDelegate: AnyObject {
 
 class ArtistImageView: UIView {
     private var imageView: UIImageView!
-    var delegation: ArtistDelegate?
     private var mirrorImageView: UIImageView!
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        if let gradient = mirrorImageView.layer.mask as? CAGradientLayer {
-            gradient.frame = mirrorImageView.bounds
-        }
-    }
+    var delegation: ArtistDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,10 +24,6 @@ class ArtistImageView: UIView {
     private func setupImageView() {
         imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-
-        guard let image = UIImage(named: "user") else { return }
-        let cropImage = resize(image: image)
-        imageView.image = cropImage
         imageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(imageView)
 
@@ -43,22 +33,29 @@ class ArtistImageView: UIView {
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
+
+        if let image = UIImage(named: "user") {
+            let cropImage = resize(image: image)
+            imageView.image = cropImage
+        }
     }
 
     private func addMirrorEffect() {
         mirrorImageView = UIImageView()
-        mirrorImageView.image = imageView.image
         mirrorImageView.contentMode = .scaleAspectFill
         mirrorImageView.clipsToBounds = true
         mirrorImageView.transform = CGAffineTransform(scaleX: 1, y: -1)
         mirrorImageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(mirrorImageView)
+
         NSLayoutConstraint.activate([
-            mirrorImageView.topAnchor.constraint(equalTo: imageView.bottomAnchor), // Commence juste en dessous de
+            mirrorImageView.topAnchor.constraint(equalTo: imageView.bottomAnchor),
             mirrorImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             mirrorImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            mirrorImageView.heightAnchor.constraint(equalToConstant: 400) // Réfléchir seulement le tiers inférieur
+            mirrorImageView.heightAnchor.constraint(equalToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 600 : 400)
         ])
+
+        mirrorImageView.image = imageView.image
 
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.clear.cgColor, UIColor.white.cgColor]
@@ -80,27 +77,30 @@ class ArtistImageView: UIView {
 
     func updateFrontUi(imageArtist: UIImage) {
         DispatchQueue.main.async { [weak self] in
-            if let strongSelf = self {
-                let cropImage = strongSelf.resize(image: imageArtist)
-                self?.imageView.image = cropImage
-                self?.imageView.alpha = 0.8
-                self?.mirrorImageView.image = cropImage
-            }
+            let cropImage = self?.resize(image: imageArtist)
+            self?.imageView.image = cropImage
+            self?.imageView.alpha = 0.8
+            self?.mirrorImageView.image = cropImage
         }
     }
-}
 
-extension ArtistImageView {
-    func resize(image: UIImage) -> UIImage {
-        let maxSize = CGSize(width: 400, height: 400)
-        let availableRect = AVMakeRect(aspectRatio: image.size, insideRect: .init(origin: .zero, size: maxSize))
+    private func resize(image: UIImage) -> UIImage {
+        let maxSize = UIDevice.current.userInterfaceIdiom == .pad ? CGSize(width: 600, height: 600) : CGSize(width: 400, height: 400)
+        let availableRect = AVMakeRect(aspectRatio: image.size, insideRect: CGRect(origin: .zero, size: maxSize))
         let targetSize = availableRect.size
         let format = UIGraphicsImageRendererFormat()
         format.scale = 1
         let renderer = UIGraphicsImageRenderer(size: targetSize, format: format)
-        let resized = renderer.image { _ in
+        let resizedImage = renderer.image { _ in
             image.draw(in: CGRect(origin: .zero, size: targetSize))
         }
-        return resized
+        return resizedImage
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if let gradient = mirrorImageView.layer.mask as? CAGradientLayer {
+            gradient.frame = mirrorImageView.bounds
+        }
     }
 }

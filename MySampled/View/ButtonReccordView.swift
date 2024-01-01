@@ -14,7 +14,7 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         super.init(frame: frame)
         //  setUpStopButton()
         circleRecordButton()
-        // setUpRecordArm()
+        adjustForDeviceSize()
     }
 
     @available(*, unavailable)
@@ -22,19 +22,22 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func setUpRecordArm() {
-        recordArm = UIImageView(image: UIImage(named: "bras"))
-        recordArm.contentMode = .scaleAspectFill
-        recordArm.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(recordArm)
-        recordArmBottomConstraint = recordArm.bottomAnchor.constraint(equalTo: centerYAnchor, constant: 60) // La constante initiale
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        adjustForDeviceSize()
+        
+    }
+
+    private func adjustForDeviceSize() {
+        let isIpad = UIDevice.current.userInterfaceIdiom == .pad
+        let buttonSize: CGFloat = isIpad ? 400 : 300
+        let cornerRadius: CGFloat = buttonSize / 2
 
         NSLayoutConstraint.activate([
-            recordArm.leadingAnchor.constraint(equalTo: trailingAnchor, constant: -129),
-            recordArm.bottomAnchor.constraint(equalTo: centerYAnchor, constant: 60),
-            recordArm.widthAnchor.constraint(equalToConstant: 80),
-            recordArm.heightAnchor.constraint(equalToConstant: 180)
+            recordButton.widthAnchor.constraint(equalToConstant: buttonSize),
+            recordButton.heightAnchor.constraint(equalToConstant: buttonSize)
         ])
+        recordButton.layer.cornerRadius = cornerRadius
     }
 
     private func circleRecordButton() {
@@ -50,9 +53,7 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         NSLayoutConstraint.activate([
             recordButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             recordButton.centerYAnchor.constraint(equalTo: centerYAnchor),
-            recordButton.widthAnchor.constraint(equalToConstant: 300),
-            recordButton.heightAnchor.constraint(equalToConstant: 300)
-        ])
+                ])
 
         // Set the cornerRadius to make the button circular
         recordButton.layer.cornerRadius = 150 // Assuming the button's width and height are 200
@@ -79,7 +80,6 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
         if flag {
             // Call the completion handler if the animation finished
             rotationCompletion?()
-            armAnimationCompletion?()
             rotationCompletion = nil
         }
     }

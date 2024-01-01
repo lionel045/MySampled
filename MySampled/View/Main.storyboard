@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="MySampled" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5E1-Hd-BKE">
-                                <rect key="frame" x="90" y="697" width="213" height="51"/>
+                                <rect key="frame" x="90" y="1225" width="844" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="c53-Bs-foR"/>
                                 </constraints>
@@ -34,13 +34,35 @@
                                     <action selector="passOtherView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="I5A-H2-RSx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage" translatesAutoresizingMaskIntoConstraints="NO" id="rYD-vT-QZt">
-                                <rect key="frame" x="16" y="300" width="361" height="263"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rYD-vT-QZt">
+                                <rect key="frame" x="248.5" y="486" width="527" height="405"/>
                                 <color key="backgroundColor" red="0.078431375319999996" green="0.1215686351" blue="0.1607843041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="263" id="Cd6-be-KTw"/>
                                     <constraint firstAttribute="width" constant="361" id="Cwv-5W-Kfq"/>
+                                    <constraint firstAttribute="width" constant="527" id="ocP-2n-q1o"/>
+                                    <constraint firstAttribute="height" constant="405" id="tSe-XX-DCw"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ocP-2n-q1o"/>
+                                        <exclude reference="Cwv-5W-Kfq"/>
+                                        <exclude reference="tSe-XX-DCw"/>
+                                        <exclude reference="Cd6-be-KTw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Cwv-5W-Kfq"/>
+                                        <include reference="Cd6-be-KTw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ocP-2n-q1o"/>
+                                        <include reference="tSe-XX-DCw"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -63,6 +85,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="homepage" width="1792" height="1024"/>
+        <image name="homepage" width="661" height="377"/>
     </resources>
 </document>
