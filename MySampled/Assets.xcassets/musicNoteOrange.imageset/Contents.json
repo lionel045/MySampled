@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "DALL_E_2024-01-01_19.05.40_-_a_very_minimalist_orange_music_note__identical_to_the_previous_design_but_without_any_shadow__flat_design__isolated_on_a_white_background__1_-removebg-preview (1).png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
