@@ -29,11 +29,16 @@ git clone https://github.com/lionel045/MySampled
 4.  Exécutez l'application : Compilez et lancez l'application sur votre simulateur ou appareil iOS.
 
 # RoadMap 
-🚧 État du Projet
-MySampled est en cours de développement actif. Bien que les fonctionnalités principales soient déjà en place, l'application est toujours en phase de peaufinage et d'amélioration, en particulier concernant son interface utilisateur.
+Roadmap
+🚧 État Actuel du Projet
+- MySampled est actuellement en phase de développement actif. Les fonctionnalités principales sont en place, mais nous travaillons sur l'amélioration continue de l'application, notamment en ce qui concerne l'interface utilisateur.
 
-À Venir
-Amélioration du Front-End : Je travaille activement à améliorer l'interface utilisateur pour rendre l'expérience plus intuitive, réactive et agréable. Ceci inclut la révision des layouts, l'amélioration des interactions utilisateur et l'optimisation de la performance visuelle.
+Prochaines Étapes
+- Amélioration du Front-End : Nous nous concentrons sur l'amélioration de l'interface utilisateur pour offrir une expérience plus intuitive, réactive et agréable. Cela inclut la révision des layouts, l'enrichissement des interactions utilisateur et l'optimisation de la performance visuelle.
+
+- Ajout d'une Tab Bar : Pour améliorer la navigation au sein de l'application, nous prévoyons d'intégrer une tab bar. Cela permettra aux utilisateurs d'accéder rapidement aux différentes fonctionnalités et sections de l'application.
+
+- Persistance des Données : Nous envisageons d'implémenter la fonctionnalité de persistance des données. Cela permettra aux utilisateurs de sauvegarder et de retrouver facilement les morceaux identifiés et les samples découverts.
 
 
 Lien pour l'api de [Shazam](https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing)
