@@ -4,9 +4,7 @@ Bienvenue sur **MySampled**, une application innovante de reconnaissance de samp
 
 
 ![Screen1](https://github.com/lionel045/MySampled/assets/64079278/1cc7048b-f650-42eb-a953-452fa989e080)
-
 ![Screen2](https://github.com/lionel045/MySampled/assets/64079278/9341689e-371f-4737-8889-58efb20a1237)
-
 ![Screen3](https://github.com/lionel045/MySampled/assets/64079278/4d9f5284-8659-4b33-8db6-5e7f65eedc32)
 
 ## 🌟 Fonctionnalités Reconnaissance de Samples 
