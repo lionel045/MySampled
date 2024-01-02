@@ -1,5 +1,6 @@
 import Foundation
 // Api class for shazam request
+
 class ApiRequest {
     static let sharedInstance = ApiRequest()
 
@@ -7,12 +8,12 @@ class ApiRequest {
     var headers: [String: String] {
         [
             "content-type": "multipart/form-data; boundary=\(boundary)",
-            "X-RapidAPI-Key": apiKey, // Utilisez la clé API chargée
+            "X-RapidAPI-Key": apiKey,
             "X-RapidAPI-Host": "shazam-api6.p.rapidapi.com"
         ]
     }
 
-    // save the apiKey stored in apiKey.plist
+    // Obtient la clé API à partir du fichier ApiKey.plist
     private var apiKey: String {
         guard let key = Bundle.main.apiKey(named: "X-RapidAPI-Key") else {
             fatalError("API Key not found in ApiKey.plist")
@@ -20,7 +21,8 @@ class ApiRequest {
         return key
     }
 
-    func sendSongApi(_ relativePath: URL, completion: ((Bool, _ shazamData: ShazamResponse?) -> Void)?) {
+    // Fonction async pour envoyer une requête à l'API
+    func sendSongApi(_ relativePath: URL) async throws -> ShazamResponse {
         let url = URL(string: "https://shazam-api6.p.rapidapi.com/shazam/recognize/")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -34,7 +36,6 @@ class ApiRequest {
             ]
         ]
 
-        let boundary = "---011000010111000001101001"
         var body = Data()
         for param in parameters {
             let paramName = param["name"]!
@@ -53,39 +54,10 @@ class ApiRequest {
 
         body.append("--\(boundary)--\r\n".data(using: .utf8)!)
         request.httpBody = body
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request) { data, _, error in
-            if let error = error {
-                print("Erreur lors de l'envoi de la requête : \(error.localizedDescription)")
-                return
-            }
 
-            guard let data = data, error == nil else {
-                print("Aucune donnée reçue.")
-                completion?(false, nil)
-                return
-            }
-
-            do {
-                let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(ShazamResponse.self, from: data)
-                let str = String(decoding: data, as: UTF8.self) // Pour le logging
-                print(str)
-
-                if let subtitle = jsonData.result?.track?.subtitle, !subtitle.isEmpty {
-                    print(subtitle)
-                    completion?(true, jsonData)
-                } else {
-                    print("Subtitle est vide")
-                    completion?(false, nil)
-                }
-
-            } catch {
-                print("error \(error.localizedDescription)")
-            }
-        }
-
-        dataTask.resume()
+        let (data, _) = try await URLSession.shared.data(for: request)
+        let decoder = JSONDecoder()
+        return try decoder.decode(ShazamResponse.self, from: data)
     }
 }
 

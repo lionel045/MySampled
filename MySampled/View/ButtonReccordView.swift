@@ -25,7 +25,7 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         adjustForDeviceSize()
-        
+
     }
 
     private func adjustForDeviceSize() {
@@ -52,7 +52,7 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
 
         NSLayoutConstraint.activate([
             recordButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            recordButton.centerYAnchor.constraint(equalTo: centerYAnchor),
+            recordButton.centerYAnchor.constraint(equalTo: centerYAnchor)
                 ])
 
         // Set the cornerRadius to make the button circular

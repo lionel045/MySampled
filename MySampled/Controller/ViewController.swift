@@ -15,19 +15,25 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     var audioRecorder: AVAudioRecorder!
     var delegate: Delegation?
 
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        let secondVc = SecondViewController()
-//        present(secondVc, animated: true, completion: nil)
-//    }
+    //    override func viewDidAppear(_ animated: Bool) {
+    //        super.viewDidAppear(animated)
+    //
+    //        let secondVc = SecondViewController()
+    //        present(secondVc, animated: true, completion: nil)
+    //    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "darkMode")
         setupView()
         initReccordButton()
-        displayAudioReccord()
+        displayAudioRecord()
+    }
+
+    private func showNoSoundFoundAlert() {
+        let alert = UIAlertController(title: "Error", message: "No sound found", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
     }
 
     func sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?], [TrackSample?])) async {
@@ -100,29 +106,37 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         }
     }
 
-    func displayAudioReccord() {
-        AudioRecorderManager.shared.sendReccord = { record in
-            ApiRequest.sharedInstance.sendSongApi(record) { apiSuccess, shazamData in
-                if apiSuccess {
-                    self.songFound = true
-                    DispatchQueue.main.async { [weak self] in
-                        if let retrieveArtist = shazamData?.result?.track?.subtitle,
-                           let retrieveTitle = shazamData?.result?.track?.title {
-                            let songWithoutFeat = retrieveTitle.removingContentInParenthesesAndBrackets()
-                            let trackWithoutFeat = songWithoutFeat.formattedTrackName()
-                            let artist = retrieveArtist.removingAndContent()
-                            print(songWithoutFeat)
+    func displayAudioRecord() {
+        AudioRecorderManager.shared.sendReccord = { [weak self] record in
+            Task {
+                do {
+                    let shazamData = try await ApiRequest.sharedInstance.sendSongApi(record)
+                    if let retrieveArtist = shazamData.result?.track?.subtitle,
+                       let retrieveTitle = shazamData.result?.track?.title {
+
+                        let songWithoutFeat = retrieveTitle.removingContentInParenthesesAndBrackets()
+                        let trackWithoutFeat = songWithoutFeat.formattedTrackName()
+                        let artist = retrieveArtist.removingAndContent()
+
+                        DispatchQueue.main.async {
                             SearchRequest.sharedInstance.myTupleValue = (artist.lowercased(), trackWithoutFeat, retrieveTitle)
+
                             Task {
                                 let sampleData = await ResultSample.sharedInstance.displayTrack()
-                                await self?.sendDataToVc(data: shazamData!, sampleData: sampleData)
+                                await self?.sendDataToVc(data: shazamData, sampleData: sampleData)
                             }
                         }
+                    } else {
+                        DispatchQueue.main.async {
+                            self?.showNoSoundFoundAlert()
+                        }
                     }
-                } else {
-                    self.songFound = false
+                } catch {
+                    print("Erreur lors de la requête : \(error)")
+
                 }
             }
         }
     }
+
 }
