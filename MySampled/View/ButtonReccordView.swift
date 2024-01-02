@@ -12,7 +12,6 @@ class ButtonReccordView: UIButton, CAAnimationDelegate {
     private var armAnimationCompletion: (() -> Void)?
     override init(frame: CGRect) {
         super.init(frame: frame)
-        //  setUpStopButton()
         circleRecordButton()
         adjustForDeviceSize()
     }

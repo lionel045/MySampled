@@ -1,40 +1,46 @@
 # 🎵 MySampled
 
-Bienvenue sur **MySampled**, une application innovante de reconnaissance de samples musicaux. En intégrant l'API de **Shazam** et une API de reconnaissance de samples, MySampled se positionne comme un outil indispensable pour les amateurs de musique, les DJ, et les producteurs. Conçue en **Swift** et s'appuyant sur **UIKit**, cette application offre une expérience utilisateur fluide et agréable.
-
+Welcome to **MySampled**, an innovative application for music sample recognition. Integrating **Shazam's API** with a sample recognition API, MySampled positions itself as an essential tool for music enthusiasts, DJs, and ## 🌟 Sample Recognition Features
+Uncover the hidden samples in your favorite tracks using state-of-the-art technology.
+- **Shazam Integration**: Quickly identify the music playing around you with Shazam's API.
+- **UIKit User Interface**: Effortlessly navigate using an intuitive and responsive user interface.
 
 ![Screen1](https://github.com/lionel045/MySampled/assets/64079278/1cc7048b-f650-42eb-a953-452fa989e080)
 ![Screen2](https://github.com/lionel045/MySampled/assets/64079278/9341689e-371f-4737-8889-58efb20a1237)
 ![Screen3](https://github.com/lionel045/MySampled/assets/64079278/4d9f5284-8659-4b33-8db6-5e7f65eedc32)
 
-## 🌟 Fonctionnalités Reconnaissance de Samples 
-Découvrez les samples cachés dans vos morceaux préférés en utilisant une technologie de pointe. Intégration Shazam : Identifiez rapidement la musique jouant autour de vous grâce à l'API de Shazam. Interface Utilisateur UIKit : Naviguez avec facilité grâce à une interface utilisateur intuitive et réactive. 
+## 🛠 Prerequisites
 
-## 🛠 Prérequis
+- Have a Mac
+- Have Xcode: Our chosen development environment for compiling and running the application.
+- API Key via RapidAPI: You need to generate an API key for Shazam by visiting Shazam API on RapidAPI.
 
-- Disposer d'un mac
-
-- Disposer de Xcode : Notre environnement de développement de choix pour compiler et exécuter l'application. Clé API via RapidAPI : Vous devez générer une clé API pour Shazam en visitant Shazam API sur RapidAPI. 🔑 Configuration de la clé API Pour intégrer l'API Shazam dans MySampled :
-
-  Obtenir la clé API : Rendez-vous sur [RapidAPI](https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing) et générer votre clé API Shazam. Création du fichier ApiKey.plist : Dans Xcode, créez un fichier ApiKey.plist au sein de votre projet. Ajout de la clé API dans ApiKey.plist : Ouvrez le fichier ApiKey.plist. Créez un nouveau dictionnaire avec la clé X-RapidAPI-Key. Insérez la clé API que vous avez obtenue de RapidAPI comme valeur pour cette clé.
+🔑 **API Key Configuration for integrating Shazam's API in MySampled**:
+  - Obtain the API Key: Go to [RapidAPI](https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing) and generate your Shazam API key.
+  - Create the `ApiKey.plist` file: In Xcode, create an `ApiKey.plist` file within your project.
+  - Add the API Key in `ApiKey.plist`: Open the `ApiKey.plist` file. Create a new dictionary with the key `X-RapidAPI-Key`. Insert the API key you obtained from RapidAPI as the value for this key.
 
 ## 📲 Installation
 
-1. Clonez le dépôt :
+1. Clone the repository:
 ```bash
-git clone https://github.com/lionel045/MySampled
+   git clone https://github.com/lionel045/MySampled
 ```
-2. Ouvrez le projet dans Xcode : Lancez Xcode et ouvrez le dossier du projet.
-3. Crée un fichier ApiKey.plist : Dans la section root ajouté ***X-RapidAPI-Key*** dans row ajouté la clé api générer précédemment.
-4.  Exécutez l'application : Compilez et lancez l'application sur votre simulateur ou appareil iOS.
+2. Open the project in Xcode: Launch Xcode and open the project folder.
+3. Create an `ApiKey.plist` file: In the root section, add ***X-RapidAPI-Key*** in the row and insert the previously generated API key.
+4. Run the application: Compile and launch the application on your iOS simulator or device.
 
-# RoadMap 
-🚧 État du Projet
-MySampled est en cours de développement actif. Bien que les fonctionnalités principales soient déjà en place, l'application est toujours en phase de peaufinage et d'amélioration, en particulier concernant son interface utilisateur.
+# Roadmap
 
-À Venir
-Amélioration du Front-End : Je travaille activement à améliorer l'interface utilisateur pour rendre l'expérience plus intuitive, réactive et agréable. Ceci inclut la révision des layouts, l'amélioration des interactions utilisateur et l'optimisation de la performance visuelle.
+## 🚧 Current State of the Project
+- MySampled is currently in active development. The core features are established, but we are focused on the continuous improvement of the application, especially in terms of user interface.
 
+## Upcoming Steps
+- **Front-End Improvement**: We are concentrating on enhancing the user interface to provide a more intuitive, responsive, and pleasant experience. This includes revising layouts, enriching user interactions, and optimizing visual performance.
 
-Lien pour l'api de [Shazam](https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing)
-Pas de panique l'utilisation de l'API est gratuite
+- **Adding a Tab Bar**: To improve navigation within the application, we plan to integrate a tab bar. This will allow users to quickly access different features and sections of the app.
+
+- **Data Persistence**: We aim to implement data persistence functionality. This will enable users to save and easily retrieve identified tracks and discovered samples.
+
+[Shazam API Link](https://rapidapi.com/diyorbekkanal/api/shazam-api6/pricing)
+No worries, the API usage is free.

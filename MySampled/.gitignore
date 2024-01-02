@@ -14,6 +14,7 @@ ApiKey.plist
 !*.xcodeproj/xcshareddata/
 MySampled.xcodeproj/project.xcworkspace/xcuserdata/
 NetWorkService.swift
+.swiftlint.yml
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 # Code Injection
