@@ -2,7 +2,8 @@
 
 Bienvenue sur **MySampled**, une application innovante de reconnaissance de samples musicaux. En intégrant l'API de **Shazam** et une API de reconnaissance de samples, MySampled se positionne comme un outil indispensable pour les amateurs de musique, les DJ, et les producteurs. Conçue en **Swift** et s'appuyant sur **UIKit**, cette application offre une expérience utilisateur fluide et agréable.
 
-![Screen1](https://github.com/lionel045/MySampled/assets/64079278/e5920cf1-99fe-460a-94fa-2590b20380de)
+
+![Screen1](https://github.com/lionel045/MySampled/assets/64079278/1cc7048b-f650-42eb-a953-452fa989e080)
 ![Screen2](https://github.com/lionel045/MySampled/assets/64079278/9341689e-371f-4737-8889-58efb20a1237)
 ![Screen3](https://github.com/lionel045/MySampled/assets/64079278/4d9f5284-8659-4b33-8db6-5e7f65eedc32)
 
