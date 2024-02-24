@@ -1,0 +1,248 @@
+{
+  "" : {
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/MySampled-master.dia",
+    "emit-module-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/MySampled-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/MySampled-master-emit-module.dia",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/MySampled-master.swiftdeps"
+  },
+  "/Users/lion/Desktop/recuperation modif/SecondViewController.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SecondViewController.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SecondViewController.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SecondViewController.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SecondViewController.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SecondViewController.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SecondViewController.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SecondViewController.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SecondViewController~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Controller/HomeViewController.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/HomeViewController.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/HomeViewController.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/HomeViewController.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/HomeViewController.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/HomeViewController.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/HomeViewController.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/HomeViewController.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/HomeViewController~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Controller/ViewController.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewController.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewController.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewController.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewController.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewController.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewController.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewController.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewController~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Controller/ViewControllerExtension.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewControllerExtension.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewControllerExtension.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewControllerExtension.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewControllerExtension.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewControllerExtension.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewControllerExtension.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewControllerExtension.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewControllerExtension~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Data/AppDelegate.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Data/SceneDelegate.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SceneDelegate.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SceneDelegate.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SceneDelegate~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/AudioRecorderManager.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AudioRecorderManager.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AudioRecorderManager.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AudioRecorderManager.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AudioRecorderManager.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AudioRecorderManager.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AudioRecorderManager.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AudioRecorderManager.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/AudioRecorderManager~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/ShazamRequest/ApiRequest.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ApiRequest.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ApiRequest.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ApiRequest.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ApiRequest.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ApiRequest.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ApiRequest.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ApiRequest.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ApiRequest~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/ShazamRequest/DownloadImageShazam.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageShazam.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageShazam.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageShazam.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageShazam.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageShazam.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageShazam.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageShazam.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageShazam~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/WWhoSampledRequest/DownloadImageWhosampled.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageWhosampled.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageWhosampled.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageWhosampled.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageWhosampled.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageWhosampled.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageWhosampled.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageWhosampled.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/DownloadImageWhosampled~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/WWhoSampledRequest/NetWorkService.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/NetWorkService.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/NetWorkService.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/NetWorkService.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/NetWorkService.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/NetWorkService.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/NetWorkService.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/NetWorkService.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/NetWorkService~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/WWhoSampledRequest/ResultTrack.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ResultTrack.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ResultTrack.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ResultTrack.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ResultTrack.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ResultTrack.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ResultTrack.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ResultTrack.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ResultTrack~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/WWhoSampledRequest/RetrieveResultTrack.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/RetrieveResultTrack.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/RetrieveResultTrack.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/RetrieveResultTrack.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/RetrieveResultTrack.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/RetrieveResultTrack.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/RetrieveResultTrack.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/RetrieveResultTrack.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/RetrieveResultTrack~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/WWhoSampledRequest/SampledIn.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledIn.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledIn.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledIn.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledIn.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledIn.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledIn.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledIn.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledIn~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/WWhoSampledRequest/SampleMinute.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleMinute.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleMinute.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleMinute.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleMinute.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleMinute.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleMinute.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleMinute.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleMinute~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/WWhoSampledRequest/SampleOriginDetector.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleOriginDetector.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleOriginDetector.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleOriginDetector.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleOriginDetector.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleOriginDetector.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleOriginDetector.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleOriginDetector.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleOriginDetector~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/Model/WWhoSampledRequest/SearchRequest.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SearchRequest.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SearchRequest.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SearchRequest.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SearchRequest.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SearchRequest.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SearchRequest.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SearchRequest.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SearchRequest~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/View/ArtistImageView.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ArtistImageView.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ArtistImageView.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ArtistImageView.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ArtistImageView.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ArtistImageView.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ArtistImageView.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ArtistImageView.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ArtistImageView~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/View/ButtonReccordView.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ButtonReccordView.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ButtonReccordView.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ButtonReccordView.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ButtonReccordView.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ButtonReccordView.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ButtonReccordView.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ButtonReccordView.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ButtonReccordView~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/View/CustomCollectionViewCell.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/CustomCollectionViewCell.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/CustomCollectionViewCell.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/CustomCollectionViewCell.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/CustomCollectionViewCell.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/CustomCollectionViewCell.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/CustomCollectionViewCell.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/CustomCollectionViewCell.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/CustomCollectionViewCell~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/View/HeaderCell/SampledInHeaderView.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledInHeaderView.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledInHeaderView.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledInHeaderView.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledInHeaderView.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledInHeaderView.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledInHeaderView.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledInHeaderView.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampledInHeaderView~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/View/HeaderCell/SampleHeaderView.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleHeaderView.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleHeaderView.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleHeaderView.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleHeaderView.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleHeaderView.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleHeaderView.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleHeaderView.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/SampleHeaderView~partial.swiftmodule"
+  },
+  "/Users/lion/Documents/swift srx/MySampled/MySampled/View/ViewInfoScroll.swift" : {
+    "const-values" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewInfoScroll.swiftconstvalues",
+    "dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewInfoScroll.d",
+    "diagnostics" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewInfoScroll.dia",
+    "index-unit-output-path" : "/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewInfoScroll.o",
+    "llvm-bc" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewInfoScroll.bc",
+    "object" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewInfoScroll.o",
+    "swift-dependencies" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewInfoScroll.swiftdeps",
+    "swiftmodule" : "/Users/lion/Documents/swift srx/MySampled/build/MySampled.build/Debug-iphoneos/MySampled.build/Objects-normal/arm64/ViewInfoScroll~partial.swiftmodule"
+  }
+}

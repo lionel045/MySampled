@@ -3,4 +3,84 @@
    uuid = "A49DCE10-13D7-4548-9BF1-D3AC9CCCA109"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37C7BAA6-49ED-4F9C-AEE6-B60745530A1D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySampled/Model/ImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "downloadImage(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "37C7BAA6-49ED-4F9C-AEE6-B60745530A1D - c76c1cc58b2c91f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MySampled.ImageService.downloadImage(from: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "MySampled"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lion/Documents/swift%20srx/MySampled/MySampled/Model/ImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "37C7BAA6-49ED-4F9C-AEE6-B60745530A1D - 133019229cbe75ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MySampled.ImageService.downloadImage(from: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "MySampled"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lion/Documents/swift%20srx/MySampled/MySampled/Model/ImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "37C7BAA6-49ED-4F9C-AEE6-B60745530A1D - f78ce8f54d27207"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MySampled.ImageService.downloadImage(from: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "MySampled"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lion/Documents/swift%20srx/MySampled/MySampled/Model/ImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "37C7BAA6-49ED-4F9C-AEE6-B60745530A1D - eb73566c73c6c404"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MySampled.ImageService.downloadImage(from: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "MySampled"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lion/Documents/swift%20srx/MySampled/MySampled/Model/ImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -1,0 +1,178 @@
+{
+  "" : {
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/swift-format-master.dia",
+    "emit-module-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/swift-format-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/swift-format-master-emit-module.dia",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/swift-format-master.swiftdeps"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Frontend/ConfigurationLoader.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/ConfigurationLoader.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/ConfigurationLoader.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/ConfigurationLoader.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/ConfigurationLoader.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/ConfigurationLoader.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/ConfigurationLoader.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/ConfigurationLoader.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/ConfigurationLoader~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Frontend/FormatFrontend.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatFrontend.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatFrontend.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatFrontend.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatFrontend.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatFrontend.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatFrontend.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatFrontend.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatFrontend~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Frontend/Frontend.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Frontend.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Frontend.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Frontend.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Frontend.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Frontend.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Frontend.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Frontend.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Frontend~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Frontend/LintFrontend.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFrontend.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFrontend.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFrontend.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFrontend.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFrontend.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFrontend.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFrontend.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFrontend~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/main.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/main.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/main.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/main.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/main.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/main.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/main.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/main.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/main~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Subcommands/DumpConfiguration.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DumpConfiguration.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DumpConfiguration.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DumpConfiguration.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DumpConfiguration.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DumpConfiguration.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DumpConfiguration.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DumpConfiguration.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DumpConfiguration~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Subcommands/Format.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Format.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Format.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Format.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Format.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Format.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Format.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Format.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Format~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Subcommands/Lint.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Lint.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Lint.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Lint.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Lint.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Lint.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Lint.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Lint.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Lint~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Subcommands/LintFormatOptions.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFormatOptions.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFormatOptions.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFormatOptions.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFormatOptions.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFormatOptions.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFormatOptions.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFormatOptions.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/LintFormatOptions~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Utilities/Diagnostic.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Diagnostic.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Diagnostic.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Diagnostic.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Diagnostic.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Diagnostic.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Diagnostic.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Diagnostic.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/Diagnostic~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Utilities/DiagnosticsEngine.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DiagnosticsEngine.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DiagnosticsEngine.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DiagnosticsEngine.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DiagnosticsEngine.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DiagnosticsEngine.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DiagnosticsEngine.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DiagnosticsEngine.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/DiagnosticsEngine~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Utilities/FileHandleTextOutputStream.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileHandleTextOutputStream.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileHandleTextOutputStream.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileHandleTextOutputStream.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileHandleTextOutputStream.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileHandleTextOutputStream.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileHandleTextOutputStream.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileHandleTextOutputStream.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileHandleTextOutputStream~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Utilities/FileIterator.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileIterator.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileIterator.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileIterator.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileIterator.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileIterator.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileIterator.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileIterator.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FileIterator~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Utilities/FormatError.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatError.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatError.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatError.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatError.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatError.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatError.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatError.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/FormatError~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Utilities/StderrDiagnosticPrinter.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/StderrDiagnosticPrinter.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/StderrDiagnosticPrinter.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/StderrDiagnosticPrinter.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/StderrDiagnosticPrinter.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/StderrDiagnosticPrinter.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/StderrDiagnosticPrinter.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/StderrDiagnosticPrinter.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/StderrDiagnosticPrinter~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/Utilities/TTY.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/TTY.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/TTY.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/TTY.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/TTY.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/TTY.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/TTY.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/TTY.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/TTY~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/Sources/swift-format/VersionOptions.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/VersionOptions.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/VersionOptions.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/VersionOptions.dia",
+    "index-unit-output-path" : "/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/VersionOptions.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/VersionOptions.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/VersionOptions.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/VersionOptions.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-format/build/swift-format.build/Debug/swift-format.build/Objects-normal/x86_64/VersionOptions~partial.swiftmodule"
+  }
+}

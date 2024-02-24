@@ -1,0 +1,41 @@
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/Argument.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/ArgumentHelp.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/ArgumentVisibility.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/CompletionKind.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/Errors.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/Flag.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/NameSpecification.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/Option.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/OptionGroup.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/AsyncParsableCommand.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/CommandConfiguration.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/EnumerableFlag.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/ExpressibleByArgument.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/ParsableArguments.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/ParsableArgumentsValidation.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/ParsableCommand.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputKey.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/DumpHelpGenerator.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/CollectionExtensions.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Platform.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift
+/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift

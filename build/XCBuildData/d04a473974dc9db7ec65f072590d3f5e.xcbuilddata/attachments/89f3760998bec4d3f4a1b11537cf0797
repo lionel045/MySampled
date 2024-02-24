@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-master.dia",
+    "emit-module-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-master-emit-module.dia",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ArgumentParserToolInfo-master.swiftdeps"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo/ToolInfo.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.dia",
+    "index-unit-output-path" : "/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-argument-parser/build/swift-argument-parser.build/Debug-iphoneos/ArgumentParserToolInfo.build/Objects-normal/arm64/ToolInfo~partial.swiftmodule"
+  }
+}

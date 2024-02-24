@@ -1,0 +1,4 @@
+module _SwiftSyntaxTestSupport {
+header "_SwiftSyntaxTestSupport-Swift.h"
+export *
+}

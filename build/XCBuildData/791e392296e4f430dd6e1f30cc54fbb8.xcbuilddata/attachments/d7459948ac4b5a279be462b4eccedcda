@@ -1,0 +1,4 @@
+module cmark_gfm_extensions {
+umbrella "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-cmark/extensions/include"
+export *
+}

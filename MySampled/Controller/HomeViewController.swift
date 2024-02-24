@@ -18,7 +18,5 @@ class HomeViewController: UIViewController {
         navigationController?.view.layer.add(transition, forKey: nil)
         navigationController?.pushViewController(firstViewController, animated: false)
     }
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
+
 }

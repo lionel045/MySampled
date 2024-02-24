@@ -1,0 +1,4 @@
+module generate_manual {
+header "generate-manual-Swift.h"
+export *
+}

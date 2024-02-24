@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/SwiftSyntaxMacrosTestSupport-master.dia",
+    "emit-module-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/SwiftSyntaxMacrosTestSupport-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/SwiftSyntaxMacrosTestSupport-master-emit-module.dia",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/SwiftSyntaxMacrosTestSupport-master.swiftdeps"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/Sources/SwiftSyntaxMacrosTestSupport/Assertions.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/Assertions.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/Assertions.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/Assertions.dia",
+    "index-unit-output-path" : "/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/Assertions.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/Assertions.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/Assertions.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/Assertions.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-syntax/build/swift-syntax.build/Debug-iphoneos/SwiftSyntaxMacrosTestSupport.build/Objects-normal/arm64/Assertions~partial.swiftmodule"
+  }
+}

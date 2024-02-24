@@ -2,7 +2,7 @@ import AVFoundation
 import UIKit
 
 protocol Delegation {
-    func sendData(data: ShazamResponse)
+    func sendData(data: ShazamResult)
 }
 
 class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
@@ -10,7 +10,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     var recordButton: ButtonReccordView!
     var checkIfSongFound: ((Bool?) -> Void)?
     var songFound = false
-    var sendResultToSecondVc: ((ShazamResponse?) -> Void)?
+    var sendResultToSecondVc: ((ShazamResult?) -> Void)?
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var delegate: Delegation?
@@ -36,11 +36,11 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         self.present(alert, animated: true)
     }
 
-    func sendDataToVc(data: ShazamResponse, sampleData: ([TrackSample?], [TrackSample?])) async {
+    func sendDataToVc(data: ShazamResult, sampleData: ([TrackSample?], [TrackSample?])) async {
         let shazamObject = data
-        guard let backgroundImage = shazamObject.result?.track?.images?.background else { return }
-        guard let artist: String = shazamObject.result?.track?.subtitle else { return }
-        guard let song: String = shazamObject.result?.track?.title else { return }
+       guard let backgroundImage =  shazamObject.track?.images?.background else { return }
+        guard let artist: String = shazamObject.track?.subtitle else { return }
+          guard let song: String = shazamObject.track?.title else { return }
 
         let artistAndSong = (artist, song)
 
@@ -111,8 +111,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             Task {
                 do {
                     let shazamData = try await ApiRequest.sharedInstance.sendSongApi(record)
-                    if let retrieveArtist = shazamData.result?.track?.subtitle,
-                       let retrieveTitle = shazamData.result?.track?.title {
+                    if let retrieveArtist = shazamData.track?.subtitle,
+                       let retrieveTitle = shazamData.track?.title {
 
                         let songWithoutFeat = retrieveTitle.removingContentInParenthesesAndBrackets()
                         let trackWithoutFeat = songWithoutFeat.formattedTrackName()

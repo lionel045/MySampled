@@ -1,0 +1,668 @@
+{
+  "" : {
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markdown-master.dia",
+    "emit-module-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markdown-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markdown-master-emit-module.dia",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markdown-master.swiftdeps"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/ChildIndexPath.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ChildIndexPath.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ChildIndexPath.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ChildIndexPath.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ChildIndexPath.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ChildIndexPath.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ChildIndexPath.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ChildIndexPath.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ChildIndexPath~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/DirectiveArgument.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DirectiveArgument.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DirectiveArgument.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DirectiveArgument.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DirectiveArgument.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DirectiveArgument.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DirectiveArgument.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DirectiveArgument.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DirectiveArgument~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/Document.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Document.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Document.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Document.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Document.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Document.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Document.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Document.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Document~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/LiteralMarkup.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LiteralMarkup.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LiteralMarkup.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LiteralMarkup.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LiteralMarkup.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LiteralMarkup.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LiteralMarkup.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LiteralMarkup.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LiteralMarkup~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/Markup.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markup.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markup.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markup.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markup.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markup.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markup.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markup.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Markup~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/MarkupChildren.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupChildren.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupChildren.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupChildren.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupChildren.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupChildren.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupChildren.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupChildren.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupChildren~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/MarkupData.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupData.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupData.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupData.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupData.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupData.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupData.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupData.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupData~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/PlainTextConvertibleMarkup.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/PlainTextConvertibleMarkup.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/PlainTextConvertibleMarkup.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/PlainTextConvertibleMarkup.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/PlainTextConvertibleMarkup.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/PlainTextConvertibleMarkup.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/PlainTextConvertibleMarkup.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/PlainTextConvertibleMarkup.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/PlainTextConvertibleMarkup~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Base/RawMarkup.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RawMarkup.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RawMarkup.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RawMarkup.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RawMarkup.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RawMarkup.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RawMarkup.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RawMarkup.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RawMarkup~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Block Container Blocks/BlockDirective.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirective.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirective.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirective.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirective.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirective.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirective.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirective.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirective~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Block Container Blocks/BlockQuote.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockQuote.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockQuote.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockQuote.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockQuote.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockQuote.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockQuote.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockQuote.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockQuote~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Block Container Blocks/CustomBlock.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomBlock.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomBlock.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomBlock.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomBlock.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomBlock.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomBlock.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomBlock.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomBlock~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Block Container Blocks/Doxygen Commands/DoxygenParameter.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenParameter.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenParameter.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenParameter.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenParameter.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenParameter.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenParameter.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenParameter.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenParameter~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Block Container Blocks/Doxygen Commands/DoxygenReturns.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenReturns.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenReturns.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenReturns.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenReturns.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenReturns.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenReturns.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenReturns.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/DoxygenReturns~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Block Container Blocks/ListItem.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItem.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItem.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItem.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItem.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItem.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItem.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItem.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItem~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Block Container Blocks/OrderedList.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/OrderedList.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/OrderedList.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/OrderedList.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/OrderedList.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/OrderedList.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/OrderedList.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/OrderedList.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/OrderedList~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Block Container Blocks/UnorderedList.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/UnorderedList.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/UnorderedList.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/UnorderedList.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/UnorderedList.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/UnorderedList.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/UnorderedList.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/UnorderedList.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/UnorderedList~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Inline Container Blocks/Paragraph.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Paragraph.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Paragraph.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Paragraph.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Paragraph.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Paragraph.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Paragraph.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Paragraph.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Paragraph~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Leaf Blocks/CodeBlock.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CodeBlock.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CodeBlock.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CodeBlock.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CodeBlock.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CodeBlock.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CodeBlock.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CodeBlock.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CodeBlock~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Leaf Blocks/Heading.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Heading.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Heading.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Heading.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Heading.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Heading.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Heading.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Heading.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Heading~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Leaf Blocks/HTMLBlock.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/HTMLBlock.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/HTMLBlock.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/HTMLBlock.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/HTMLBlock.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/HTMLBlock.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/HTMLBlock.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/HTMLBlock.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/HTMLBlock~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Leaf Blocks/ThematicBreak.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ThematicBreak.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ThematicBreak.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ThematicBreak.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ThematicBreak.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ThematicBreak.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ThematicBreak.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ThematicBreak.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ThematicBreak~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Tables/Table.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Table.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Table.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Table.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Table.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Table.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Table.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Table.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Table~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Tables/TableBody.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableBody.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableBody.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableBody.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableBody.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableBody.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableBody.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableBody.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableBody~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Tables/TableCell.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCell.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCell.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCell.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCell.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCell.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCell.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCell.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCell~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Tables/TableCellContainer.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCellContainer.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCellContainer.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCellContainer.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCellContainer.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCellContainer.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCellContainer.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCellContainer.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableCellContainer~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Tables/TableHead.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableHead.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableHead.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableHead.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableHead.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableHead.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableHead.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableHead.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableHead~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Block Nodes/Tables/TableRow.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableRow.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableRow.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableRow.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableRow.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableRow.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableRow.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableRow.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/TableRow~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Infrastructure/Replacement.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Replacement.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Replacement.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Replacement.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Replacement.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Replacement.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Replacement.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Replacement.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Replacement~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Infrastructure/SourceLocation.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SourceLocation.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SourceLocation.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SourceLocation.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SourceLocation.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SourceLocation.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SourceLocation.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SourceLocation.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SourceLocation~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Containers/Emphasis.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Emphasis.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Emphasis.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Emphasis.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Emphasis.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Emphasis.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Emphasis.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Emphasis.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Emphasis~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Containers/Image.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Image.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Image.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Image.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Image.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Image.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Image.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Image.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Image~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Containers/InlineAttributes.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineAttributes.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineAttributes.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineAttributes.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineAttributes.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineAttributes.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineAttributes.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineAttributes.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineAttributes~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Containers/Link.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Link.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Link.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Link.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Link.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Link.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Link.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Link.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Link~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Containers/Strikethrough.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strikethrough.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strikethrough.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strikethrough.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strikethrough.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strikethrough.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strikethrough.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strikethrough.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strikethrough~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Containers/Strong.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strong.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strong.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strong.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strong.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strong.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strong.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strong.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Strong~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Leaves/CustomInline.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomInline.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomInline.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomInline.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomInline.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomInline.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomInline.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomInline.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CustomInline~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Leaves/InlineCode.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineCode.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineCode.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineCode.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineCode.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineCode.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineCode.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineCode.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineCode~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Leaves/InlineHTML.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineHTML.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineHTML.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineHTML.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineHTML.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineHTML.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineHTML.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineHTML.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineHTML~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Leaves/LineBreak.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LineBreak.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LineBreak.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LineBreak.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LineBreak.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LineBreak.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LineBreak.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LineBreak.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LineBreak~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Leaves/SoftBreak.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SoftBreak.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SoftBreak.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SoftBreak.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SoftBreak.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SoftBreak.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SoftBreak.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SoftBreak.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SoftBreak~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Leaves/SymbolLink.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SymbolLink.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SymbolLink.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SymbolLink.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SymbolLink.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SymbolLink.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SymbolLink.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SymbolLink.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/SymbolLink~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Inline Nodes/Inline Leaves/Text.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Text.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Text.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Text.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Text.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Text.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Text.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Text.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Text~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Interpretive Nodes/Aside.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Aside.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Aside.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Aside.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Aside.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Aside.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Aside.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Aside.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/Aside~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Parser/BlockDirectiveParser.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirectiveParser.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirectiveParser.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirectiveParser.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirectiveParser.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirectiveParser.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirectiveParser.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirectiveParser.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockDirectiveParser~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Parser/CommonMarkConverter.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CommonMarkConverter.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CommonMarkConverter.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CommonMarkConverter.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CommonMarkConverter.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CommonMarkConverter.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CommonMarkConverter.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CommonMarkConverter.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CommonMarkConverter~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Parser/LazySplitLines.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LazySplitLines.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LazySplitLines.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LazySplitLines.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LazySplitLines.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LazySplitLines.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LazySplitLines.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LazySplitLines.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/LazySplitLines~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Parser/ParseOptions.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ParseOptions.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ParseOptions.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ParseOptions.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ParseOptions.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ParseOptions.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ParseOptions.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ParseOptions.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ParseOptions~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Parser/RangeAdjuster.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangeAdjuster.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangeAdjuster.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangeAdjuster.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangeAdjuster.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangeAdjuster.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangeAdjuster.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangeAdjuster.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangeAdjuster~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Parser/RangerTracker.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangerTracker.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangerTracker.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangerTracker.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangerTracker.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangerTracker.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangerTracker.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangerTracker.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/RangerTracker~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Rewriter/MarkupRewriter.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupRewriter.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupRewriter.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupRewriter.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupRewriter.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupRewriter.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupRewriter.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupRewriter.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupRewriter~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Structural Restrictions/BasicBlockContainer.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicBlockContainer.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicBlockContainer.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicBlockContainer.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicBlockContainer.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicBlockContainer.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicBlockContainer.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicBlockContainer.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicBlockContainer~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Structural Restrictions/BasicInlineContainer.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicInlineContainer.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicInlineContainer.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicInlineContainer.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicInlineContainer.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicInlineContainer.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicInlineContainer.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicInlineContainer.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BasicInlineContainer~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Structural Restrictions/BlockContainer.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockContainer.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockContainer.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockContainer.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockContainer.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockContainer.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockContainer.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockContainer.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockContainer~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Structural Restrictions/BlockMarkup.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockMarkup.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockMarkup.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockMarkup.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockMarkup.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockMarkup.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockMarkup.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockMarkup.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/BlockMarkup~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Structural Restrictions/InlineContainer.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineContainer.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineContainer.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineContainer.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineContainer.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineContainer.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineContainer.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineContainer.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineContainer~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Structural Restrictions/InlineMarkup.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineMarkup.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineMarkup.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineMarkup.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineMarkup.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineMarkup.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineMarkup.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineMarkup.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/InlineMarkup~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Structural Restrictions/ListItemContainer.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItemContainer.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItemContainer.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItemContainer.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItemContainer.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItemContainer.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItemContainer.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItemContainer.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/ListItemContainer~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Utility/AtomicCounter.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/AtomicCounter.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/AtomicCounter.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/AtomicCounter.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/AtomicCounter.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/AtomicCounter.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/AtomicCounter.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/AtomicCounter.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/AtomicCounter~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Utility/CharacterExtensions.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CharacterExtensions.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CharacterExtensions.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CharacterExtensions.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CharacterExtensions.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CharacterExtensions.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CharacterExtensions.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CharacterExtensions.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CharacterExtensions~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Utility/CollectionExtensions.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CollectionExtensions.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CollectionExtensions.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CollectionExtensions.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CollectionExtensions.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CollectionExtensions.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CollectionExtensions.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CollectionExtensions.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/CollectionExtensions~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Utility/StringExtensions.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/StringExtensions.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/StringExtensions.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/StringExtensions.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/StringExtensions.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/StringExtensions.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/StringExtensions.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/StringExtensions.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/StringExtensions~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Visitor/MarkupVisitor.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupVisitor.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupVisitor.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupVisitor.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupVisitor.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupVisitor.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupVisitor.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupVisitor.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupVisitor~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Walker/MarkupWalker.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupWalker.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupWalker.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupWalker.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupWalker.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupWalker.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupWalker.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupWalker.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupWalker~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Walker/Walkers/MarkupFormatter.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupFormatter.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupFormatter.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupFormatter.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupFormatter.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupFormatter.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupFormatter.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupFormatter.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupFormatter~partial.swiftmodule"
+  },
+  "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/Markdown/Walker/Walkers/MarkupTreeDumper.swift" : {
+    "const-values" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupTreeDumper.swiftconstvalues",
+    "dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupTreeDumper.d",
+    "diagnostics" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupTreeDumper.dia",
+    "index-unit-output-path" : "/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupTreeDumper.o",
+    "llvm-bc" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupTreeDumper.bc",
+    "object" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupTreeDumper.o",
+    "swift-dependencies" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupTreeDumper.swiftdeps",
+    "swiftmodule" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/build/swift-markdown.build/Debug/Markdown.build/Objects-normal/x86_64/MarkupTreeDumper~partial.swiftmodule"
+  }
+}

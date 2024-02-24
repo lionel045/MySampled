@@ -1,0 +1,252 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "PACKAGE-TARGET:Lottie"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:Lottie"
+    },
+    {
+      "guid" : "fad88072a2aa083913658574175773576b1602c359ca50fa9666aff486415aa8"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftLint"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftLint"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftLintFix"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftLintFix"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:api_test"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:cmark-gfm"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:cmark-gfm"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:cmark-gfm-bin"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:cmark-gfm-extensions"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:cmark-gfm-extensions"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:ArgumentParser"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:ArgumentParser"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:ArgumentParserToolInfo"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GenerateManual"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:GenerateManual"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:generate-manual"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:generate-manual-55E729FAD4D73105-testable"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:Format Source Code"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FormatPlugin"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:Lint Source Code"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:LintPlugin"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftFormat"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftFormat"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftFormatConfiguration"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftFormatConfiguration"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:swift-format"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:swift-format-44A7DBA4DD5E81EF-testable"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:CAtomic"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:Markdown"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:Markdown"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftBasicFormat"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftBasicFormat"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftCompilerPlugin"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftCompilerPlugin"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftCompilerPluginMessageHandling"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftCompilerPluginMessageHandling"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftDiagnostics"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftDiagnostics"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftIDEUtils"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftIDEUtils"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftOperators"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftOperators"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftParser"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftParser"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftParserDiagnostics"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftParserDiagnostics"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftRefactor"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftRefactor"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftSyntax"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftSyntax"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftSyntax509"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftSyntaxBuilder"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftSyntaxBuilder"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftSyntaxMacroExpansion"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftSyntaxMacroExpansion"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftSyntaxMacros"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftSyntaxMacros"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftSyntaxMacrosTestSupport"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftSyntaxMacrosTestSupport"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:_SwiftSyntaxTestSupport"
+    }
+  ],
+  "containerPath" : "/Users/lion/Documents/swift srx/MySampled/MySampled.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos17.2",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/lion/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone14,5",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.2.1",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone14,5",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "00008110-0001116C2643801E",
+          "TARGET_DEVICE_MODEL" : "iPhone14,5",
+          "TARGET_DEVICE_OS_VERSION" : "17.2.1",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

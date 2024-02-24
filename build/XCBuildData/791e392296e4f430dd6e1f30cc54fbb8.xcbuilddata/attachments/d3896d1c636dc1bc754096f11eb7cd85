@@ -1,0 +1,4 @@
+module SwiftFormatConfiguration {
+header "SwiftFormatConfiguration-Swift.h"
+export *
+}

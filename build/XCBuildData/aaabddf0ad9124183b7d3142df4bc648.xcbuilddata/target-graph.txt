@@ -1,4 +1,0 @@
-Target dependency graph (2 targets)
-SwiftSoup in Pods, no dependencies
-Pods-MySampled in Pods, depends on:
-SwiftSoup in Pods (explicit)

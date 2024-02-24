@@ -1,0 +1,4 @@
+module CAtomic {
+umbrella header "/Users/lion/Library/Developer/Xcode/DerivedData/MySampled-agdiwaqxtledjaewwliwajnvbtqx/SourcePackages/checkouts/swift-markdown/Sources/CAtomic/include/CAtomic.h"
+export *
+}
